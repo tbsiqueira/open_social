@@ -7,6 +7,7 @@ use Drupal\Core\Config\ConfigFactoryOverrideInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Config\StorageInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Configuration override.
@@ -22,14 +23,34 @@ class SocialTaggingOverrides implements ConfigFactoryOverrideInterface {
    */
   protected $configFactory;
 
+    /**
+   * The current route match.
+   *
+   * @var \Drupal\Core\Routing\RouteMatchInterface
+   */
+  protected $currentRouteMatch;
+
+  /**
+   * Social tagging service.
+   *
+   * @var \Drupal\social_tagging\SocialTaggingService
+   */
+  protected $socialTaggingService;
+
   /**
    * Constructs the service.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The config factory.
+   * @param \Drupal\Core\Routing\RouteMatchInterface $currentRouteMatch
+   *   The request stack.
+   * @param \Drupal\social_tagging\SocialTaggingService $socialTaggingService
+   *   The request stack.
    */
-  public function __construct(ConfigFactoryInterface $config_factory) {
+  public function __construct(ConfigFactoryInterface $config_factory, RouteMatchInterface $currentRouteMatch, SocialTaggingService $socialTaggingService) {
     $this->configFactory = $config_factory;
+    $this->currentRouteMatch = $currentRouteMatch;
+    $this->socialTaggingService = $socialTaggingService;
   }
 
   /**
@@ -86,7 +107,7 @@ class SocialTaggingOverrides implements ConfigFactoryOverrideInterface {
     $overrides = [];
 
     /** @var \Drupal\social_tagging\SocialTaggingService $tag_service */
-    $tag_service = \Drupal::service('social_tagging.tag_service');
+    $tag_service = $this->socialTaggingService;
     $config = $this->configFactory;
 
     // Check if tagging is active.
@@ -255,7 +276,7 @@ class SocialTaggingOverrides implements ConfigFactoryOverrideInterface {
       'views.view.newest_groups' => 'page_all_groups',
     ];
 
-    $route_name = \Drupal::routeMatch()->getRouteName();
+    $route_name = $this->currentRouteMatch->getRouteName();
     if ($tag_service->profileActive() && $route_name == 'view.newest_users.page_newest_users') {
       $config_overviews['views.view.newest_users'] = 'default';
     }
