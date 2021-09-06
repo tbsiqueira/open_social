@@ -114,6 +114,16 @@ class SocialTaggingService {
   }
 
   /**
+   * Returns the filter query condition.
+   *
+   * @return string
+   *   Returns OR or AND.
+   */
+  public function queryCondition() {
+    return (string) ($this->configFactory->get('social_tagging.settings')->get('use_and_condition') ? 'AND' : 'OR');
+  }
+
+  /**
    * Returns whether using a parent of categories is allowed.
    *
    * @return bool
@@ -244,7 +254,8 @@ class SocialTaggingService {
         }
         // Or add the parent term itself if it connected to the content.
         else {
-          $category_label = $current_term->getTranslation($langcode)->getName();
+          $category_label = $current_term->hasTranslation($langcode) ? $current_term->getTranslation($langcode)
+            ->getName() : $current_term->getName();
           $parent = $current_term;
         }
         // Prepare the parameter;.
