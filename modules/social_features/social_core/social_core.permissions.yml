@@ -1,3 +1,8 @@
 access social_core dashboard:
   title: 'Access administration dashboard'
   description: 'Allows access to the administration dashboard.'
+
+view debug information:
+  title: 'View debug information'
+  description: 'Show debug information in Open Social modules. Intended for developers only.'
+  restrict access: true
