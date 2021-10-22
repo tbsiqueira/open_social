@@ -1464,8 +1464,8 @@ function social_core_update_10300() {
 function social_core_update_11001(): void {
   Role::create([
     'id' => 'verified',
-    'label' => t('Verified User'),
-    'weight' => 5,
+    'label' => 'Verified User',
+    'weight' => 3,
     'is_admin' => NULL,
     'permissions' => [],
   ])->save();
