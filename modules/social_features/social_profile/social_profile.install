@@ -1845,11 +1845,18 @@ function social_profile_update_11022() : void {
   // A hook_requirements checks that uninstalling these modules does not take
   // any others with it. If modules still rely on any of these then the update
   // to 11.0.0 is blocked.
-  $modules = [
-    'social_profile_fields',
-    'social_profile_privacy',
-    'social_registration_fields',
-  ];
+  $modules = array_filter(
+    [
+      'social_profile_fields',
+      'social_profile_privacy',
+      'social_registration_fields',
+    ],
+    // Ensure we only try to uninstall modules that are actually enabled
+    // otherwise Drupal will uninstall nothing.
+    fn (string $name) => \Drupal::moduleHandler()->moduleExists($name)
+  );
+
+
 
   /** @var \Drupal\Core\Extension\ModuleInstallerInterface $module_installer */
   $module_installer = \Drupal::service('module_installer');
