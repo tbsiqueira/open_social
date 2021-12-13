@@ -7,7 +7,7 @@ Feature: Mute/Unmute group notifications
   Background:
     Given users:
       | name     | pass | mail                 | status | roles       |
-      | dude_1st | 1234 | dude_1st@example.com | 1      |             |
+      | dude_1st | 1234 | dude_1st@example.com | 1      | verified    |
       | dude_2nd | 1234 | dude_1st@example.com | 1      | sitemanager |
     Given groups:
       | title                | description            | author       | type           | language |
@@ -17,8 +17,8 @@ Feature: Mute/Unmute group notifications
   @group-mute-group-notifications-group-page
   Scenario: LU able to mute/umute group notifications
     Given I am logged in as "dude_1st"
-      And I click the xth "0" element with the css ".navbar-nav .profile"
-      And I click "My groups"
+      And I am on "/my-groups"
+    Then I should see "Ressinel's group 1st" in the "Main content"
       And I click "Ressinel's group 1st"
     Then I should see the button "Joined"
       And I press "Joined"
@@ -33,8 +33,8 @@ Feature: Mute/Unmute group notifications
   @group-mute-group-notifications-overview-page
   Scenario: LU able to view all Groups muted
     Given I am logged in as "dude_1st"
-      And I click the xth "0" element with the css ".navbar-nav .profile"
-      And I click "My groups"
+      And I am on "/my-groups"
+    Then I should see "Ressinel's group 1st" in the "Main content"
       And I click "Ressinel's group 1st"
     Then I should see the button "Joined"
       And I press "Joined"
@@ -42,13 +42,16 @@ Feature: Mute/Unmute group notifications
     When I click "Mute group"
       And I wait for AJAX to finish
     Then I should see "Unmute group"
-    When I click the xth "0" element with the css ".navbar-nav .profile"
-      And I click "My groups"
+    When I am on "/my-groups"
     Then I should see "Ressinel's group 2nd"
-    When I check the box "edit-muted--2"
+    When I select "My muted groups" from "Muted groups"
       And I press the "Apply" button
     Then I should not see "Ressinel's group 2nd"
-    But I should see "Ressinel's group 1st"
+      But I should see "Ressinel's group 1st"
+    When I select "My unmuted groups" from "Muted groups"
+      And I press the "Apply" button
+    Then I should not see "Ressinel's group 1st"
+      But I should see "Ressinel's group 2nd"
     When I press the "Reset" button
     Then I should see "Ressinel's group 1st"
       And I should see "Ressinel's group 2nd"
@@ -82,8 +85,8 @@ Feature: Mute/Unmute group notifications
     # Log in and check if we have notifications.
     Given I am logged in as "dude_1st"
     # Ensure that group notifications are not muted.
-    When I click the xth "0" element with the css ".navbar-nav .profile"
-      And I click "My groups"
+    When I am on "/my-groups"
+    Then I should see "Ressinel's group 1st"
       And I click "Ressinel's group 1st"
     Then I should see the button "Joined"
       And I press "Joined"
@@ -92,7 +95,7 @@ Feature: Mute/Unmute group notifications
     # There should be notifications.
     When I am on "/notifications"
     Then I should see "dude_2nd created a topic Topic for unmute notify in the Ressinel's group 1st group"
-      And I should have an email with subject "Notification from Open Social" and in the content:
+      And I should have an email with subject "New content has been added to a group you are in" and in the content:
         | dude_2nd created a topic Topic for unmute notify in the Ressinel's group 1st group |
 
   @email-spool
@@ -109,8 +112,8 @@ Feature: Mute/Unmute group notifications
 
     # Login and mute group notifications.
     Given I am logged in as "dude_1st"
-    When I click the xth "0" element with the css ".navbar-nav .profile"
-      And I click "My groups"
+    When I am on "/my-groups"
+    Then I should see "Ressinel's group 1st"
       And I click "Ressinel's group 1st"
     Then I should see the button "Joined"
       And I press "Joined"
@@ -138,5 +141,5 @@ Feature: Mute/Unmute group notifications
     # There shouldn't be any notifications.
     When I am on "/notifications"
     Then I should not see "dude_2nd created a topic Topic for mute notify in the Ressinel's group 1st group"
-      And I should not have an email with subject "Notification from Open Social" and in the content:
+      And I should not have an email with subject "New content has been added to a group you are in" and in the content:
         | dude_2nd created a topic Topic for mute notify in the Ressinel's group 1st group |
