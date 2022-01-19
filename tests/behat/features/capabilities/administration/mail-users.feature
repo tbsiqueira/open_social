@@ -29,5 +29,3 @@ Feature: Send bulk email
     Then I should see the text "Background process"
     And I should see the text "This is the e-mail subject"
     And I should see the text "has finished"
-    And I should have an email with subject "This is the e-mail subject" and in the content:
-      | The body for the e-mail to send |

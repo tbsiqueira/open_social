@@ -101,49 +101,6 @@ function ginvite_group_content_insert(GroupContentInterface $group_content) {
 }
 
 /**
- * Implements hook_mail().
- *
- * This mail is sent when people who do not have an account on the website yet
- * are invited into a group. It is sent in the language the inviter was using
- * the website in.
- *
- * @see ginvite_group_content_insert()
- */
-function ginvite_mail($key, &$message, $params) {
-  if ($key == 'invite') {
-
-    $token_service = \Drupal::token();
-    $language_manager = \Drupal::languageManager();
-
-    // Get email from GroupInvitation.
-    $group = $params['group'];
-    $langcode = $message['langcode'];
-
-    $language = $language_manager->getLanguage($langcode);
-    $original_language = $language_manager->getConfigOverrideLanguage();
-    $language_manager->setConfigOverrideLanguage($language);
-
-    // Load plugin configuration.
-    $group_plugin_collection = \Drupal::service('plugin.manager.group_content_enabler')->getInstalled($group->getGroupType());
-    $group_invite_config = $group_plugin_collection->getConfiguration()['group_invitation'];
-
-    $invitation_subject = (!$params['existing_user']) ? $group_invite_config["invitation_subject"] : $group_invite_config["existing_user_invitation_subject"];
-    $invitation_body = (!$params['existing_user']) ? $group_invite_config["invitation_body"] : $group_invite_config["existing_user_invitation_body"];
-
-    unset($params['existing_user']);
-
-    $body = $token_service->replace($invitation_body, $params);
-    $subject = $token_service->replace($invitation_subject, $params);
-
-    $message['subject'] = $subject;
-    $message['body'][] = $body;
-
-    $language_manager->setConfigOverrideLanguage($original_language);
-
-  }
-}
-
-/**
  * Set referenced entity to Invitation when invited user registered.
  *
  * Implements hook_ENTITY_TYPE_insert().
