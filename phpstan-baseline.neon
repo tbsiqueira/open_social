@@ -1186,26 +1186,6 @@ parameters:
 			path: modules/custom/activity_send/modules/activity_send_email/activity_send_email.module
 
 		-
-			message: "#^Function activity_send_email_mail\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: modules/custom/activity_send/modules/activity_send_email/activity_send_email.module
-
-		-
-			message: "#^Function activity_send_email_mail\\(\\) has parameter \\$key with no type specified\\.$#"
-			count: 1
-			path: modules/custom/activity_send/modules/activity_send_email/activity_send_email.module
-
-		-
-			message: "#^Function activity_send_email_mail\\(\\) has parameter \\$message with no type specified\\.$#"
-			count: 1
-			path: modules/custom/activity_send/modules/activity_send_email/activity_send_email.module
-
-		-
-			message: "#^Function activity_send_email_mail\\(\\) has parameter \\$params with no type specified\\.$#"
-			count: 1
-			path: modules/custom/activity_send/modules/activity_send_email/activity_send_email.module
-
-		-
 			message: "#^Function activity_send_email_theme\\(\\) has no return type specified\\.$#"
 			count: 1
 			path: modules/custom/activity_send/modules/activity_send_email/activity_send_email.module
@@ -2227,26 +2207,6 @@ parameters:
 
 		-
 			message: "#^Function ginvite_group_content_insert\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: modules/custom/ginvite/ginvite.module
-
-		-
-			message: "#^Function ginvite_mail\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: modules/custom/ginvite/ginvite.module
-
-		-
-			message: "#^Function ginvite_mail\\(\\) has parameter \\$key with no type specified\\.$#"
-			count: 1
-			path: modules/custom/ginvite/ginvite.module
-
-		-
-			message: "#^Function ginvite_mail\\(\\) has parameter \\$message with no type specified\\.$#"
-			count: 1
-			path: modules/custom/ginvite/ginvite.module
-
-		-
-			message: "#^Function ginvite_mail\\(\\) has parameter \\$params with no type specified\\.$#"
 			count: 1
 			path: modules/custom/ginvite/ginvite.module
 
@@ -8096,26 +8056,6 @@ parameters:
 
 		-
 			message: "#^Function social_event_invite_form_user_register_form_alter\\(\\) has parameter \\$form_id with no type specified\\.$#"
-			count: 1
-			path: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module
-
-		-
-			message: "#^Function social_event_invite_mail\\(\\) has no return type specified\\.$#"
-			count: 1
-			path: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module
-
-		-
-			message: "#^Function social_event_invite_mail\\(\\) has parameter \\$key with no type specified\\.$#"
-			count: 1
-			path: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module
-
-		-
-			message: "#^Function social_event_invite_mail\\(\\) has parameter \\$message with no type specified\\.$#"
-			count: 1
-			path: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module
-
-		-
-			message: "#^Function social_event_invite_mail\\(\\) has parameter \\$params with no type specified\\.$#"
 			count: 1
 			path: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module
 

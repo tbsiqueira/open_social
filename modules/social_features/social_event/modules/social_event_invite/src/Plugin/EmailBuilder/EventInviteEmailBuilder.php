@@ -5,7 +5,7 @@ namespace Drupal\social_event_invite\Plugin\EmailBuilder;
 use Drupal\symfony_mailer\EmailInterface;
 use Drupal\symfony_mailer\Processor\EmailProcessorBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\token\TokenInterface;
+use Drupal\Core\Utility\Token;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Render\Markup;
@@ -35,7 +35,7 @@ class EventInviteEmailBuilder extends EmailProcessorBase implements ContainerFac
   /**
    * The token service.
    */
-  protected TokenInterface $token;
+  protected Token $token;
 
   /**
    * The language manager.
@@ -67,7 +67,7 @@ class EventInviteEmailBuilder extends EmailProcessorBase implements ContainerFac
    *   The plugin implementation definition.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The config factory.
-   * @param \Drupal\token\TokenInterface $token
+   * @param \Drupal\Core\Utility\Token $token
    *   The token service.
    * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
    *   The language manager.
@@ -77,7 +77,7 @@ class EventInviteEmailBuilder extends EmailProcessorBase implements ContainerFac
     $plugin_id,
     $plugin_definition,
     ConfigFactoryInterface $config_factory,
-    TokenInterface $token,
+    Token $token,
     LanguageManagerInterface $language_manager
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);

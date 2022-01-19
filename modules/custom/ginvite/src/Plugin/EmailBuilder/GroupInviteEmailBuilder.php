@@ -5,7 +5,7 @@ namespace Drupal\ginvite\Plugin\EmailBuilder;
 use Drupal\symfony_mailer\EmailInterface;
 use Drupal\symfony_mailer\Processor\EmailProcessorBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Drupal\token\TokenInterface;
+use Drupal\Core\Utility\Token;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Language\LanguageManagerInterface;
@@ -32,7 +32,7 @@ class GroupInviteEmailBuilder extends EmailProcessorBase implements ContainerFac
   /**
    * The token service.
    */
-  protected TokenInterface $token;
+  protected Token $token;
 
   /**
    * The language manager.
@@ -67,7 +67,7 @@ class GroupInviteEmailBuilder extends EmailProcessorBase implements ContainerFac
    *   The plugin_id for the plugin instance.
    * @param mixed $plugin_definition
    *   The plugin implementation definition.
-   * @param \Drupal\token\TokenInterface $token
+   * @param \Drupal\Core\Utility\Token $token
    *   The token service.
    * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
    *   The language manager.
@@ -78,7 +78,7 @@ class GroupInviteEmailBuilder extends EmailProcessorBase implements ContainerFac
     array $configuration,
     $plugin_id,
     $plugin_definition,
-    TokenInterface $token,
+    Token $token,
     LanguageManagerInterface $language_manager,
     GroupContentEnablerManagerInterface $plugin_manager
   ) {

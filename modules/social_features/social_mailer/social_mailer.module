@@ -167,6 +167,6 @@ function social_mailer_mailer_builder_info_alter(array &$email_builders): void {
 /**
  * Implements hook_post_render().
  */
-function social_mailer_post_render(EmailInterface $email) {
-  $email->setHtmlBody(check_markup($email->getHtmlBody(), 'full_html'));
+function social_mailer_post_render(EmailInterface $email): void {
+  $email->setHtmlBody(check_markup((string) $email->getHtmlBody(), 'full_html'));
 }
