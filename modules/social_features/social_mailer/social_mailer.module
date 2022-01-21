@@ -170,6 +170,6 @@ function social_mailer_mailer_builder_info_alter(array &$email_builders): void {
  */
 function social_mailer_post_render(EmailInterface $email): void {
   $css_inliner = new CssToInlineStyles();
-  $body = $email->getHtmlBody();
+  $body = (string) $email->getHtmlBody();
   $email->setHtmlBody(check_markup($css_inliner->convert($body), 'full_html'));
 }

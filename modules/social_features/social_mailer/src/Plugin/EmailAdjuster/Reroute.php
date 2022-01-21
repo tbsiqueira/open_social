@@ -78,6 +78,7 @@ class Reroute extends EmailAdjusterBase implements ContainerFactoryPluginInterfa
    * @param \Drupal\Component\Utility\EmailValidatorInterface $email_validator
    *   The email validator.
    * @param \Psr\Log\LoggerInterface $logger
+   *   The logger instance.
    */
   public function __construct(
     array $configuration,
@@ -109,6 +110,7 @@ class Reroute extends EmailAdjusterBase implements ContainerFactoryPluginInterfa
         [$this, 'validateEmails'],
       ],
       '#reroute_config_delimiter' => ',',
+      '#required' => TRUE,
     ];
 
     $form['allowed'] = [
@@ -185,6 +187,11 @@ class Reroute extends EmailAdjusterBase implements ContainerFactoryPluginInterfa
   public function validateEmails(array $element, FormStateInterface $form_state): void {
     // Remove duplicates.
     $addresses = preg_split('/[\s,;\n]+/', $form_state->getValue($element['#name']), -1, PREG_SPLIT_NO_EMPTY);
+
+    if (!is_array($addresses)) {
+      return;
+    }
+
     $addresses = array_unique($addresses);
     $addresses = array_map('mb_strtolower', $addresses);
 
@@ -211,10 +218,11 @@ class Reroute extends EmailAdjusterBase implements ContainerFactoryPluginInterfa
   public function preRender(EmailInterface $email): void {
     global $base_url;
 
-    $to = $email->getTo();
+    $addresses = $email->getTo();
+    $to = [];
 
-    foreach ($to as $key => $address) {
-      $to[$key] = $address->toString();
+    foreach ($addresses as $address) {
+      $to[] = $address->toString();
     }
 
     // Save information about the original recipient to a header.
@@ -241,15 +249,15 @@ class Reroute extends EmailAdjusterBase implements ContainerFactoryPluginInterfa
       // Add Cc/Bcc values to the message only if they are set.
       $headers = $email->getHeaders();
 
-      if ($headers->has('X-Rerouted-Original-cc')) {
+      if ($header = $headers->get('X-Rerouted-Original-cc')) {
         $message_lines[] = $this->t('Originally cc: @cc', [
-          '@cc' => $headers->get('X-Rerouted-Original-cc')->toString(),
+          '@cc' => $header->toString(),
         ]);
       }
 
-      if ($headers->has('X-Rerouted-Original-bcc')) {
+      if ($header = $headers->get('X-Rerouted-Original-bcc')) {
         $message_lines[] = $this->t('Originally bcc: @bcc', [
-          '@cc' => $headers->get('X-Rerouted-Original-bcc')->toString(),
+          '@cc' => $header->toString(),
         ]);
       }
 
@@ -290,7 +298,6 @@ class Reroute extends EmailAdjusterBase implements ContainerFactoryPluginInterfa
   protected function addOriginalHeader(EmailInterface $email, string $key): self {
     $method = 'get' . ucfirst($key);
 
-    /** @var \Symfony\Component\Mime\Address[] $original */
     if (method_exists($email, $method) && ($original = $email->$method())) {
       $value = [];
 
