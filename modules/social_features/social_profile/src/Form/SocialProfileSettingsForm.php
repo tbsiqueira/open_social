@@ -11,8 +11,10 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
+use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\TypedData\TypedDataManagerInterface;
+use Drupal\Core\Url;
 use Drupal\field\FieldConfigInterface;
 use Drupal\social_profile\FieldManager;
 use Drupal\field\Entity\FieldConfig;
@@ -121,6 +123,8 @@ class SocialProfileSettingsForm extends ConfigFormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('social_profile.settings');
 
+    $form['community_visibility'] = $this->buildCommunityVisibilityFieldset();
+
     // @todo When the verified user role is created allow configuration of `"view " . SOCIAL_PROFILE_FIELD_VISIBILITY_COMMUNITY . " profile fields"` permission to determine what role(s) count as community.
     $form['fields'] = $this->buildFieldsFieldset();
 
@@ -151,6 +155,37 @@ class SocialProfileSettingsForm extends ConfigFormBase {
     $form['tagging'] = $this->buildTaggingFieldset();
 
     return parent::buildForm($form, $form_state);
+  }
+
+  /**
+   * The fieldset to control who can see community profile fields.
+   *
+   * @return array
+   *   The form fields to control who can see community profile fields.
+   */
+  private function buildCommunityVisibilityFieldset() : array {
+    $fields = [
+      '#type' => 'fieldset',
+      '#title' => new TranslatableMarkup('Community Visibility'),
+      '#open' => TRUE,
+      '#tree' => TRUE,
+    ];
+
+    /** @var \Drupal\user\RoleInterface $authenticated_role */
+    $authenticated_role = Role::load(AccountInterface::AUTHENTICATED_ROLE);
+    $account_settings = Url::fromRoute("entity.user.admin_form");
+
+    $fields['require_verified'] = [
+      '#type' => 'checkbox',
+      '#title' => new TranslatableMarkup("Require users to be verified before seeing profile fields with the community visibility"),
+      '#description' => new TranslatableMarkup(
+        "When this is unchecked authenticated users without the “verified” role can view community profile fields. Control when users receive the “verified’ role in the <a href=':account_settings'>account settings</a>.",
+        [':account_settings' => $account_settings]
+      ),
+      '#default_value' => !$authenticated_role->hasPermission("view " . SOCIAL_PROFILE_FIELD_VISIBILITY_COMMUNITY . " profile profile fields"),
+    ];
+
+    return $fields;
   }
 
   /**
@@ -625,6 +660,15 @@ class SocialProfileSettingsForm extends ConfigFormBase {
       ->set('use_category_parent', $form_state->getValue('use_category_parent'))
       ->set('nickname_unique_validation', $form_state->getValue('nickname_unique_validation'))
       ->save();
+
+    /** @var \Drupal\user\RoleInterface $authenticated_role */
+    $authenticated_role = Role::load(AccountInterface::AUTHENTICATED_ROLE);
+    if ($form_state->getValue("community_visibility.require_verified")) {
+      $authenticated_role->revokePermission("view " . SOCIAL_PROFILE_FIELD_VISIBILITY_COMMUNITY . " profile profile fields");
+    }
+    else {
+      $authenticated_role->grantPermission("view " . SOCIAL_PROFILE_FIELD_VISIBILITY_COMMUNITY . " profile profile fields");
+    }
 
     $this->submitFieldsFieldset($form, $form_state);
 
