@@ -71,7 +71,7 @@ class SocialMailerEmailBuilder extends EmailProcessorBase implements ContainerFa
   public function preRender(EmailInterface $email): void {
     parent::preRender($email);
 
-    $email->setSubject($this->t('Swift Mailer has been successfully configured!'));
+    $email->setSubject($this->t('Social Mailer has been successfully configured!'));
 
     $text[] = '<h3>' . $this->t('Dear @user,', [
       '@user' => $this->currentUser->getDisplayName(),
@@ -80,7 +80,7 @@ class SocialMailerEmailBuilder extends EmailProcessorBase implements ContainerFa
       '@site' => $this->configFactory->get('system.site')->get('name'),
     ]) . '</p>';
     $text[] = $this->t('Kind regards') . '<br /><br />';
-    $text[] = $this->t('The Swift Mailer module');
+    $text[] = $this->t('The Social Mailer module');
     $email->setBody(Markup::create(implode(PHP_EOL, $text)));
   }
 

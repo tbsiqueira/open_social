@@ -24,8 +24,8 @@ Feature: Send invite group email notifications
     When I fill in the following:
       | E-mail | site_manager_1@example.com |
     Then I press "Send"
-    And I should have an email with subject "Symfony Mailer has been successfully configured!" and in the content:
-      | This e-mail has been sent from Open Social by the Symfony Mailer module. |
+    And I should have an email with subject "Social Mailer has been successfully configured!" and in the content:
+      | This e-mail has been sent from Open Social by the Social Mailer module. |
 
     # Enable "Allow invited user to skip email verification" option for groups
     When I go to "/admin/config/opensocial/social-group"

@@ -23,15 +23,18 @@ class EmailContext implements Context {
       \Drupal::state()->set('default_mailer_transport', $default->id());
     }
 
-    $entity = MailerTransport::create([
-      'id' => 'behat_file_spool',
-      'label' => 'Behat File Spool',
-      'plugin' => 'file_spool',
-      'configuration' => [
-        'spool_directory' => $this->getSpoolDir(),
-      ],
-    ]);
-    $entity->save();
+    if (!$entity = MailerTransport::load('behat_file_spool')) {
+      $entity = MailerTransport::create([
+        'id' => 'behat_file_spool',
+        'label' => 'Behat File Spool',
+        'plugin' => 'file_spool',
+        'configuration' => [
+          'spool_directory' => $this->getSpoolDir(),
+        ],
+      ]);
+      $entity->save();
+    }
+
     $entity->setAsDefault();
 
     // Clean up emails that were left behind.
@@ -61,7 +64,7 @@ class EmailContext implements Context {
    *
    * @return Finder|null
    *   Returns a Finder if the directory exists.
-   * @throws Exception
+   * @throws \Exception
    */
   public function getSpooledEmails() {
     $finder = new Finder();
@@ -100,7 +103,7 @@ class EmailContext implements Context {
    *   The path where the spooled emails are stored.
    */
   protected function getSpoolDir() {
-    $path = DRUPAL_ROOT . DIRECTORY_SEPARATOR . drupal_get_path('profile', 'social') . '/tests/behat/features/symfony-mailer-spool';
+    $path = DRUPAL_ROOT . '/' . drupal_get_path('profile', 'social') . '/tests/behat/features/symfony-mailer-spool';
     if (!file_exists($path)) {
       mkdir($path, 0777, true);
     }
@@ -137,18 +140,18 @@ class EmailContext implements Context {
    */
   protected function findSubjectAndBody($subject, $body) {
     $finder = $this->getSpooledEmails();
-
     $found_email = FALSE;
 
     if ($finder) {
       /** @var File $file */
       foreach ($finder as $file) {
         $email = $this->getEmailContent($file);
+
         preg_match('/Subject\:\s(.*)(?=(\s|$))/', $email, $matches);
-        $email_subject = $matches[1] ?? '';
+        $email_subject = isset($matches[1]) ? trim($matches[1]) : '';
 
         preg_match('/--- HTML Body ---(.*)--- End HTML Body ---/s', $email, $matches);
-        $email_body = $matches[1] ?? '';
+        $email_body = isset($matches[1]) ? trim($matches[1]) : '';
 
         // Make it a traversable HTML doc.
         $doc = new \DOMDocument();

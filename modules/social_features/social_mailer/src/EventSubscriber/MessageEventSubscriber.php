@@ -63,7 +63,7 @@ class MessageEventSubscriber implements EventSubscriberInterface {
 
     $path = $this->getFilePath($spool_directory);
 
-    if (($fp = @fopen($path, 'w')) !== FALSE) {
+    if (($fp = @fopen($path, 'w+'))  !== FALSE) {
       $content = [
         $headers->toString(),
         '--- HTML Body ---',
