@@ -78,7 +78,7 @@ class EmailContext implements Context {
       $finder->files()->in($spoolDir);
       return $finder;
     }
-    catch (InvalidArgumentException $exception) {
+    catch (\InvalidArgumentException $exception) {
       return NULL;
     }
   }
@@ -104,6 +104,7 @@ class EmailContext implements Context {
    */
   protected function getSpoolDir() {
     $path = DRUPAL_ROOT . '/' . drupal_get_path('profile', 'social') . '/tests/behat/features/symfony-mailer-spool';
+
     if (!file_exists($path)) {
       mkdir($path, 0777, true);
     }
