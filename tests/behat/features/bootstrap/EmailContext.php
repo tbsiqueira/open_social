@@ -9,6 +9,7 @@ use Drupal\ultimate_cron\Entity\CronJob;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\File\File;
+use Drupal\symfony_mailer\Entity\MailerTransport;
 
 class EmailContext implements Context {
 
@@ -18,11 +19,20 @@ class EmailContext implements Context {
    * @BeforeScenario @email-spool
    */
   public function enableEmailSpool() {
-    // Update Drupal configuration.
-    $swiftmailer_config = \Drupal::configFactory()->getEditable('swiftmailer.transport');
-    $swiftmailer_config->set('transport', 'spool');
-    $swiftmailer_config->set('spool_directory', $this->getSpoolDir());
-    $swiftmailer_config->save();
+    if ($default = MailerTransport::loadDefault()) {
+      \Drupal::state()->set('default_mailer_transport', $default->id());
+    }
+
+    $entity = MailerTransport::create([
+      'id' => 'behat_file_spool',
+      'label' => 'Behat File Spool',
+      'plugin' => 'file_spool',
+      'configuration' => [
+        'spool_directory' => $this->getSpoolDir(),
+      ],
+    ]);
+    $entity->save();
+    $entity->setAsDefault();
 
     // Clean up emails that were left behind.
     $this->purgeSpool();
@@ -35,9 +45,12 @@ class EmailContext implements Context {
    */
   public function disableEmailSpool() {
     // Update Drupal configuration.
-    $swiftmailer_config = \Drupal::configFactory()->getEditable('swiftmailer.transport');
-    $swiftmailer_config->set('transport', 'native');
-    $swiftmailer_config->save();
+    MailerTransport::load('behat_file_spool')->delete();
+
+    if ($default_id = \Drupal::state()->get('default_mailer_transport')) {
+      MailerTransport::load($default_id)->setAsDefault();
+      \Drupal::state()->delete('default_mailer_transport');
+    }
 
     // Clean up emails after us.
     $this->purgeSpool();
@@ -74,10 +87,10 @@ class EmailContext implements Context {
    *   Path to the file.
    *
    * @return string
-   *   An unserialized email.
+   *   An email.
    */
   public function getEmailContent($file) {
-    return unserialize(file_get_contents($file));
+    return file_get_contents($file);
   }
 
   /**
@@ -87,7 +100,7 @@ class EmailContext implements Context {
    *   The path where the spooled emails are stored.
    */
   protected function getSpoolDir() {
-    $path = drupal_get_path('profile', 'social') . '/tests/behat/features/swiftmailer-spool';
+    $path = DRUPAL_ROOT . DIRECTORY_SEPARATOR . drupal_get_path('profile', 'social') . '/tests/behat/features/symfony-mailer-spool';
     if (!file_exists($path)) {
       mkdir($path, 0777, true);
     }
@@ -120,7 +133,7 @@ class EmailContext implements Context {
    *
    * @return bool
    *   Email was found or not.
-   * @throws Exception
+   * @throws \Exception
    */
   protected function findSubjectAndBody($subject, $body) {
     $finder = $this->getSpooledEmails();
@@ -130,10 +143,12 @@ class EmailContext implements Context {
     if ($finder) {
       /** @var File $file */
       foreach ($finder as $file) {
-        /** @var Swift_Message $email */
         $email = $this->getEmailContent($file);
-        $email_subject = $email->getSubject();
-        $email_body = $email->getBody();
+        preg_match('/Subject\:\s(.*)(?=(\s|$))/', $email, $matches);
+        $email_subject = $matches[1] ?? '';
+
+        preg_match('/--- HTML Body ---(.*)--- End HTML Body ---/s', $email, $matches);
+        $email_body = $matches[1] ?? '';
 
         // Make it a traversable HTML doc.
         $doc = new \DOMDocument();

@@ -166,10 +166,17 @@ function social_mailer_mailer_builder_info_alter(array &$email_builders): void {
 }
 
 /**
- * Implements hook_post_render().
+ * Implements hook_mailer_post_render().
  */
-function social_mailer_post_render(EmailInterface $email): void {
+function social_mailer_mailer_post_render(EmailInterface $email): void {
   $css_inliner = new CssToInlineStyles();
   $body = (string) $email->getHtmlBody();
-  $email->setHtmlBody(check_markup($css_inliner->convert($body), 'full_html'));
+  $email->setHtmlBody($css_inliner->convert(check_markup($body, 'full_html')));
+
+  $dsn = $email->getTransportDSN();
+
+  if (strpos($dsn, 'null://file-spool:') === 0) {
+    $email->addTextHeader('X-Transport', 'FileSpool');
+    $email->addTextHeader('X-Spool-Directory', substr($dsn, 18));
+  }
 }
