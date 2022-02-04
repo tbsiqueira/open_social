@@ -128,7 +128,7 @@
             },
             "drupal/socialbase": {
                 "[Internal] Add extra check for the file.": "https://git.drupalcode.org/project/socialbase/-/merge_requests/81.diff",
-                "3259374: Create a new template for the new email engine": "https://git.drupalcode.org/project/socialbase/-/merge_requests/88.patch"
+                "3259374: Create a new template for the new email engine": "https://git.drupalcode.org/project/socialbase/-/merge_requests/88.diff"
             },
             "drupal/update_helper": {
                 "3248189: Symfony 4.4 event dispatcher parameter order change": "https://www.drupal.org/files/issues/2021-11-08/symfony-4-4-event-dispatcher-parameter-order-change-3248189-2.patch"
