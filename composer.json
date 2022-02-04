@@ -127,7 +127,8 @@
                 "3248175: Symfony 4.4 event dispatcher parameter order change": "https://www.drupal.org/files/issues/2021-11-08/symfony-4-4-event-dispatcher-parameter-order-change-3248175-2.patch"
             },
             "drupal/socialbase": {
-                "[Internal] Add extra check for the file.": "https://git.drupalcode.org/project/socialbase/-/merge_requests/81.diff"
+                "[Internal] Add extra check for the file.": "https://git.drupalcode.org/project/socialbase/-/merge_requests/81.diff",
+                "3259374: Create a new template for the new email engine": "https://git.drupalcode.org/project/socialbase/-/merge_requests/88.patch"
             },
             "drupal/update_helper": {
                 "3248189: Symfony 4.4 event dispatcher parameter order change": "https://www.drupal.org/files/issues/2021-11-08/symfony-4-4-event-dispatcher-parameter-order-change-3248189-2.patch"
@@ -146,6 +147,10 @@
             },
             "drupal/redirect": {
                 "Redirection issue when interface language is different from content language": "https://www.drupal.org/files/issues/2020-06-01/redirect-interface_language_different_from_content_language_2991423-13.patch"
+            },
+            "drupal/symfony_mailer": {
+                "3256314: Catch/log outgoing emails": "https://www.drupal.org/files/issues/2022-02-04/3256314-8-catch-outgoing-emails.patch",
+                "3258789: System emails sent from actions missing token replacement": "https://www.drupal.org/files/issues/2022-02-04/3258789-3-system-emails-missing-tokens.patch"
             }
         }
     },

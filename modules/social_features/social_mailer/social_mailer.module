@@ -182,8 +182,8 @@ function social_mailer_mailer_post_render(EmailInterface $email): void {
 
   $dsn = $email->getTransportDSN();
 
-  if (strpos($dsn, 'null://file-spool:') === 0) {
+  if (strpos($dsn, 'null://file-spool:/') === 0) {
     $email->addTextHeader('X-Transport', 'FileSpool');
-    $email->addTextHeader('X-Spool-Directory', substr($dsn, 18));
+    $email->addTextHeader('X-Spool-Directory', substr($dsn, 19));
   }
 }

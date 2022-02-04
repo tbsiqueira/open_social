@@ -101,7 +101,7 @@ class FileSpool extends TransportBase implements ContainerFactoryPluginInterface
    * {@inheritdoc}
    */
   public function getDsn(): string {
-    return 'null://file-spool:' . $this->configuration['spool_directory'];
+    return 'null://file-spool:/' . $this->configuration['spool_directory'];
   }
 
 }

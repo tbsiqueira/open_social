@@ -103,7 +103,7 @@ class EmailContext implements Context {
    *   The path where the spooled emails are stored.
    */
   protected function getSpoolDir() {
-    $path = DRUPAL_ROOT . '/' . drupal_get_path('profile', 'social') . '/tests/behat/features/symfony-mailer-spool';
+    $path = drupal_get_path('profile', 'social') . '/tests/behat/features/symfony-mailer-spool';
 
     if (!file_exists($path)) {
       mkdir($path, 0777, true);
