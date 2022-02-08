@@ -64,7 +64,7 @@ class MessageEventSubscriber implements EventSubscriberInterface {
     $path = $this->getFilePath($spool_directory);
 
     if (($fp = @fopen($path, 'w+')) !== FALSE) {
-      $subject = $message->getSubject();
+      $subject = (string) $message->getSubject();
       $headers->remove('Subject');
       $content = [
         $headers->toString(),
