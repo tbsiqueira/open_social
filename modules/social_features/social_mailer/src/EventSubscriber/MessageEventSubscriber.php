@@ -64,8 +64,11 @@ class MessageEventSubscriber implements EventSubscriberInterface {
     $path = $this->getFilePath($spool_directory);
 
     if (($fp = @fopen($path, 'w+')) !== FALSE) {
+      $subject = $message->getSubject();
+      $headers->remove('Subject');
       $content = [
         $headers->toString(),
+        'Subject: ' . str_replace(["\r", "\n"], '', $subject),
         '--- HTML Body ---',
         $message->getHtmlBody(),
         '--- End HTML Body ---',
