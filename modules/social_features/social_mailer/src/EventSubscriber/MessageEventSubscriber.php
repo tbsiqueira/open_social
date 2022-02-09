@@ -64,20 +64,7 @@ class MessageEventSubscriber implements EventSubscriberInterface {
     $path = $this->getFilePath($spool_directory);
 
     if (($fp = @fopen($path, 'w+')) !== FALSE) {
-      $subject = (string) $message->getSubject();
-      $headers->remove('Subject');
-      $content = [
-        $headers->toString(),
-        'Subject: ' . str_replace(["\r", "\n"], '', $subject),
-        '--- HTML Body ---',
-        $message->getHtmlBody(),
-        '--- End HTML Body ---',
-        '--- Text Body ---',
-        $message->getTextBody(),
-        '--- End Text Body ---',
-      ];
-
-      fwrite($fp, implode(PHP_EOL, $content));
+      fwrite($fp, serialize($message));
       fclose($fp);
     }
   }

@@ -147,12 +147,10 @@ class EmailContext implements Context {
       /** @var File $file */
       foreach ($finder as $file) {
         $email = $this->getEmailContent($file);
-
-        preg_match('/Subject\:\s(.*)(?=(\s|$))/', $email, $matches);
-        $email_subject = isset($matches[1]) ? trim($matches[1]) : '';
-
-        preg_match('/--- HTML Body ---(.*)--- End HTML Body ---/s', $email, $matches);
-        $email_body = isset($matches[1]) ? trim($matches[1]) : '';
+        /** @var \Symfony\Component\Mime\Email $message */
+        $message = unserialize($email);
+        $email_subject = $message->getSubject();
+        $email_body = $message->getHtmlBody();
 
         // Make it a traversable HTML doc.
         $doc = new \DOMDocument();
