@@ -23,7 +23,6 @@ Feature: Send invite event email notifications
     When I fill in the following:
       | E-mail | site_manager_1@example.com |
     Then I press "Send"
-    And I wait for "5" seconds
     And I should have an email with subject "Social Mailer has been successfully configured!" and in the content:
       | This e-mail has been sent from Open Social by the Social Mailer module. |
 
