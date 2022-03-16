@@ -81,8 +81,11 @@ function social_user_update_dependencies(): array {
  * Create the default configuration for the verified immediately site setting.
  */
 function social_user_update_11001(): void {
-  $config = \Drupal::getContainer()->get('config.factory')->getEditable('social_user.settings');
-  $config->set('verified_immediately', TRUE)->save();
+  \Drupal::getContainer()
+    ->get('config.factory')
+    ->getEditable('social_user.settings')
+    ->set('verified_immediately', TRUE)
+    ->save();
 }
 
 /**
@@ -147,11 +150,12 @@ function social_user_update_11006(array &$sandbox): void {
       $config->setData($settings)->save(TRUE);
     }
   }
+}
 
 /**
  * Update access to user profiles.
  */
-function social_user_update_11004() : void {
+function social_user_update_12001() : void {
   user_role_grant_permissions(
     RoleInterface::ANONYMOUS_ID,
     [
