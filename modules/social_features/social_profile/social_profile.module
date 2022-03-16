@@ -89,10 +89,13 @@ function social_profile_create_visibility_field_storage_config_for(FieldStorageC
     // ship with their storage. This allows visibility field config to be safely
     // exported and imported.
     if (\Drupal::isConfigSyncing() || InstallerKernel::installationAttempted() || \Drupal::getContainer()->getParameter('kernel.environment') === "testing") {
-      return FieldStorageConfig::loadByName(
+      $visibility_storage_config = FieldStorageConfig::loadByName(
         $field_storage_config->getTargetEntityTypeId(),
         $field_storage_config->getThirdPartySetting('social_profile', 'visibility_stored_by')
       );
+      assert($visibility_storage_config !== NULL, "{$field_storage_config->getName()} pointed to a field for visibiity storage that doesn't exist.");
+
+      return $visibility_storage_config;
     }
 
     // In other cases we don't expect fields to already have this setting so

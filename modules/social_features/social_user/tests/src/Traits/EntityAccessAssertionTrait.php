@@ -123,15 +123,15 @@ trait EntityAccessAssertionTrait {
   /**
    * Asserts that two variables are equal.
    *
-   * @throws ExpectationFailedException
+   * @throws \PHPUnit\Framework\ExpectationFailedException
    * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
    */
-  abstract public static function assertEquals($expected, $actual, string $message = '', float $delta = 0.0, int $maxDepth = 10, bool $canonicalize = FALSE, bool $ignoreCase = FALSE): void;
+  abstract public static function assertEquals($expected, $actual, string $message = ''): void;
 
   /**
    * Asserts that a variable is empty.
    *
-   * @throws ExpectationFailedException
+   * @throws \PHPUnit\Framework\ExpectationFailedException
    * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
    */
   abstract public static function assertEmpty($actual, string $message = ''): void;

@@ -264,6 +264,7 @@ class SocialProfileSettingsFormTest extends ProfileKernelTestBase {
     ]);
     // Must reload field to catch changes.
     $test_field = FieldConfig::loadByName("profile", "profile", $field_name);
+    self::assertNotNull($test_field, "Failed to reload existing test field");
     self::assertFalse($test_field->status());
 
     $this->submitForm([
@@ -271,6 +272,7 @@ class SocialProfileSettingsFormTest extends ProfileKernelTestBase {
     ]);
     // Must reload field to catch changes.
     $test_field = FieldConfig::loadByName("profile", "profile", $field_name);
+    self::assertNotNull($test_field, "Failed to reload existing test field");
     self::assertTrue($test_field->status());
   }
 
@@ -340,7 +342,7 @@ class SocialProfileSettingsFormTest extends ProfileKernelTestBase {
     self::assertNotNull($bundle, "Field config is not attached to bundle of entity.");
 
     $visibilityField = FieldConfig::loadByName($fieldConfig->getTargetEntityTypeId(), $bundle, $fieldName);
-    self::assertNotNull($visibilityField, "Could not load visibility field for field config.");
+    self::assertInstanceOf(FieldConfig::class, $visibilityField, "Could not load visibility field for field config.");
 
     return $visibilityField;
   }

@@ -440,7 +440,7 @@ class ProfileAccessCheckTest extends ProfileKernelTestBase {
     self::assertNotNull($bundle, "Field config is not attached to bundle of entity.");
 
     $visibilityField = FieldConfig::loadByName($fieldConfig->getTargetEntityTypeId(), $bundle, $fieldName);
-    self::assertNotNull($visibilityField, "Could not load visibility field for field config.");
+    self::assertInstanceOf(FieldConfig::class, $visibilityField, "Could not load visibility field for field config.");
 
     return $visibilityField;
   }

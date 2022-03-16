@@ -18,6 +18,7 @@ use Drupal\Core\Site\Settings;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\FieldConfigInterface;
 use Drupal\file\Entity\File;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\social_profile\FieldManager;
@@ -51,9 +52,7 @@ function social_profile_requirements(string $phase) : array {
     $dependency_info = $module_handler->buildModuleDependencies($module_handler->getModuleList());
 
     foreach ($modules as $module_id) {
-      // @phpstan-ignore-next-line
       if (isset($dependency_info[$module_id]) && !empty($dependency_info[$module_id]->required_by)) {
-        // @phpstan-ignore-next-line
         $dependents = array_keys($dependency_info[$module_id]->required_by);
         $requirements['social_profile_remove_' . $module_id] = [
           'title' => new TranslatableMarkup("%module has dependents", ["%module" => $dependency_info[$module_id]->getName()]),
@@ -903,6 +902,7 @@ function social_profile_update_12004() : void {
     // there's a field config entity.
     $field_config = FieldConfig::loadByName('profile', 'profile', $field_storage_config->getName());
     if ($field_config !== NULL) {
+      assert($field_config instanceof FieldConfigInterface);
       social_profile_ensure_associated_visibility_field_config($field_config);
     }
   }
