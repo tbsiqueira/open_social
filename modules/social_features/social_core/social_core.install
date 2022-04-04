@@ -99,6 +99,7 @@ function social_core_install() {
       'delete all revisions',
       'create url aliases',
       'use text format full_html',
+      'access social_core dashboard',
     ]
   );
   user_role_grant_permissions(
@@ -128,6 +129,7 @@ function social_core_install() {
       'administer themes',
       'administer blocks',
       'access contextual links',
+      'access social_core dashboard',
     ]
   );
   // Create AN Homepage block.
@@ -153,6 +155,17 @@ function social_core_update_dependencies() {
   // Update field schema only after Profile module bug fixed.
   $dependencies['social_core'][8020] = [
     'profile' => 8001,
+  ];
+
+  // Convert the configuration of existing views to the new schema only after
+  // VariationCache is installed. In another case, it will lead to update
+  // database error:
+  // > [notice] Update started: views_bulk_operations_update_8034
+  // > [error]  The "VariationCache" module is not installed. Please run the
+  // update script to install it properly.
+  // > [error]  Update failed: views_bulk_operations_update_8034.
+  $dependencies['views_bulk_operations'][8034] = [
+    'group' => 8020,
   ];
 
   return $dependencies;
@@ -1528,8 +1541,16 @@ function social_core_update_11005(): string {
 }
 
 /**
- * Install social_mailer module.
+ * Add dashboard permission to SM/CM.
  */
 function social_core_update_11006(): void {
+  user_role_grant_permissions('contentmanager', ['access social_core dashboard']);
+  user_role_grant_permissions('sitemanager', ['access social_core dashboard']);
+}
+
+/**
+ * Install social_mailer module.
+ */
+function social_core_update_11007(): void {
   \Drupal::service('module_installer')->install(['social_mailer']);
 }
