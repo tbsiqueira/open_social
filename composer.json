@@ -139,8 +139,7 @@
                 "Redirection issue when interface language is different from content language": "https://www.drupal.org/files/issues/2020-06-01/redirect-interface_language_different_from_content_language_2991423-13.patch"
             },
             "drupal/symfony_mailer": {
-                "3256314: Catch/log outgoing emails": "https://www.drupal.org/files/issues/2022-02-04/3256314-8-catch-outgoing-emails.patch",
-                "3258789: System emails sent from actions missing token replacement": "https://www.drupal.org/files/issues/2022-02-04/3258789-3-system-emails-missing-tokens.patch"
+                "3256314: Catch/log outgoing emails": "https://www.drupal.org/files/issues/2022-02-04/3256314-8-catch-outgoing-emails.patch"
             }
         }
     },
