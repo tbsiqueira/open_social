@@ -6,7 +6,6 @@
  */
 
 use Drupal\Core\Render\BubbleableMetadata;
-use Drupal\message\Entity\Message;
 
 /**
  * Implements hook_token_info().
