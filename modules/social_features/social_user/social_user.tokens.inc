@@ -37,20 +37,13 @@ function social_user_tokens($type, $tokens, array $data, array $options, Bubblea
   $replacements = [];
 
   if ($type == 'social_user' && !empty($data['message'])) {
-    /** @var \Drupal\message\Entity\Message $message */
-    $message = $data['message'];
-
-    if ($message instanceof Message) {
-      foreach ($tokens as $name => $original) {
-        switch ($name) {
-
-          case 'recipient':
-
-            if (isset($data['display_name'])) {
-              $replacements[$original] = $data['display_name'];
-            }
-            break;
-        }
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'recipient':
+          if (isset($data['display_name'])) {
+            $replacements[$original] = $data['display_name'];
+          }
+          break;
       }
     }
   }
