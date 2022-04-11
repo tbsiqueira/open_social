@@ -2051,6 +2051,11 @@ parameters:
 			path: modules/custom/entity_access_by_field/src/Plugin/search_api/processor/EntityAccessByField.php
 
 		-
+		  message: "#^Property Drupal\\\\entity_access_by_field\\\\Plugin\\\\search_api\\\\processor\\\\EntityAccessByField\\:\\:\\$groupContentStorage \\(Drupal\\\\group\\\\Entity\\\\Storage\\\\GroupContentStorageInterface\\) does not accept Drupal\\\\Core\\\\Entity\\\\EntityStorageInterface\\.$#"
+		  count: 1
+		  path: modules/custom/entity_access_by_field/src/Plugin/search_api/processor/EntityAccessByField.php
+
+		-
 			message: "#^Call to an undefined method Prophecy\\\\Prophecy\\\\ObjectProphecy\\:\\:bundle\\(\\)\\.$#"
 			count: 3
 			path: modules/custom/entity_access_by_field/tests/src/Unit/EntityAccessTest.php
