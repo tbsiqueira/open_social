@@ -35,7 +35,7 @@ function social_user_token_info() {
 function social_user_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
   $replacements = [];
 
-  if ($type == 'social_user' && !empty($data['message'])) {
+  if ($type == 'social_user') {
     foreach ($tokens as $name => $original) {
       switch ($name) {
         case 'recipient':
