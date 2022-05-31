@@ -1,0 +1,28 @@
+block.block.socialblue_pagetitleblock_content:
+  expected_config: {  }
+  update_actions:
+    delete:
+      visibility:
+        request_path:
+          'entity_bundle:node': {  }
+          group_type: {  }
+    add:
+      visibility:
+        'entity_bundle:node':
+          id: 'entity_bundle:node'
+          bundles:
+            event: event
+            page: page
+            topic: topic
+          negate: true
+          context_mapping:
+            node: '@node.node_route_context:node'
+        group_type:
+          id: group_type
+          group_types:
+            closed_group: closed_group
+            open_group: open_group
+            public_group: public_group
+          negate: false
+          context_mapping:
+            group: '@group.group_route_context:group'
