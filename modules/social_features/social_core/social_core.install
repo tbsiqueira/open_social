@@ -1575,9 +1575,19 @@ function social_core_update_11401(): void {
 }
 
 /**
- * Correct visibility settings for socialblue_pagetitleblock_content block.
+ * Update socialblue_pagetitleblock_content block configuration.
  */
 function social_core_update_11402(array &$sandbox): string {
+  // Make sure that this block doesn't show on nodes pages.
+  $config = \Drupal::service('config.factory')->getEditable('block.block.socialblue_pagetitleblock_content');
+  if (!empty($config->getRawData())) {
+    $pages = $config->get('visibility.request_path.pages');
+    $pages .= "\r\n/node/*";
+    $config->set('visibility.request_path.pages', $pages);
+    $config->save();
+  }
+
+  // Remove visibility settings that were added in the wrong place.
   /** @var \Drupal\update_helper\UpdaterInterface $update_helper */
   $update_helper = \Drupal::service('update_helper.updater');
 
