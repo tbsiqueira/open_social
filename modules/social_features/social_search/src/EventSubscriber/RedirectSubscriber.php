@@ -103,7 +103,7 @@ class RedirectSubscriber implements EventSubscriberInterface {
 
     // Workaround for drupal.org issue #3085806.
     if (empty($query) || empty($query['created_op'])) {
-      $query = ['created_op' => '<'];
+      $query = array_merge($query, ['created_op' => '<']);
       $parameters = $this->currentRoute->getParameters();
       $redirect_path = $this->currentRoute->getRouteName();
       $options = ['query' => $query];
