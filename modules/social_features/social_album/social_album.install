@@ -5,7 +5,6 @@
  * Install, update and uninstall functions for the social_album module.
  */
 
-use Drupal\block\BlockInterface;
 use Drupal\user\RoleInterface;
 
 /**
@@ -53,39 +52,14 @@ function social_album_install() {
 
   module_set_weight('social_album', 5);
 
-  _social_album_blocks('_social_album_install_blocks');
-}
-
-/**
- * Add new paths where blocks should be displayed.
- *
- * @param string $pages
- *   The current sequence of block paths.
- * @param array $paths
- *   List of blocks which should be updated and paths which should be added.
- *
- * @return string
- *   List of block paths with new paths.
- */
-function _social_album_install_blocks($pages, array $paths) {
-  return $pages . "\r\n" . implode("\r\n", $paths);
+  _social_album_blocks();
 }
 
 /**
  * Implements hook_uninstall().
  */
 function social_album_uninstall() {
-  _social_album_blocks(function ($pages, array $paths) {
-    $pages = explode("\r\n", $pages);
-
-    foreach ($pages as $delta => $page) {
-      if (in_array($page, $paths)) {
-        unset($pages[$delta]);
-      }
-    }
-
-    return implode("\r\n", $pages);
-  });
+  _social_album_blocks(NULL, '_social_core_blocks_unset_paths');
 }
 
 /**
@@ -189,42 +163,27 @@ function _social_album_set_group_permissions() {
 /**
  * Process list of pages where chosen blocks should be shown.
  *
- * @param callable $function
- *   The function which updates the pages set.
- * @param array $items
- *   Paths of blocks.
+ * @param array|null $items
+ *   (optional) Paths of blocks. Defaults to NULL.
+ * @param callable|null $function
+ *   (optional) The function which updates the pages set. Defaults to NULL.
  */
-function _social_album_blocks(callable $function, array $items = [
-  'socialblue_profile_hero_block' => '/user/*/albums',
-  'socialblue_pagetitleblock_content' => [
-    '/user/*/albums',
-    '/group/*/albums',
-    '/group/*/albums/add',
-  ],
-  'socialblue_profile_statistic_block' => '/user/*/albums',
-  'socialblue_groupheroblock' => '/group/*/albums',
-  'socialblue_group_statistic_block' => '/group/*/albums',
-]) {
-  $storage = \Drupal::entityTypeManager()->getStorage('block');
-
-  foreach ($items as $id => $paths) {
-    $block = $storage->load($id);
-
-    if (!$block instanceof BlockInterface) {
-      continue;
-    }
-
-    /** @var \Drupal\system\Plugin\Condition\RequestPath $visibility */
-    $visibility = $block->getVisibilityCondition('request_path');
-
-    $configuration = $visibility->getConfiguration();
-    $pages = $function($configuration['pages'], (array) $paths);
-
-    if ($configuration['pages'] !== $pages) {
-      $configuration['pages'] = $pages;
-      $block->setVisibilityConfig('request_path', $configuration)->save();
-    }
+function _social_album_blocks(array $items = NULL, callable $function = NULL): void {
+  if (!is_array($items)) {
+    $items = [
+      'socialblue_profile_hero_block' => '/user/*/albums',
+      'socialblue_pagetitleblock_content' => [
+        '/user/*/albums',
+        '/group/*/albums',
+        '/group/*/albums/add',
+      ],
+      'socialblue_profile_statistic_block' => '/user/*/albums',
+      'socialblue_groupheroblock' => '/group/*/albums',
+      'socialblue_group_statistic_block' => '/group/*/albums',
+    ];
   }
+
+  _social_core_install_blocks($items, $function);
 }
 
 /**
@@ -271,7 +230,7 @@ function social_album_update_8903() {
  * Delete duplicate of title from the group album creation page.
  */
 function social_album_update_8904() {
-  _social_album_blocks('_social_album_install_blocks', [
+  _social_core_install_blocks([
     'socialblue_pagetitleblock_content' => [
       '/group/*/albums/add',
     ],
