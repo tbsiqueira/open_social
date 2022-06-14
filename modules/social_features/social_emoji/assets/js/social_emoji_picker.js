@@ -160,7 +160,7 @@ import { Picker } from '/libraries/emoji-picker-element/index.js';
     this.popper = Popper.createPopper(this.trigger.button, this.pickerElement, {
       onFirstUpdate: state => {
         // Focus a user to the search input for bigger screens only, as on
-        // mobiles this behavior creates unpleasent scrolls.
+        // mobiles this behavior creates unpleasant scrolls.
         if (window.innerWidth >= 480 && window.innerHeight >= 480) {
           this.pickerElement.shadowRoot.querySelector('#search').focus();
         }
