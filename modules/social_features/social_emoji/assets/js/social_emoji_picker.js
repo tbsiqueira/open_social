@@ -156,7 +156,7 @@ import { Picker } from '/libraries/emoji-picker-element/index.js';
 
     this.trigger = pickerTrigger;
 
-    // Popper.js will take care of palcing the emoji picker.
+    // Popper.js will take care of placing the emoji picker.
     this.popper = Popper.createPopper(this.trigger.button, this.pickerElement, {
       onFirstUpdate: state => {
         // Focus a user to the search input for bigger screens only, as on
