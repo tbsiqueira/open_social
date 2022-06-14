@@ -296,7 +296,7 @@ import { Picker } from '/libraries/emoji-picker-element/index.js';
   };
 
   /**
-   * Inserts the given emojhi character to the corresponding input DOM element.
+   * Inserts the given emoji character to the corresponding input DOM element.
    *
    * This method ensures that emoji is being inserted into the right input
    * DOM element, and that caret (cursor) position is being preserved.
