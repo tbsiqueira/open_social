@@ -100,7 +100,7 @@ class UserRouteContext implements ContextProviderInterface {
    */
   public function getAvailableContexts() {
     return [
-      'social_user' => EntityContext::fromEntityTypeId('user', $this->t('Social User entity from URL')),
+      'user' => EntityContext::fromEntityTypeId('user', $this->t('Social User entity from URL')),
     ];
   }
 
