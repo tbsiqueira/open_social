@@ -1558,7 +1558,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Open Social\n"
-"POT-Creation-Date: 2022-05-26 00:18+0000\n"
+"POT-Creation-Date: 2022-06-22 00:17+0000\n"
 "PO-Revision-Date: 2022-03-21 12:09+0000\n"
 "Last-Translator: Maja <maja.stanisic+1@gmail.com>\n"
 "Language-Team: Croatian <https://translate.getopensocial.com/projects/gpcee/"
@@ -1601,7 +1601,7 @@ msgstr ""
 "prijavu, pokušaj ponovno kasnije ili <a href=\":url\">zatraži novu lozinku</"
 "a></p>"
 
-#: translations.php:29
+#: translations.php:37
 msgid ""
 "\n"
 "        Oops, there was an error. This may have happened for the following "
@@ -1650,7 +1650,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: modules/social_features/social_event/modules/social_event_max_enroll/social_event_max_enroll.module:34;212
+#: modules/social_features/social_event/modules/social_event_max_enroll/social_event_max_enroll.module:34;225
 msgid "(1 spot left)"
 msgid_plural "(@count spots left)"
 msgstr[0] ""
@@ -1670,8 +1670,6 @@ msgid "(descending)"
 msgstr "(silazno)"
 
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0;0;0;0;0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0;0;0;0;0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0;0;0;0
 #: modules/social_features/social_album/config/install/views.view.albums.yml:0;0;0;0
 #: modules/social_features/social_comment/config/install/views.view.comment.yml:0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1703,8 +1701,6 @@ msgstr "(silazno)"
 msgid ", "
 msgstr ", "
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -1747,10 +1743,10 @@ msgstr ", "
 msgid "- All -"
 msgstr "- Sve -"
 
-#: modules/social_features/social_comment/social_comment.module:405
+#: modules/social_features/social_comment/social_comment.module:401
 #: modules/social_features/social_group/src/Plugin/views/filter/FilterByGroup.php:74
 #: modules/social_features/social_search/social_search.module:76
-#: modules/social_features/social_tagging/social_tagging.module:514;537
+#: modules/social_features/social_tagging/social_tagging.module:524;559
 #: modules/social_features/social_user/social_user.module:144
 msgid "- Any -"
 msgstr "- Bilo koji -"
@@ -1762,7 +1758,7 @@ msgid ""
 "False|My unmuted groups"
 msgstr ""
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:44
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:43
 msgid "- Default -"
 msgstr "- Zadano -"
 
@@ -1774,11 +1770,19 @@ msgstr "- Ograničen pristup -"
 msgid "- none -"
 msgstr ""
 
-#: translations.php:89
+#: translations.php:97
 msgid "-- Select action --"
 msgstr "-- Odaberi radnju --"
 
-#: modules/custom/download_count/src/Plugin/Field/FieldFormatter/FieldDownloadCount.php:150
+#: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
+msgid "/group/{{ gid }}/content/{{ id }}/approve-membership"
+msgstr ""
+
+#: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
+msgid "/group/{{ gid }}/content/{{ id }}/reject-membership"
+msgstr ""
+
+#: modules/custom/download_count/src/Plugin/Field/FieldFormatter/FieldDownloadCount.php:173
 msgid "0 downloads"
 msgstr "0 preuzimanja"
 
@@ -1789,14 +1793,14 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:148
+#: translations.php:177
 msgid "1 attachment."
 msgid_plural "@count attachments."
 msgstr[0] "1 privitak."
 msgstr[1] "@count privitka."
 msgstr[2] "@count privitaka."
 
-#: modules/custom/download_count/src/Plugin/Field/FieldFormatter/FieldDownloadCount.php:147
+#: modules/custom/download_count/src/Plugin/Field/FieldFormatter/FieldDownloadCount.php:170
 msgid "1 download"
 msgid_plural "@count downloads"
 msgstr[0] "1 preuzimanje"
@@ -1842,21 +1846,21 @@ msgstr[0] "1 član"
 msgstr[1] "@count člana"
 msgstr[2] "@count člana"
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:317
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:318
 msgid "1 membership invite for group: @group_name"
 msgid_plural "@count membership invites for group: @group_name"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:113
+#: translations.php:142
 msgid "1 selected enrollee has been exported successfully"
 msgid_plural "@count selected enrollees have been exported successfully"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:117
+#: translations.php:146
 msgid "1 selected enrollee has been removed from the event successfully"
 msgid_plural ""
 "@count selected enrollees have been removed from the event successfully"
@@ -1864,14 +1868,14 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:114
+#: translations.php:143
 msgid "1 selected enrollee has not been exported successfully"
 msgid_plural "@count selected enrollees have not been exported successfully"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:118
+#: translations.php:147
 msgid "1 selected enrollee has not been removed from the event successfully"
 msgid_plural ""
 "@count selected enrollees have not been removed from the event successfully"
@@ -1879,28 +1883,28 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:119
+#: translations.php:148
 msgid "1 selected member has been exported successfully"
 msgid_plural "@count selected members have been exported successfully"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:121
+#: translations.php:150
 msgid "1 selected member has been removed successfully"
 msgid_plural "@count selected members have been removed successfully"
 msgstr[0] "1 odabrani član je uspješno uklonjen"
 msgstr[1] "@count odabrana člana su uspješno uklonjena"
 msgstr[2] "@count odabranih članova su uspješno uklonjeni"
 
-#: translations.php:120
+#: translations.php:149
 msgid "1 selected member has not been exported"
 msgid_plural "@count selected members have not been exported"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:122
+#: translations.php:151
 msgid "1 selected member has not been removed successfully"
 msgid_plural "@count selected members have been removed successfully"
 msgstr[0] "1 odabrani član nije uspješno uklonjen"
@@ -2859,21 +2863,21 @@ msgid ""
 msgstr ""
 "@count podataka o aktivnostima premješteno je u activity_notification_table."
 
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:141
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:133
 msgid "@count new member is enrolled to this event."
 msgid_plural "@count new members are enrolled to this event."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:144
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:136
 msgid "@count new member is enrolled to your event."
 msgid_plural "@count new members are enrolled to your event."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: modules/social_features/social_group/social_group.module:1138
+#: modules/social_features/social_group/social_group.module:1305
 msgid "@count new member joined the group."
 msgid_plural "@count new members joined the group."
 msgstr[0] "@count novi član je u grupi."
@@ -2887,11 +2891,9 @@ msgstr ""
 "Objava @entity_type @entity_id nije poništena nakon zaprimljene prijave "
 "korisnika."
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitation.php:201
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:179
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:267
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:276
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteUserForm.php:130
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:513
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:526
 msgid "@err"
 msgstr "@err"
 
@@ -2899,11 +2901,17 @@ msgstr "@err"
 msgid "@function @ @organization"
 msgstr ""
 
-#: translations.php:63
+#: modules/social_features/social_user/config/install/views.view.user_admin_people.yml:0;0
+msgid "@interval"
+msgstr ""
+
+#: translations.php:71
+#: modules/social_features/social_user/config/install/views.view.user_admin_people.yml:0
 msgid "@interval ago"
 msgstr "prije @interval"
 
-#: translations.php:62
+#: translations.php:70
+#: modules/social_features/social_user/config/install/views.view.user_admin_people.yml:0
 msgid "@interval hence"
 msgstr "od @interval"
 
@@ -2911,7 +2919,7 @@ msgstr "od @interval"
 msgid "@name field is required."
 msgstr "@name polje je obvezno."
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Controller/UserEnrollInviteController.php:88
+#: modules/social_features/social_event/modules/social_event_invite/src/Controller/UserEnrollInviteController.php:85
 msgid "@node"
 msgstr "@unos"
 
@@ -2919,7 +2927,7 @@ msgstr "@unos"
 msgid "@time ago"
 msgstr "prije @time"
 
-#: modules/social_features/social_event/social_event.module:609
+#: modules/social_features/social_event/social_event.module:610
 msgid "@timezone time"
 msgstr "@timezone vrijeme"
 
@@ -2935,7 +2943,7 @@ msgstr "@total članova"
 msgid "@total people have enrolled"
 msgstr "@total ljudi se prijavilo"
 
-#: modules/social_features/social_event/modules/social_event_max_enroll/social_event_max_enroll.module:217
+#: modules/social_features/social_event/modules/social_event_max_enroll/social_event_max_enroll.module:230
 msgid "@total person has enrolled @spots_left"
 msgid_plural "@total people have enrolled @spots_left"
 msgstr[0] ""
@@ -2957,7 +2965,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: modules/social_features/social_group/src/Element/SocialGroupEntityAutocomplete.php:104
+#: modules/social_features/social_group/src/Element/SocialGroupEntityAutocomplete.php:116
 msgid "@usernames is already member of the @type, you can't add them again"
 msgid_plural ""
 "@usernames are already members of the @type, you can't add them again"
@@ -2965,7 +2973,7 @@ msgstr[0] "@usernames je već član @type, ne možeš ga dodati opet"
 msgstr[1] "@usernames su već članovi @type, ne možeš ih dodati opet"
 msgstr[2] "@usernames su već članovi @type, ne možeš ih dodati opet"
 
-#: translations.php:57;97
+#: translations.php:65;105
 msgid ""
 "A Reply-To address is the email address that receives messages sent from "
 "those who select Reply in their email clients."
@@ -3216,12 +3224,12 @@ msgstr "Korisnik mi je poslao privatnu poruku"
 msgid "A user was enrolled for the event"
 msgstr ""
 
-#: translations.php:81
+#: translations.php:89
 #: modules/social_features/social_profile/config/install/taxonomy.vocabulary.expertise.yml:0
 msgid "A users expertises"
 msgstr "Korisnik je stručnjak za"
 
-#: translations.php:83
+#: translations.php:91
 #: modules/social_features/social_profile/config/install/taxonomy.vocabulary.interests.yml:0
 msgid "A users interests for their profile."
 msgstr "Korisnikov interes za njihov profil."
@@ -3264,7 +3272,7 @@ msgstr "Blok AN početne stranice junaka"
 #: modules/social_features/social_footer/social_footer.module:18
 #: modules/social_features/social_group/social_group.links.task.yml:0
 #: modules/social_features/social_page/social_page.module:21
-#: modules/social_features/social_tagging/social_tagging.module:30
+#: modules/social_features/social_tagging/social_tagging.module:31
 msgid "About"
 msgstr "Opis"
 
@@ -3280,13 +3288,12 @@ msgstr "Informacije {{ arguments.id }}"
 msgid "Accent style"
 msgstr "Stil naglaska"
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteEnrollActionForm.php:58
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0;0
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteEnrollActionForm.php:61
+#: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Join/SocialGroupInviteJoin.php:91
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0;0
 msgid "Accept"
 msgstr "Prihvati"
 
-#: modules/custom/ginvite/ginvite.routing.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/social_group_invite.routing.yml:0
 msgid "Accept invitation and join group"
 msgstr "Prihvati poziv i pridruži se grupi"
@@ -3338,7 +3345,7 @@ msgstr "Pristup samo za upravitelje grupa."
 msgid "Access group search"
 msgstr "Pristup pretraživanju grupe"
 
-#: modules/social_features/social_group/social_group.module:439;1987;2649;2655
+#: modules/social_features/social_group/social_group.module:436;2159;2856;2862
 msgid "Access permissions"
 msgstr "Ovlasti pristupa"
 
@@ -3424,7 +3431,7 @@ msgstr "Blok zaglavlja računa"
 msgid "Account identifier"
 msgstr "Identifikator računa"
 
-#: translations.php:77
+#: translations.php:85
 msgid "Account information"
 msgstr "Informacije o korisničkom računu"
 
@@ -3437,7 +3444,7 @@ msgid "AccountInterface instance"
 msgstr "Instanca sučelja računa"
 
 #: modules/social_features/social_comment/src/Form/SocialCommentAdminOverview.php:141
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:691
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:682
 #: modules/social_features/social_comment/config/install/views.view.comment.yml:0;0
 #: modules/social_features/social_event/modules/social_event_invite/config/install/views.view.user_event_invites.yml:0
 #: modules/social_features/social_follow_taxonomy/config/install/views.view.following_tags.yml:0
@@ -3548,15 +3555,15 @@ msgstr "Postavke filtra aktivnosti"
 msgid "Activity filter tag"
 msgstr ""
 
-#: modules/custom/activity_creator/activity_creator.module:239;241
+#: modules/custom/activity_creator/activity_creator.module:237;239
 msgid "Activity group argument"
 msgstr "Grupni argument aktivnosti"
 
-#: modules/custom/activity_creator/activity_creator.module:242
+#: modules/custom/activity_creator/activity_creator.module:240
 msgid "Activity group context argument."
 msgstr "Argument konteksta grupe aktivnosti."
 
-#: modules/custom/activity_creator/activity_creator.module:222;224
+#: modules/custom/activity_creator/activity_creator.module:220;222
 msgid "Activity notification visibility access"
 msgstr "Pristup vidljivosti obavijesti o aktivnostima"
 
@@ -3568,15 +3575,15 @@ msgstr "Aktivnost događaja koje organiziram"
 msgid "Activity overview"
 msgstr "Pregled aktivnosti"
 
-#: modules/custom/activity_creator/activity_creator.module:213;215
+#: modules/custom/activity_creator/activity_creator.module:211;213
 msgid "Activity post visibility access"
 msgstr "Aktivnost pristup vidljivosti objave"
 
-#: modules/custom/activity_creator/activity_creator.module:231;233
+#: modules/custom/activity_creator/activity_creator.module:229;231
 msgid "Activity profile argument"
 msgstr "Aktivnost argument profila"
 
-#: modules/custom/activity_creator/activity_creator.module:234
+#: modules/custom/activity_creator/activity_creator.module:232
 msgid "Activity profile context argument."
 msgstr "Argument konteksta profila aktivnosti."
 
@@ -3622,7 +3629,7 @@ msgstr "Tok aktivnosti na profilu"
 msgid "Activity tokens"
 msgstr "Tokeni aktivnosti"
 
-#: modules/custom/activity_creator/activity_creator.module:204;206
+#: modules/custom/activity_creator/activity_creator.module:202;204
 msgid "Activity visibility access"
 msgstr "Pristup vidljivosti aktivnosti"
 
@@ -3690,7 +3697,7 @@ msgstr ""
 msgid "Add another organizer"
 msgstr "Dodaj organizatora"
 
-#: translations.php:73
+#: translations.php:81
 #: modules/social_features/social_comment_upload/src/SocialCommentUploadConfigOverride.php:63;69
 msgid "Add attachment"
 msgstr "Dodaj privitak"
@@ -3724,29 +3731,29 @@ msgstr "Dodaj sliku/e u album"
 msgid "Add images"
 msgstr "Dodaj slike"
 
-#: modules/social_features/social_album/src/Controller/SocialAlbumController.php:103
+#: modules/social_features/social_album/src/Controller/SocialAlbumController.php:115
 msgid "Add images to album @name"
 msgstr "Dodaj slike u album @name"
 
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:132
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:133
 msgid "Add invites"
 msgstr "Dodaj pozive"
 
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:130
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:131
 msgid "Add invites to group: @group_name"
 msgstr "Dodaj pozive u grupu: @group_name"
 
 #: modules/social_features/social_group/social_group.links.action.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialInviteLocalActionsBlock.php:145
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:138
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:139
 msgid "Add members"
 msgstr "Dodaj članove"
 
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:16
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:17
 msgid "Add members to group"
 msgstr "Dodaj članove u grupu"
 
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:135
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:136
 msgid "Add members to group: @group_name"
 msgstr "Dodaj članove u grupu: @group_name"
 
@@ -3774,7 +3781,7 @@ msgstr "Dodaj objavu"
 msgid "Add post type"
 msgstr "Dodaj vrstu objave"
 
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:119
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:117
 msgid "Add selected member to a group"
 msgid_plural "Add @count selected members to a group"
 msgstr[0] "Dodaj odabranog člana u grupu"
@@ -3785,7 +3792,7 @@ msgstr[2] "Dodaj @count odabranih članova u grupu"
 msgid "Add to"
 msgstr ""
 
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:149
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:147
 msgid "Add to Group"
 msgstr "Dodaj u Grupu"
 
@@ -4202,8 +4209,6 @@ msgstr "Stranica pregleda albuma"
 #: modules/social_features/social_content_block/src/Plugin/Field/FieldWidget/ContentBlockPluginFieldWidget.php:104
 #: modules/social_features/social_event/social_event.install:1235
 #: modules/social_features/social_search/social_search.links.task.yml:0;0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream_group.yml:0
@@ -4239,12 +4244,12 @@ msgstr "Stranica pregleda albuma"
 msgid "All"
 msgstr "Sve"
 
-#: modules/social_features/social_core/social_core.module:368;400;442
+#: modules/social_features/social_core/social_core.module:372;404;449
 #: modules/social_features/social_event/modules/social_event_managers/social_event_managers.module:37
 msgid "All @label"
 msgstr "Sve @label"
 
-#: modules/custom/activity_basics/src/Plugin/ActivityEntityCondition/CommentAllActivityEntityCondition.php:7
+#: modules/custom/activity_basics/src/Plugin/ActivityEntityCondition/CommentAllActivityEntityCondition.php:8
 msgid "All comments"
 msgstr "Svi komentari"
 
@@ -4296,7 +4301,7 @@ msgid ""
 "automatically."
 msgstr "Svi odgovori na neobjavljeni komentar će automatski biti sakriveni."
 
-#: src/Installer/Form/ModuleConfigureForm.php:70
+#: src/Installer/Form/ModuleConfigureForm.php:80
 msgid ""
 "All the required modules and configuration will be automatically installed "
 "and imported. You can optionally select additional features or generated "
@@ -4316,7 +4321,7 @@ msgstr "Sve teme"
 msgid "All types"
 msgstr "Sve vrste"
 
-#: modules/social_features/social_group/social_group.module:625
+#: modules/social_features/social_group/social_group.module:622
 msgid "All visitors of the platform can see this group"
 msgstr "Svi posjetitelji platforme mogu vidjeti ovu grupu"
 
@@ -4383,7 +4388,7 @@ msgid "Allow file uploads in comments."
 msgstr "Dopusti postavljanje datoteka u komentarima."
 
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteSettingsForm.php:79
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:616
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:588
 msgid "Allow invited user to skip email verification"
 msgstr "Dopusti pozvanom korisniku da preskoči potvrdu e-pošte"
 
@@ -4558,7 +4563,7 @@ msgstr "Dopusti korisnicima označavanje sadržaja u sadržaju."
 msgid "Allowed calendars"
 msgstr "Dopušteni kalendari"
 
-#: modules/social_features/social_group/modules/social_group_flexible_group/src/SocialGroupFlexibleGroupConfigOverride.php:456
+#: modules/social_features/social_group/modules/social_group_flexible_group/src/SocialGroupFlexibleGroupConfigOverride.php:501
 #: modules/social_features/social_group/modules/social_group_flexible_group/config/install/field.field.group.flexible_group.field_group_allowed_join_method.yml:0
 msgid "Allowed join method"
 msgstr "Dopuštena metoda pridruživanja"
@@ -4654,10 +4659,6 @@ msgstr ""
 msgid "Allows events to be organised by event types."
 msgstr ""
 
-#: modules/custom/ginvite/ginvite.info.yml:0
-msgid "Allows group managers to invite people into their group"
-msgstr ""
-
 #: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.installer_options.yml:0
 msgid ""
 "Allows group managers to set the default pages on a group for member and non-"
@@ -4724,7 +4725,7 @@ msgid ""
 "picture or name."
 msgstr ""
 
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:68
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:69
 msgid ""
 "Altering the visibility options could result in changes in access for "
 "content within this group and the group itself."
@@ -4758,15 +4759,15 @@ msgstr "Uvijek prikaži svima"
 msgid "Amount of days"
 msgstr ""
 
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:89
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:87
 msgid "Amount of existing members"
 msgstr "Broj postojećih članova"
 
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:93
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:91
 msgid "Amount of users added not added"
 msgstr "Broj dodanih nedodanih korisnika"
 
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:85
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:83
 msgid "Amount of users added to group"
 msgstr "Broj korisnika dodanih u grupu"
 
@@ -4774,14 +4775,12 @@ msgstr "Broj korisnika dodanih u grupu"
 msgid "An error occurred and processing did not complete."
 msgstr "Došlo je do pogreške i obrada nije završena."
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:141
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:449
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:462
 msgid "An error occurred during processing"
 msgstr "Došlo je do pogreške tijekom obrade"
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:185
 #: modules/social_features/social_group/modules/social_group_flexible_group/src/FlexibleGroupContentVisibilityUpdate.php:164
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:519
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:532
 #: modules/social_features/social_group/src/GroupContentVisibilityUpdate.php:171
 msgid "An error occurred while processing @operation with arguments : @args"
 msgstr "Došlo je do pogreške u obradi @operation s argumentima: @args"
@@ -4827,8 +4826,6 @@ msgstr ""
 msgid "Appearance"
 msgstr "Izgled"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -4866,15 +4863,15 @@ msgstr "Izgled"
 msgid "Apply"
 msgstr "Primjeni"
 
-#: modules/social_features/social_event/social_event.module:984
+#: modules/social_features/social_event/social_event.module:991
 msgid "Approve"
 msgstr "Odobri"
 
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:593
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:584
 msgid "Approve Membership"
 msgstr "Odobri Članstvo"
 
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:589;601
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:580;592
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0;0
 msgid "Approve membership"
 msgstr "Odobri članstvo"
@@ -4906,7 +4903,7 @@ msgstr "Odobren zahtjev za pridruživanje kontekstu aktivnosti u grupi"
 msgid "Approved/Rejected by"
 msgstr "Odobrava/Odbija"
 
-#: modules/social_features/social_group/social_group.module:788
+#: modules/social_features/social_group/social_group.module:880
 msgid ""
 "Are you sure to accept the invitation and join this group? You can leave "
 "this group at any time."
@@ -4934,7 +4931,7 @@ msgstr[2] ""
 msgid "Are you sure you want to Reject this request?"
 msgstr "Želiš li zbilja Odbiti ovaj zahtjev?"
 
-#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:260
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:230
 msgid "Are you sure you want to approve the membership request for @name?"
 msgstr "Želiš li zbilja odobriti zahtjev za članstvo za @name?"
 
@@ -4947,7 +4944,7 @@ msgstr "Želiš li zbilja odbiti zahtjev za upis za @name?"
 msgid "Are you sure you want to delete %name?"
 msgstr "Želiš li zbilja obrisati %name?"
 
-#: modules/social_features/social_group/social_group.module:925
+#: modules/social_features/social_group/social_group.module:1026
 msgid ""
 "Are you sure you want to delete your group \"@group\" along with all of the "
 "posts, events and topics inside this group? This action cannot be undone."
@@ -4959,18 +4956,13 @@ msgstr ""
 msgid "Are you sure you want to reject the membership request for @name?"
 msgstr "Želiš li zbilja odbiti zahtjev za članstvo za @name?"
 
-#: modules/social_features/social_group/social_group.module:775
+#: modules/social_features/social_group/social_group.module:867
 msgid "Are you sure you want to remove %name from %group?"
 msgstr "Želiš li zbilja ukloniti %name iz %group?"
 
 #: modules/custom/grequest/src/Form/GroupRequestMembershipForm.php:35
 msgid "Are you sure you want to request membership the group @group"
 msgstr "Želiš li zbilja zatražiti članstvo u grupi @group"
-
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:109
-msgid ""
-"Are you sure you want to send a invitation to all e-mails listed bellow?"
-msgstr "Želiš li zbilja poslati poziv svim navedenim adresama e-pošte ?"
 
 #: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersViewsBulkOperationsConfirmAction.php:35
 msgid "Are you sure you want to send your email to the following enrollee?"
@@ -4992,8 +4984,6 @@ msgstr[2] ""
 "Želiš li zbilja poslati svoju adresu e-pošte %count navedenih članova?"
 
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -5038,7 +5028,7 @@ msgstr "Uzlazno"
 msgid "Assign event organisers to this event."
 msgstr "Dodijeli organizatore događaja ovom događaju."
 
-#: modules/custom/social_file_private/social_file_private.install:33
+#: modules/custom/social_file_private/social_file_private.install:34
 msgid ""
 "Assuming your private file system path configuration is functional and no "
 "other warnings are shown: your uploaded files on the Open Social entities "
@@ -5062,8 +5052,8 @@ msgstr "Na kojem broju vrsta događaja prijeći s radio gumba na odabir widgeta.
 msgid "Attachment"
 msgstr "Prilog"
 
-#: translations.php:72
-#: modules/social_features/social_core/social_core.module:941
+#: translations.php:80
+#: modules/social_features/social_core/social_core.module:953
 msgid "Attachments"
 msgstr "Prilozi"
 
@@ -5079,7 +5069,7 @@ msgstr "Pažnja!"
 msgid "Author"
 msgstr "Autor"
 
-#: modules/social_features/social_core/social_core.module:880
+#: modules/social_features/social_core/social_core.module:891
 msgid "Author Information"
 msgstr "Informacije o autoru"
 
@@ -5108,16 +5098,16 @@ msgstr "Autor"
 msgid "Autocomplete Item"
 msgstr "Automatski dovrši stavku"
 
-#: translations.php:138
+#: translations.php:167
 msgid "Autocomplete field with group names."
 msgstr "Automatski dovrši polje s nazivima grupa."
 
-#: translations.php:137
+#: translations.php:166
 msgid "Autocomplete field with items from taxonomy list content tags."
 msgstr ""
 "Automatski dovrši polje sa stavkama oznaka sadržaja popisa taksonomije."
 
-#: translations.php:136
+#: translations.php:165
 msgid "Autocomplete field with items from taxonomy list topic types."
 msgstr ""
 "Polje za automatsko dovršavanje stavkama s taksonomskog popisa vrsti tema."
@@ -5138,16 +5128,15 @@ msgstr ""
 msgid "Avatar settings"
 msgstr ""
 
-#: modules/social_features/social_event/social_event.module:1032
+#: modules/social_features/social_event/social_event.module:1039
 #: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module:165
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:153
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:162
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteUserForm.php:94
 msgid "Back to event"
 msgstr "Povratak na događaj"
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitation.php:140
 #: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:172
-#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:393
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:386
 msgid "Back to group"
 msgstr "Povratak u grupu"
 
@@ -5206,10 +5195,6 @@ msgstr "Osnovna provedba aktivnosti u Open Socialu"
 #: modules/social_features/social_page/config/install/node.type.page.yml:0
 msgid "Basic page"
 msgstr "Osnovna stranica"
-
-#: modules/social_features/social_group/modules/social_group_flexible_group/config/install/field.storage.group.field_group_allowed_join_method.yml:0
-msgid "Be added"
-msgstr "Budi dodan/a"
 
 #: modules/social_features/social_profile/modules/social_profile_fields/src/Form/SocialProfileFieldsSettingsForm.php:145
 msgid ""
@@ -5290,8 +5275,6 @@ msgstr "Blokiran"
 msgid "Blog"
 msgstr "Blog"
 
-#: modules/custom/ginvite/config/schema/ginvite.schema.yml:0;0
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:290;308
 #: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollSettingsForm.php:101
 msgid "Body"
 msgstr "Sadržaj"
@@ -5352,7 +5335,7 @@ msgid ""
 "\"@provider\"</b> and therefore its privacy policy."
 msgstr ""
 
-#: modules/social_features/social_group/social_group.module:783
+#: modules/social_features/social_group/social_group.module:875
 msgid ""
 "By submitting this form you will become a member of the group. As a member "
 "of the group you will begin to receive notifications about changes and "
@@ -5363,7 +5346,7 @@ msgstr ""
 "primati obavijesti o promjenama i interakcijama unutar grupe. Tvoj će profil "
 "također biti uključen u članstvo grupe."
 
-#: translations.php:144
+#: translations.php:173
 msgid ""
 "By submitting this form you will become a member of the group. Please fill "
 "out any available fields to complete your membership information."
@@ -5375,13 +5358,13 @@ msgstr ""
 msgid "Bypass create group access control"
 msgstr "Zaobiđi kontrolu pristupa kreiranju grupe"
 
-#: translations.php:85
+#: translations.php:93
 #: modules/social_features/social_profile/modules/social_profile_organization_tag/config/install/taxonomy.vocabulary.profile_organization_tag.yml:0
 msgid "CM can tag a user and indicate that user is part of an organization."
 msgstr ""
 "CM može označiti korisnika i naznačiti da je korisnik dio organizacije."
 
-#: translations.php:87
+#: translations.php:95
 #: modules/social_features/social_profile/config/install/taxonomy.vocabulary.profile_tag.yml:0
 msgid "CM can tag a user, giving options on filtering / searching users."
 msgstr ""
@@ -5410,21 +5393,21 @@ msgstr ""
 msgid "Call to action link"
 msgstr "Poveznica s pozivom na akciju"
 
-#: translations.php:43
+#: translations.php:51
 msgid "Can not send e-mail for %entity"
 msgstr "Ne mogu poslati e-poštu za %entity"
 
-#: modules/social_features/social_core/social_core.module:967
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:294
+#: modules/social_features/social_core/social_core.module:979
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:286
 #: modules/social_features/social_event/src/Form/EnrollRequestDeclineForm.php:165
-#: modules/social_features/social_group/social_group.module:804;928
+#: modules/social_features/social_group/social_group.module:899;1029
 #: modules/social_features/social_group/modules/social_group_request/src/Form/GroupRequestMembershipRejectForm.php:130
 #: modules/social_features/social_profile/social_profile.module:221
 msgid "Cancel"
 msgstr "Otkaži"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:104
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:327
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:132
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:336
 msgid "Cancel enrollment"
 msgstr "Otkaži upis"
 
@@ -5432,11 +5415,15 @@ msgstr "Otkaži upis"
 msgid "Cancel invite"
 msgstr "Otkaži pozivnicu"
 
-#: translations.php:100
+#: modules/social_features/social_group/modules/social_group_request/src/Plugin/Join/SocialGroupRequestJoin.php:136
+msgid "Cancel request"
+msgstr ""
+
+#: translations.php:108
 msgid "Canceled \"%action\"."
 msgstr "\"%action\" otkazano."
 
-#: translations.php:78
+#: translations.php:86
 #: modules/social_features/social_tagging/config/install/taxonomy.vocabulary.social_tagging.yml:0
 msgid "Categories and terms used to tag content"
 msgstr "Kategorije i pojmovi koji se koriste za označavanje sadržaja"
@@ -5490,7 +5477,7 @@ msgstr ""
 msgid "Change the name and email address of your site."
 msgstr ""
 
-#: translations.php:131
+#: translations.php:160
 msgid "Change the role"
 msgstr "Promijeni ulogu"
 
@@ -5509,7 +5496,7 @@ msgstr ""
 msgid "Change which profile fields are used / not used"
 msgstr "Promijeni koja se polja profila koriste / ne koriste"
 
-#: modules/social_features/social_event/social_event.module:744
+#: modules/social_features/social_event/social_event.module:745
 msgid "Change your timezone here"
 msgstr "Ovdje promijeni vremensku zonu"
 
@@ -5529,7 +5516,7 @@ msgstr ""
 "Promjena grupa i vidljivosti još nije dopuštena za albume, razmisli o "
 "stvaranju novog albuma."
 
-#: modules/social_features/social_group/social_group.module:1978
+#: modules/social_features/social_group/social_group.module:2150
 msgid "Changing groups is disabled when translating."
 msgstr "Promjena grupa je onemogućena prilikom prevođenja."
 
@@ -5541,13 +5528,13 @@ msgstr ""
 "Promjena grupe može utjecati na <strong>postavke vidljivosti</strong> i može "
 "uzrokovati da <strong>autor/koautori</strong> izgube pristup."
 
-#: translations.php:141
+#: translations.php:170
 msgid ""
 "Changing the group may have impact on the <strong>visibility settings</"
 "strong>."
 msgstr "Promjena grupe može utjecati na <strong>postavke vidljivosti</strong>."
 
-#: modules/social_features/social_group/social_group.module:1976
+#: modules/social_features/social_group/social_group.module:2148
 msgid "Changing visibility is disabled when translating."
 msgstr "Promjena vidljivosti je onemogućena prilikom prevođenja."
 
@@ -5591,8 +5578,8 @@ msgid ""
 "frontpage for logged-in users."
 msgstr ""
 
-#: translations.php:108
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:117
+#: translations.php:116
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:104
 msgid "Choose the visibility options allowed for the group content."
 msgstr "Odaberi opcije vidljivosti za sadržaj grupe."
 
@@ -5620,7 +5607,7 @@ msgstr "Gumb Sat(ovi) u tijeku = \"@classes\""
 msgid "Clear all selected enrollees"
 msgstr "Obriši sve označene upisnike"
 
-#: translations.php:56
+#: translations.php:64
 msgid "Clear all selected members"
 msgstr "Obriši sve označene članove"
 
@@ -5633,7 +5620,7 @@ msgstr "Obriši odabir na svim stranicama"
 msgid "Clear selection when exposed filters change"
 msgstr ""
 
-#: modules/social_features/social_tagging/src/Form/SocialTaggingSettingsForm.php:179
+#: modules/social_features/social_tagging/src/Form/SocialTaggingSettingsForm.php:198
 msgid "Click here to go to the social tagging overview"
 msgstr "Klikni ovdje za pregled društvenih oznaka"
 
@@ -5646,7 +5633,7 @@ msgstr "ID mutacije klijenta"
 msgid "Close"
 msgstr "Zatvori"
 
-#: translations.php:91
+#: translations.php:99
 msgid "Close report"
 msgstr "Zatvori prijavu"
 
@@ -5685,7 +5672,7 @@ msgstr "Zatvorena grupa: Zahtjev za članstvom u grupi"
 msgid "Closed group: Group node (Album)"
 msgstr "Zatvorena grupa: Grupni unos (Album)"
 
-#: translations.php:102
+#: translations.php:110
 msgid "Collaboration Settings"
 msgstr "Postavke suradnje"
 
@@ -5725,7 +5712,7 @@ msgid "Color red component"
 msgstr ""
 
 #: modules/custom/social_demo/src/Plugin/DemoContent/Comment.php:7
-#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:79
+#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:82
 #: modules/social_features/social_comment/src/Form/SocialCommentAdminOverview.php:160
 #: modules/social_features/social_comment/config/install/comment.type.comment.yml:0
 #: modules/social_features/social_comment/config/install/field.field.comment.comment.field_comment_body.yml:0
@@ -5733,7 +5720,7 @@ msgstr ""
 msgid "Comment"
 msgstr "Komentar"
 
-#: modules/social_features/social_comment/social_comment.module:39;319
+#: modules/social_features/social_comment/social_comment.module:39;315
 msgctxt "Comment Button"
 msgid "Comment"
 msgstr "Komentar"
@@ -5767,7 +5754,7 @@ msgstr "Popis komentara na unose"
 msgid "Comment on post list"
 msgstr "Popis komentara na objave"
 
-#: modules/social_features/social_comment/src/Controller/SocialCommentController.php:75
+#: modules/social_features/social_comment/src/Controller/SocialCommentController.php:74
 msgid "Comment unpublished."
 msgstr "Objava komentara je poništena."
 
@@ -5802,7 +5789,7 @@ msgid "Comments unapproved"
 msgstr ""
 
 #: modules/social_features/social_activity/social_activity.install:38
-#: modules/social_features/social_group/social_group.module:632;2765
+#: modules/social_features/social_group/social_group.module:629;3056
 #: modules/social_features/social_post/social_post.module:143
 #: modules/social_features/social_post/src/Entity/Post.php:219
 #: modules/social_features/social_group/modules/social_group_flexible_group/config/install/field.storage.group.field_flexible_group_visibility.yml:0
@@ -5866,7 +5853,7 @@ msgstr "Aktivnosti zajednice"
 msgid "Community activities block"
 msgstr "Blok aktivnosti zajednice"
 
-#: modules/custom/activity_basics/src/Plugin/ActivityContext/CommunityActivityContext.php:9
+#: modules/custom/activity_basics/src/Plugin/ActivityContext/CommunityActivityContext.php:10
 msgid "Community activity context"
 msgstr "Kontekst aktivnosti zajednice"
 
@@ -6125,7 +6112,7 @@ msgstr ""
 msgid "Content group content"
 msgstr "Sadržaj sadržaj grupe"
 
-#: modules/custom/activity_basics/src/Plugin/ActivityContext/ContentInMyGroupActivityContext.php:16
+#: modules/custom/activity_basics/src/Plugin/ActivityContext/ContentInMyGroupActivityContext.php:18
 msgid "Content in my group activity context"
 msgstr "Sadržaj u kontekstu moje aktivnosti u grupi"
 
@@ -6156,7 +6143,7 @@ msgstr "Kontekst aktivnosti prijave sadržaja"
 msgid "Content selection"
 msgstr "Odabir sadržaja"
 
-#: modules/social_features/social_tagging/social_tagging.module:31
+#: modules/social_features/social_tagging/social_tagging.module:32
 #: modules/social_features/social_tagging/social_tagging.info.yml:0
 msgid "Content tagging module"
 msgstr "Modul za označavanje sadržaja"
@@ -6225,7 +6212,7 @@ msgstr ""
 msgid "Convert only URLs that are supported to URL embeds."
 msgstr "Pretvori samo URL-ove koji su podržani u umetnute URL-ove."
 
-#: modules/custom/social_graphql/src/Plugin/GraphQL/DataProducer/Media/FileUrl.php:8
+#: modules/custom/social_graphql/src/Plugin/GraphQL/DataProducer/Media/FileUrl.php:11
 msgid "Convert uri to url."
 msgstr ""
 
@@ -6238,7 +6225,7 @@ msgstr "Kopiraj URL"
 msgid "Could not create profile for @user_id"
 msgstr "Nije moguće kreirati profil za @user_id"
 
-#: modules/social_features/social_core/social_core.install:1354
+#: modules/social_features/social_core/social_core.install:1358
 msgid ""
 "Could not install Content Entity forms as Open Social please do so manually "
 "in the Socialblue settings."
@@ -6246,11 +6233,11 @@ msgstr ""
 "Nije moguće instalirati obrasce entiteta sadržaja kao Open Social, učini to "
 "ručno u postavkama Socialbluea."
 
-#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:181
+#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:217
 msgid "Could not save the export file on: %name."
 msgstr "Nije moguće spremiti datoteku za izvoz na: %name."
 
-#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:180
+#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:216
 msgid "Could not save the export file."
 msgstr "Nije moguće spremiti datoteku za izvoz."
 
@@ -6267,11 +6254,11 @@ msgstr ""
 "      bilježi poruku u tablicu nadzora."
 
 #: modules/social_features/social_core/src/Controller/SocialCoreController.php:222
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:245
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:250
 msgid "Create @article @name"
 msgstr "Kreiraj @article @name"
 
-#: modules/social_features/social_core/social_core.module:959
+#: modules/social_features/social_core/social_core.module:971
 msgid "Create @entity"
 msgstr "Kreiraj @entity"
 
@@ -6292,11 +6279,11 @@ msgstr "Kreiraj novu stranicu knjige"
 msgid "Create New Content"
 msgstr "Kreiraj novi sadržaj"
 
-#: modules/social_features/social_event/social_event.module:622
+#: modules/social_features/social_event/social_event.module:623
 msgid "Create New Event"
 msgstr "Kreiraj novi događaj"
 
-#: modules/social_features/social_group/social_group.module:2216
+#: modules/social_features/social_group/social_group.module:2424
 msgid "Create New Group"
 msgstr "Kreiraj novu grupu"
 
@@ -6318,7 +6305,7 @@ msgid "Create Topic"
 msgstr "Kreiraj temu"
 
 #: modules/social_features/social_core/src/Controller/SocialCoreController.php:228
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:251
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:256
 msgid "Create a @name"
 msgstr "Kreiraj @name"
 
@@ -6568,7 +6555,6 @@ msgstr "Kreira entitete aktivnosti."
 msgid "Creates a call to action link in a block"
 msgstr "Kreira poveznicu s pozivom na akciju u bloku"
 
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:17
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/group.content_type.closed_group-group_invitation.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/group.content_type.flexible_group-group_invitation.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/group.content_type.open_group-group_invitation.yml:0
@@ -6597,11 +6583,11 @@ msgstr "Izreži sličicu"
 msgid "Crop your image to select which part of your image to show on display."
 msgstr "Izreži sliku i odaberi koji dio slike želiš prikazati na zaslonu."
 
-#: modules/social_features/social_group/social_group.module:1297
+#: modules/social_features/social_group/social_group.module:1464
 msgid "Cross posting is not allowed for @type group type"
 msgstr ""
 
-#: modules/social_features/social_group/social_group.module:1019
+#: modules/social_features/social_group/social_group.module:1165
 msgid "Cross-group posting for @group_type is disabled"
 msgstr ""
 
@@ -6694,7 +6680,7 @@ msgstr ""
 msgid "Date"
 msgstr "Datum"
 
-#: translations.php:71
+#: translations.php:79
 msgid "Date & time"
 msgstr "Datum i vrijeme"
 
@@ -6735,9 +6721,9 @@ msgstr "Dan Mjesec"
 msgid "Day Month Time"
 msgstr "Dan Mjesec Vrijeme"
 
-#: modules/social_features/social_event/social_event.module:991
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteEnrollActionForm.php:108
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0;0
+#: modules/social_features/social_event/social_event.module:998
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteEnrollActionForm.php:111
+#: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Join/SocialGroupInviteJoin.php:98
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0;0
 msgid "Decline"
 msgstr "Odbij"
@@ -6745,10 +6731,6 @@ msgstr "Odbij"
 #: modules/social_features/social_event/src/Controller/SocialEventController.php:101
 msgid "Decline enrollment request for the event @event_title"
 msgstr "Odbij zahtjev za upis na događaj @event_title"
-
-#: modules/custom/ginvite/ginvite.routing.yml:0
-msgid "Decline invitation"
-msgstr "Odbij poziv"
 
 #: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module:384
 msgid "Decline invite"
@@ -6820,7 +6802,7 @@ msgstr "Zadana vidljivost"
 #: modules/social_features/social_comment/src/Form/SocialCommentAdminOverview.php:218
 #: modules/social_features/social_event/social_event.links.task.yml:0
 #: modules/social_features/social_post/social_post.links.task.yml:0
-#: modules/social_features/social_post/src/PostViewBuilder.php:235
+#: modules/social_features/social_post/src/PostViewBuilder.php:236
 #: modules/social_features/social_post/src/Form/PostTypeDeleteForm.php:32
 msgid "Delete"
 msgstr "Ukloni"
@@ -6833,7 +6815,7 @@ msgstr "Ukloni @type \"@title\""
 msgid "Delete Activity entities"
 msgstr "Ukloni entitete Aktivnosti"
 
-#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:74
+#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:77
 msgid "Delete Comment"
 msgstr "Ukloni komentar"
 
@@ -6897,7 +6879,7 @@ msgstr "Ukloni odabrane entitete sadržaja grupe"
 msgid "Delete the selected comments"
 msgstr "Ukloni odabrane komentare"
 
-#: modules/social_features/social_private_message/social_private_message.module:382
+#: modules/social_features/social_private_message/social_private_message.module:374
 msgid "Delete thread"
 msgstr "Ukloni raspravu"
 
@@ -6905,7 +6887,7 @@ msgstr "Ukloni raspravu"
 msgid "Delete your account and anonymize all other content."
 msgstr "Izbriši svoj račun i anonimiziraj sav ostali sadržaj."
 
-#: modules/social_features/social_private_message/social_private_message.module:462
+#: modules/social_features/social_private_message/social_private_message.module:454
 msgid ""
 "Delete your account, delete private messages, and anonymize all other "
 "content."
@@ -6913,9 +6895,9 @@ msgstr ""
 "Izbriši svoj račun, izbriši privatne poruke i anonimiziraj sav ostali "
 "sadržaj."
 
-#: modules/social_features/social_private_message/social_private_message.module:285;303
+#: modules/social_features/social_private_message/social_private_message.module:279;297
 #: modules/social_features/social_private_message/src/Plugin/Field/FieldFormatter/SocialPrivateMessageOwnerFormatter.php:29
-#: modules/social_features/social_private_message/src/Plugin/Field/FieldFormatter/SocialPrivateMessageThreadMemberFormatter.php:56
+#: modules/social_features/social_private_message/src/Plugin/Field/FieldFormatter/SocialPrivateMessageThreadMemberFormatter.php:131
 msgid "Deleted user"
 msgstr "Uklonjen korisnik"
 
@@ -6923,7 +6905,7 @@ msgstr "Uklonjen korisnik"
 msgid "Deleting @type's"
 msgstr "Brisanje @type's"
 
-#: modules/social_features/social_group/social_group.module:1884
+#: modules/social_features/social_group/social_group.module:2056
 msgid "Deleting the group and all the content within the group..."
 msgstr "Brisanje grupe i sadržaja u grupi..."
 
@@ -6932,8 +6914,6 @@ msgid "Deleting this image will also delete it from the post it belongs to."
 msgstr "Brisanje ove slike briše je i iz objave kojoj pripada."
 
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -6981,7 +6961,7 @@ msgstr "Opiši vrstu spominjanja."
 #: modules/custom/dropdown/config/schema/dropdown.schema.yml:0
 #: modules/custom/mentions/config/schema/mentions.schema.yml:0
 #: modules/custom/mentions/src/Form/MentionsTypeForm.php:138
-#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:23
+#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:24
 #: config/optional/field.field.node.book.body.yml:0
 #: modules/social_features/social_content_report/config/install/views.view.report_overview.yml:0
 #: modules/social_features/social_event/config/install/field.field.node.event.body.yml:0
@@ -7015,7 +6995,7 @@ msgstr "Opis"
 msgid "Destinations"
 msgstr "Odredišta"
 
-#: modules/social_features/social_core/social_core.module:483
+#: modules/social_features/social_core/social_core.module:493
 msgid "Details"
 msgstr "Detalji"
 
@@ -7048,7 +7028,7 @@ msgstr ""
 msgid "Determine the look and feel of your site."
 msgstr ""
 
-#: translations.php:38
+#: translations.php:46
 msgid "Determine wether users can upload documents to comments."
 msgstr "Odredi mogu li korisnici postavljati dokumente u komentare."
 
@@ -7112,7 +7092,7 @@ msgstr "Određuje ima li tip unosa omogućeno označavanje."
 msgid "Dialog"
 msgstr ""
 
-#: modules/custom/download_count/download_count.module:64
+#: modules/custom/download_count/download_count.module:62
 msgid "Direct download"
 msgstr "Direktno preuzimanje"
 
@@ -7246,7 +7226,7 @@ msgstr "Prikazuje najnovije teme u zajednici"
 msgid "Do not count downloads for users with this role."
 msgstr "Ne računaj preuzimanja za korisnike s ovom ulogom."
 
-#: modules/social_features/social_private_message/social_private_message.module:594
+#: modules/social_features/social_private_message/social_private_message.module:586
 msgid "Do not show threads a user deleted."
 msgstr "Ne prikazuj rasprave koje je korisnik izbrisao."
 
@@ -7269,7 +7249,7 @@ msgstr "Broj preuzimanja"
 msgid "Download count"
 msgstr "Broj preuzimanja"
 
-#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:173
+#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:209
 msgid "Download file"
 msgstr "Preuzmi datoteku"
 
@@ -7318,7 +7298,7 @@ msgstr ""
 "poveznicu za oporavak lozinke ni potvrdu/upozorenje o tome. Kontaktiraj "
 "@admin_link u slučaju problema."
 
-#: translations.php:51
+#: translations.php:59
 #: modules/social_features/social_user/social_user.module:240
 msgid ""
 "Due to privacy concerns, we can't disclose the existence of registered email "
@@ -7360,9 +7340,9 @@ msgstr "Rubovi"
 #: modules/social_features/social_comment/src/Form/SocialCommentAdminOverview.php:214
 #: modules/social_features/social_event/social_event.links.task.yml:0
 #: modules/social_features/social_event/modules/social_event_type/social_event_type.links.task.yml:0
-#: modules/social_features/social_group/social_group.module:2350
+#: modules/social_features/social_group/social_group.module:2558
 #: modules/social_features/social_post/social_post.links.task.yml:0
-#: modules/social_features/social_post/src/PostViewBuilder.php:227
+#: modules/social_features/social_post/src/PostViewBuilder.php:228
 msgid "Edit"
 msgstr "Uredi"
 
@@ -7370,7 +7350,7 @@ msgstr "Uredi"
 msgid "Edit Activity entities"
 msgstr "Uredi entitete aktivnosti"
 
-#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:69
+#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:72
 #: modules/social_features/social_content_report/config/install/views.view.report_overview.yml:0
 msgid "Edit Comment"
 msgstr "Uredi komentar"
@@ -7403,7 +7383,7 @@ msgstr "Uredi objavu"
 msgid "Edit Queue storage entity entities"
 msgstr "Uredi entitete za pohranu reda čekanja"
 
-#: modules/social_features/social_profile/social_profile.module:854
+#: modules/social_features/social_profile/social_profile.module:852
 msgid "Edit account"
 msgstr "Uredi račun"
 
@@ -7436,7 +7416,7 @@ msgstr "Uredi vlastite komentare"
 msgid "Edit own posts entities"
 msgstr "Uredi vlastite entitete objava"
 
-#: modules/social_features/social_profile/social_profile.module:856;887;889
+#: modules/social_features/social_profile/social_profile.module:854;885;887
 msgid "Edit profile"
 msgstr "Uredi profil"
 
@@ -7458,7 +7438,6 @@ msgstr "Uredi pojedinosti prijave"
 #: modules/social_features/social_event/modules/social_event_an_enroll/src/Plugin/Action/SocialEventAnEnrollSendEmail.php:17
 #: modules/social_features/social_event/modules/social_event_an_enroll_enrolments_export/src/Plugin/UserExportPlugin/EnrolmentUserEmail.php:8
 #: modules/social_features/social_user_export/src/Plugin/UserExportPlugin/UserEmail.php:23;8
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
 #: modules/custom/social_queue_storage/config/install/social_queue_storage.queue_storage_entity_type.email.yml:0
 #: modules/social_features/social_event/modules/social_event_an_enroll/config/install/views.view.manage_enrollments.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0
@@ -7469,7 +7448,7 @@ msgstr "E-pošta"
 msgid "Email Card"
 msgstr ""
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:101
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:100
 #: modules/social_features/social_event/modules/social_event_an_enroll/config/optional/field.field.event_enrollment.event_enrollment.field_email.yml:0
 #: modules/social_features/social_event/modules/social_event_invite/config/optional/field.field.event_enrollment.event_enrollment.field_email.yml:0
 msgid "Email address"
@@ -7521,19 +7500,19 @@ msgstr ""
 msgid "Embeds URLs using data attribute: data-embed-url."
 msgstr ""
 
-#: modules/custom/activity_creator/activity_creator.module:225
+#: modules/custom/activity_creator/activity_creator.module:223
 msgid "Enable activity access control for notifications."
 msgstr "Omogući kontrolu pristupa aktivnostima za obavijesti."
 
-#: modules/custom/activity_creator/activity_creator.module:216
+#: modules/custom/activity_creator/activity_creator.module:214
 msgid "Enable activity access control for related post entities."
 msgstr "Omogući kontrolu pristupa aktivnostima za povezane entitete objave."
 
-#: modules/custom/activity_creator/activity_creator.module:207
+#: modules/custom/activity_creator/activity_creator.module:205
 msgid "Enable activity access control."
 msgstr "Omogući kontrolu pristupa aktivnostima."
 
-#: src/Installer/Form/ModuleConfigureForm.php:105
+#: src/Installer/Form/ModuleConfigureForm.php:115
 msgid "Enable additional features"
 msgstr "Omogući dodatne značajke"
 
@@ -7691,7 +7670,7 @@ msgstr ""
 msgid "End"
 msgstr "Kraj"
 
-#: modules/social_features/social_event/social_event.module:839
+#: modules/social_features/social_event/social_event.module:846
 msgid "End date is required!"
 msgstr "Datum završetka je obavezan!"
 
@@ -7717,8 +7696,8 @@ msgstr ""
 "datoteka (vrlo preporučljivo!). Više informacija: https://www.drupal.org/"
 "docs/8/distributions/open-social/private-files"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:158
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:163
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:186
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:172
 msgid "Enroll"
 msgstr "Upis"
 
@@ -7749,7 +7728,7 @@ msgstr ""
 msgid "Enroll date"
 msgstr "Datum upisa"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:151
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:179
 msgid "Enroll in"
 msgstr "Upis na"
 
@@ -7757,11 +7736,11 @@ msgstr "Upis na"
 msgid "Enroll in @label Event"
 msgstr "Upis na događaj @label"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:116
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:115
 msgid "Enroll in event"
 msgstr "Upis na događaj"
 
-#: modules/social_features/social_event/social_event.module:1337
+#: modules/social_features/social_event/social_event.module:1344
 #: modules/social_features/social_event/config/install/field.field.node.event.field_enroll_method.yml:0
 msgid "Enroll method"
 msgstr "Metoda upisa"
@@ -7782,8 +7761,8 @@ msgstr "Upiši se s računom"
 msgid "Enroll without account"
 msgstr "Upiši se bez računa"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:83
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:219
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:111
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:228
 #: modules/social_features/social_event/config/install/field.storage.event_enrollment.field_enrollment_status.yml:0
 msgid "Enrolled"
 msgstr "Upisani"
@@ -7798,7 +7777,7 @@ msgstr "Polaznik"
 msgid "Enrollment limit"
 msgstr "Ograničenje upisa"
 
-#: translations.php:90
+#: translations.php:98
 msgid "Enrollment options"
 msgstr "Mogućnosti upisa"
 
@@ -7845,7 +7824,7 @@ msgstr ""
 msgid "Enter your @s username or email."
 msgstr "Unesi svoje @s korisničko ime ili e-poštu."
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:102
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:101
 #: modules/social_features/social_event/modules/social_event_an_enroll/config/optional/field.field.event_enrollment.event_enrollment.field_email.yml:0
 #: modules/social_features/social_event/modules/social_event_invite/config/optional/field.field.event_enrollment.event_enrollment.field_email.yml:0
 msgid "Enter your email, so we can send you event updates."
@@ -7939,7 +7918,7 @@ msgid "Error creating request"
 msgstr "Pogreška pri izradi zahtjeva"
 
 #: modules/custom/grequest/src/Form/GroupRequestMembershipRejectForm.php:77
-#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:96
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:126
 #: modules/social_features/social_group/modules/social_group_request/src/Form/GroupRequestMembershipRejectForm.php:167
 msgid "Error updating Request"
 msgstr "Pogreška pri ažuriranju zahtjeva"
@@ -7952,7 +7931,7 @@ msgstr "Pogreška pri izradi zahtjeva za pridruživanje"
 msgid "Error when joining the group."
 msgstr "Pogreška prilikom pridruživanja grupi."
 
-#: translations.php:96
+#: translations.php:104
 #: modules/custom/social_demo/src/Plugin/DemoContent/Event.php:8
 #: modules/social_features/social_content_block/modules/social_event_content_block/src/Plugin/MultipleContentBlock/EventContent.php:7
 #: modules/social_features/social_event/src/Plugin/GraphQL/DataProducer/EventManagers.php:11
@@ -8031,9 +8010,9 @@ msgstr "Postavke upisa na događaj"
 msgid "Event enrollments"
 msgstr "Upisi na događaj"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:125
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:121
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:211
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:153
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:120
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:220
 msgid "Event has passed"
 msgstr "Događaj je prošao"
 
@@ -8088,7 +8067,7 @@ msgstr "Postavke organizatora događaja"
 msgid "Event organisers"
 msgstr "Organizatori događaja"
 
-#: modules/custom/activity_basics/src/Plugin/ActivityContext/EventRequestActivityContext.php:13
+#: modules/custom/activity_basics/src/Plugin/ActivityContext/EventRequestActivityContext.php:14
 msgid "Event request activity context"
 msgstr "Kontekst aktivnosti zahtjeva za događaj"
 
@@ -8120,7 +8099,7 @@ msgstr "Vrsta događaja"
 msgid "Event type settings"
 msgstr "Postavke vrste događaja"
 
-#: translations.php:79
+#: translations.php:87
 #: modules/social_features/social_event/modules/social_event_type/social_event_type.installer_options.yml:0
 #: modules/social_features/social_content_block/modules/social_event_content_block/config/optional/field.field.block_content.custom_content_list.field_event_type.yml:0
 #: modules/social_features/social_event/modules/social_event_type/config/install/taxonomy.vocabulary.event_types.yml:0;0
@@ -8158,15 +8137,19 @@ msgstr "Blok događaja na profilu"
 msgid "Events profile overview"
 msgstr "Pregled profila događaja"
 
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:125
+msgid "Exception trying to save a group membership request: @message"
+msgstr ""
+
 #: modules/custom/download_count/src/Form/DownloadCountSettingsForm.php:34;39
 msgid "Excluded file extensions"
 msgstr "Izuzete ekstenzije datoteka"
 
-#: translations.php:99
+#: translations.php:107
 msgid "Execute action"
 msgstr "Izvrši radnju"
 
-#: translations.php:80
+#: translations.php:88
 #: modules/social_features/social_profile/config/install/field.field.profile.profile.field_profile_expertise.yml:0
 #: modules/social_features/social_profile/config/install/taxonomy.vocabulary.expertise.yml:0
 #: modules/social_features/social_search/config/install/views.view.search_users.yml:0
@@ -8190,18 +8173,18 @@ msgstr "Blok istraži tok"
 msgid "Explore page for LU"
 msgstr "Istraži stranicu za LU"
 
-#: modules/social_features/social_group/social_group.tokens.inc:182
+#: modules/social_features/social_group/social_group.tokens.inc:179
 msgid "Explore the group"
 msgstr "Istraži grupu"
 
-#: translations.php:130
+#: translations.php:159
 #: modules/social_features/social_event/modules/social_event_an_enroll_enrolments_export/social_event_an_enroll_enrolments_export.install:124;153
 #: modules/social_features/social_event/modules/social_event_enrolments_export/social_event_enrolments_export.install:44;62
 #: modules/social_features/social_group/modules/social_group_members_export/social_group_members_export.install:43;61
 msgid "Export"
 msgstr "Izvezi"
 
-#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:175
+#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:211
 msgid "Export is complete. @link"
 msgstr "Izvoz je završen. @link"
 
@@ -8214,7 +8197,7 @@ msgstr "Izvezi dodatke koje mogu koristiti obični korisnici."
 msgid "Export settings"
 msgstr "Postavke izvoza"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll_enrolments_export/src/Plugin/Action/ExportAllEnrolments.php:16
+#: modules/social_features/social_event/modules/social_event_an_enroll_enrolments_export/src/Plugin/Action/ExportAllEnrolments.php:18
 #: modules/social_features/social_event/modules/social_event_enrolments_export/src/Plugin/Action/ExportEnrolments.php:10
 msgid "Export the selected enrollments to CSV"
 msgstr "Izvezi odabrane prijave u CSV"
@@ -8223,7 +8206,7 @@ msgstr "Izvezi odabrane prijave u CSV"
 msgid "Export the selected members to CSV"
 msgstr "Izvezi odabrane članove u CSV"
 
-#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:22
+#: modules/social_features/social_user_export/src/Plugin/Action/ExportUser.php:24
 msgid "Export the selected users to CSV"
 msgstr "Izvezi odabrane korisnike u CSV"
 
@@ -8303,11 +8286,11 @@ msgstr "Datoteka"
 msgid "File and Image in a table"
 msgstr "Datoteka i slika u tablici"
 
-#: modules/custom/social_graphql/src/Plugin/GraphQL/DataProducer/Media/FileUrl.php:8
+#: modules/custom/social_graphql/src/Plugin/GraphQL/DataProducer/Media/FileUrl.php:11
 msgid "File uri"
 msgstr ""
 
-#: modules/custom/social_graphql/src/Plugin/GraphQL/DataProducer/Media/FileUrl.php:8;8
+#: modules/custom/social_graphql/src/Plugin/GraphQL/DataProducer/Media/FileUrl.php:11;11
 msgid "File url"
 msgstr ""
 
@@ -8371,7 +8354,7 @@ msgstr "Filtriraj aktivnosti za personaliziranu početnu stranicu"
 msgid "Filter by group"
 msgstr ""
 
-#: modules/social_features/social_private_message/social_private_message.module:591;593
+#: modules/social_features/social_private_message/social_private_message.module:583;585
 msgid "Filter deleted threads"
 msgstr "Filtriraj izbrisane rasprave"
 
@@ -8379,7 +8362,7 @@ msgstr "Filtriraj izbrisane rasprave"
 msgid "Filter events by start date and end date"
 msgstr "Filtriraj događaje prema datumu početka i datumu završetka"
 
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:45;47;48
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:46;48;49
 msgid ""
 "Filter nodes, with visibility group, placed in group you are not a member of."
 msgstr "Filteri unosa, s grupom vidljivosti, smješteni u grupu koje nisi član."
@@ -8428,14 +8411,14 @@ msgstr "Pretraga i upravljanje sadržajem."
 msgid "Find and manage people interacting with your site."
 msgstr "Pronađi i upravljaj korisnicima svoje stranice."
 
-#: modules/social_features/social_group/social_group.module:815
+#: modules/social_features/social_group/social_group.module:910
 msgid "Find people by name"
 msgstr "Pronađi ljude po imenu"
 
 #: modules/social_features/social_core/src/Form/InviteEmailBaseForm.php:71
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:206
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:211
-#: modules/social_features/social_group/src/SocialGroupHelperService.php:312
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:198
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:224
+#: modules/social_features/social_group/src/SocialGroupHelperService.php:317
 msgid "Find people by name or email address"
 msgstr "Pronađi ljude po imenu ili adresi e-pošte"
 
@@ -8457,7 +8440,7 @@ msgstr "Prvi"
 msgid "First and last name or username, depends on settings."
 msgstr "Ime i prezime ili korisničko ime, ovisno o postavkama."
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:90
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:89
 #: modules/social_features/social_event/modules/social_event_an_enroll_enrolments_export/src/Plugin/UserExportPlugin/EnrolmentUserFirstName.php:8
 #: modules/social_features/social_user_export/src/Plugin/UserExportPlugin/UserFirstName.php:23;8
 #: modules/social_features/social_event/modules/social_event_an_enroll/config/install/field.field.event_enrollment.event_enrollment.field_first_name.yml:0
@@ -8578,7 +8561,7 @@ msgstr ""
 msgid "Followers"
 msgstr "Pratitelji"
 
-#: modules/social_features/social_follow_content/social_follow_content.module:112
+#: modules/social_features/social_follow_content/social_follow_content.module:110
 #: modules/social_features/social_follow_user/social_follow_user.links.task.yml:0
 msgid "Following"
 msgstr "Prati"
@@ -8714,7 +8697,7 @@ msgstr "Potpuni HTML"
 msgid "Function"
 msgstr "Funkcija"
 
-#: translations.php:76
+#: translations.php:84
 msgid "Function and organization"
 msgstr "Funkcija i organizacija"
 
@@ -8731,7 +8714,7 @@ msgstr "Budući događaji"
 msgid "General configuration"
 msgstr "Općenita konfiguracija"
 
-#: src/Installer/Form/ModuleConfigureForm.php:116
+#: src/Installer/Form/ModuleConfigureForm.php:126
 msgid "Generate demo content and users"
 msgstr "Generiraj demo sadržaj i korisnike"
 
@@ -8754,7 +8737,7 @@ msgstr[2] ""
 msgid "Generating embedded content "
 msgstr ""
 
-#: modules/custom/download_count/src/Plugin/Field/FieldFormatter/FieldDownloadCount.php:17
+#: modules/custom/download_count/src/Plugin/Field/FieldFormatter/FieldDownloadCount.php:18
 msgid "Generic file with download count"
 msgstr "Generička datoteka s brojem preuzimanja"
 
@@ -8790,17 +8773,15 @@ msgstr "Zrnatost"
 msgid "GraphQL API"
 msgstr ""
 
-#: modules/custom/ginvite/ginvite.info.yml:0
 #: modules/custom/grequest/grequest.info.yml:0
 #: modules/custom/group_core_comments/group_core_comments.info.yml:0
 #: modules/custom/gvbo/gvbo.info.yml:0
 #: modules/custom/social_demo/src/Plugin/DemoContent/Group.php:7
 #: modules/social_features/social_featured_content/templates/group--featured.html.twig:50
-#: modules/social_features/social_group/social_group.module:1933
+#: modules/social_features/social_group/social_group.module:2105
 #: modules/social_features/social_group/social_group.routing.yml:0
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:145
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:143
 #: modules/social_features/social_tagging/src/Form/SocialTaggingSettingsForm.php:155
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/social_metatag/config/install/metatag.metatag_defaults.group.yml:0
 #: modules/social_features/social_comment/config/install/views.view.comment.yml:0;0;0;0;0
 #: modules/social_features/social_content_block/config/install/field.field.block_content.custom_content_list.field_group.yml:0
@@ -8847,10 +8828,6 @@ msgstr "Slika grupe"
 #: modules/social_features/social_group/config/install/views.view.group_information.yml:0
 msgid "Group Information"
 msgstr "Informacije o grupi"
-
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:17
-msgid "Group Invitation"
-msgstr ""
 
 #: modules/social_features/social_group/config/install/views.view.group_manage_members.yml:0;0
 msgid "Group Manage Members"
@@ -8906,7 +8883,7 @@ msgstr "Vrsta grupe"
 msgid "Group Views Bulk Operations"
 msgstr ""
 
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:376
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:348
 msgid "Group Visibility"
 msgstr "Vidljivost grupe"
 
@@ -8962,13 +8939,13 @@ msgstr "Korisnik sadržaja u grupi"
 msgid "Group content in my group activity context"
 msgstr "Sadržaj u grupi u mom kontekstu aktivnosti u grupi"
 
-#: modules/social_features/social_group/social_group.module:421
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:386
+#: modules/social_features/social_group/social_group.module:418
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:349
 msgid "Group content visibility"
 msgstr "Vidljivost sadržaja u grupi"
 
-#: translations.php:107
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:114
+#: translations.php:115
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:101
 msgid "Group content visibility options"
 msgstr "Opcije vidljivosti sadržaja u grupi"
 
@@ -8990,16 +8967,11 @@ msgstr "Odredište grupe"
 msgid "Group hero block"
 msgstr "Blok heroja grupe"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0;0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0
 msgid "Group invitations"
 msgstr "Pozivi u grupu"
 
-#: modules/custom/ginvite/ginvite.info.yml:0
-msgid "Group invite"
-msgstr ""
-
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:576
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:548
 msgid "Group invite settings"
 msgstr "Postavke poziva u grupu"
 
@@ -9011,7 +8983,7 @@ msgstr "Pozivi u grupu"
 msgid "Group invites (@count)"
 msgstr "Pozivi u grupu (@count)"
 
-#: modules/social_features/social_group/social_group.module:1705
+#: modules/social_features/social_group/social_group.module:1877
 msgid "Group manager"
 msgstr "Upravitelj grupe"
 
@@ -9019,7 +8991,7 @@ msgstr "Upravitelj grupe"
 msgid "Group managers"
 msgstr "Voditelji grupa"
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:621
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:593
 msgid "Group managers are able to allow members send invites"
 msgstr ""
 
@@ -9035,15 +9007,15 @@ msgstr "Samo za upravitelje grupa"
 msgid "Group members"
 msgstr "Članovi grupe"
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:60
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:59
 msgid "Group members landing tab"
 msgstr "Odredišna kartica za članove grupe"
 
-#: modules/social_features/social_group/social_group.module:2775
+#: modules/social_features/social_group/social_group.module:3066
 msgid "Group members only"
 msgstr "Samo članovi grupe"
 
-#: modules/social_features/social_group/social_group.module:640
+#: modules/social_features/social_group/social_group.module:637
 msgid "Group members only (Secret)"
 msgstr "Samo članovi grupe (tajno)"
 
@@ -9051,7 +9023,7 @@ msgstr "Samo članovi grupe (tajno)"
 msgid "Group members only (secret)"
 msgstr "Samo članovi grupe (tajno)"
 
-#: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialGroupInviteNotificationBlock.php:15
+#: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialGroupInviteNotificationBlock.php:16
 msgid "Group membership invite notification"
 msgstr "Obavijest o pozivu za članstvo u grupi"
 
@@ -9091,7 +9063,7 @@ msgstr ""
 msgid "Group request"
 msgstr ""
 
-#: modules/social_features/social_group/social_group.module:816
+#: modules/social_features/social_group/social_group.module:911
 #: modules/social_features/social_group/src/Plugin/Action/ChangeGroupMembershipRole.php:167
 msgid "Group roles"
 msgstr "Uloge u grupi"
@@ -9124,8 +9096,8 @@ msgstr "Vrsta grupe"
 msgid "Group types"
 msgstr "Vrste grupe"
 
-#: translations.php:105
-#: modules/social_features/social_group/social_group.module:411
+#: translations.php:113
+#: modules/social_features/social_group/social_group.module:408
 #: modules/social_features/social_group/modules/social_group_flexible_group/config/install/field.field.group.flexible_group.field_flexible_group_visibility.yml:0
 msgid "Group visibility"
 msgstr "Vidljivost grupe"
@@ -9164,7 +9136,7 @@ msgstr "URL grupe"
 msgid "Guest"
 msgstr "Gost"
 
-#: translations.php:94
+#: translations.php:102
 #: modules/social_features/social_event/modules/social_event_an_enroll/config/install/views.view.manage_enrollments.yml:0
 msgid "Guest enrollments"
 msgstr "Upisi gostiju"
@@ -9307,7 +9279,7 @@ msgstr "Sakrij"
 msgid "Hide for others"
 msgstr "Sakrij za druge"
 
-#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:58;59
+#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:59;60
 #: modules/social_features/social_core/social_core.install:337
 #: modules/social_features/social_search/src/SocialSearchBreadcrumbBuilder.php:57
 msgid "Home"
@@ -9317,8 +9289,8 @@ msgstr "Početna"
 msgid "Homepage stream block"
 msgstr "Blok toka početne stranice"
 
-#: translations.php:110
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:149
+#: translations.php:118
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:124
 msgid ""
 "How can people join this group. Group managers can always add members "
 "directly, regardless of the chosen join method."
@@ -9334,9 +9306,9 @@ msgstr "Koliko prijedloga želiš prikazati kada nekoga spominješ."
 #: modules/custom/alternative_frontpage/config/schema/alternative_frontpage.schema.yml:0
 #: modules/custom/mentions/config/schema/mentions.schema.yml:0
 #: modules/custom/social_queue_storage/config/schema/queue_storage_entity_type.schema.yml:0
-#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:20
+#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:21
 #: modules/social_features/social_event/src/Entity/EventEnrollment.php:210
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:520
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:511
 #: modules/social_features/social_post/config/schema/post.schema.yml:0
 #: modules/social_features/social_post/config/schema/post_type.schema.yml:0
 #: modules/social_features/social_post/src/Entity/Post.php:313
@@ -9366,7 +9338,7 @@ msgstr "Ikona"
 msgid "Identifier"
 msgstr "Identifikator"
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:600
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:572
 msgid ""
 "If checked you will be prompted to define a message users will receive on "
 "resending invites."
@@ -9385,7 +9357,7 @@ msgstr ""
 "Ako je omogućeno, upravitelji grupa mogu dopustiti korisnicima slanje poziva "
 "na događaj."
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:622
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:594
 msgid ""
 "If enabled, group managers can allow group members to send invitations to "
 "their group."
@@ -9512,7 +9484,7 @@ msgstr "Za slanje zahtjeva trebaš se prvo registrirati ili prijaviti."
 msgid "Inappropriate content reported"
 msgstr "Prijavljen neprikladan sadržaj"
 
-#: modules/social_features/social_private_message/social_private_message.module:501;504;543;1
+#: modules/social_features/social_private_message/social_private_message.module:493;496;535;1
 #: modules/social_features/social_private_message/social_private_message.routing.yml:0
 #: modules/social_features/social_private_message/config/install/views.view.inbox.yml:0;0
 msgid "Inbox"
@@ -9547,11 +9519,11 @@ msgstr "Instaliraj modul %module_name."
 msgid "Install demo content"
 msgstr "Instaliraj demo sadržaj"
 
-#: src/Installer/Form/ModuleConfigureForm.php:66
+#: src/Installer/Form/ModuleConfigureForm.php:76
 msgid "Install optional modules"
 msgstr "Instaliraj dodatne module"
 
-#: modules/social_features/social_core/social_core.install:597
+#: modules/social_features/social_core/social_core.install:599
 msgid ""
 "Installed socialblue theme and made this the default. Please check release "
 "notes."
@@ -9559,7 +9531,7 @@ msgstr ""
 "Tema socialblue instalirana i postavljena kao zadana. Provjeri bilješke o "
 "izdanju."
 
-#: modules/social_features/social_core/social_core.install:698
+#: modules/social_features/social_core/social_core.install:700
 msgid ""
 "Installed the social_file_private module. Make sure to read: https://www."
 "drupal.org/docs/8/distributions/open-social/private-files"
@@ -9576,7 +9548,7 @@ msgstr "Modul Integracija politike podataka."
 msgid "Integration with Ajax Comments."
 msgstr "Integracija s Ajax komentarima."
 
-#: translations.php:82
+#: translations.php:90
 #: modules/social_features/social_user_export/src/Plugin/UserExportPlugin/UserInterests.php:23;8
 #: modules/social_features/social_profile/config/install/field.field.profile.profile.field_profile_interests.yml:0
 #: modules/social_features/social_profile/config/install/taxonomy.vocabulary.interests.yml:0
@@ -9597,41 +9569,22 @@ msgstr "Uvod"
 msgid "Invalid or expired"
 msgstr "Nevažeće ili isteklo"
 
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:278
-msgid "Invitation e-mail"
-msgstr ""
-
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:297
-msgid "Invitation e-mail for registered users"
-msgstr ""
-
-#: modules/custom/ginvite/ginvite.module:72
-msgid "Invitation has been created."
-msgstr ""
-
 #: modules/custom/group_core_comments/src/Plugin/Field/FieldFormatter/CommentGroupContentFormatter.php:199
-#: modules/social_features/social_group/social_group.module:287;295
+#: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Join/SocialGroupInviteJoin.php:121
 msgid "Invitation only"
 msgstr "Samo uz pozivnicu"
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:122
-msgid "Invitation recipients: <br /> @email_list"
-msgstr ""
-
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:192
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0
 msgid "Invitation status"
 msgstr "Status poziva"
 
-#: modules/custom/ginvite/src/Plugin/Validation/Constraint/PreventDuplicatedConstraintValidator.php:79
-msgid "Invitation to this user already sent."
-msgstr ""
-
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0;0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0;0
 msgid "Invitations"
 msgstr "Pozivi"
+
+#: modules/social_features/social_group/templates/join.html.twig:39
+msgid "Invite"
+msgstr ""
 
 #: modules/social_features/social_event/modules/social_event_invite/config/install/views.view.user_event_invites.yml:0
 msgid "Invite date"
@@ -9641,21 +9594,8 @@ msgstr "Datum poziva"
 msgid "Invite event enrollment"
 msgstr "Poziv za upis na događaj"
 
-#: modules/custom/ginvite/ginvite.links.action.yml:0
-msgid "Invite member"
-msgstr ""
-
-#: modules/custom/ginvite/ginvite.links.action.yml:0
-#: modules/custom/ginvite/src/Controller/InvitationOperations.php:168
-msgid "Invite members"
-msgstr ""
-
-#: modules/custom/ginvite/src/Controller/InvitationOperations.php:171
-msgid "Invite members to group: @group_title"
-msgstr ""
-
-#: modules/social_features/social_group/social_group.module:692;949
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:85
+#: translations.php:31
+#: modules/social_features/social_group/social_group.module:710
 msgid "Invite only"
 msgstr "Samo uz poziv"
 
@@ -9667,25 +9607,13 @@ msgstr "Pozovi ljude"
 msgid "Invite resend message"
 msgstr ""
 
-#: modules/custom/ginvite/ginvite.module:69
-msgid "Invite sent to %invitee"
-msgstr ""
-
-#: modules/custom/ginvite/ginvite.module:77
-msgid "Invite sent to %mail"
-msgstr ""
-
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:56
-msgid "Invite user"
-msgstr ""
-
 #: modules/social_features/social_event/modules/social_event_invite/src/Plugin/Block/SocialEventInviteLocalActionsBlock.php:116
 #: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialInviteLocalActionsBlock.php:155
 msgid "Invite users"
 msgstr "Pozovi korisnike"
 
 #: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module:258
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:522
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:535
 msgid "Invite via email"
 msgstr ""
 
@@ -9693,12 +9621,12 @@ msgstr ""
 msgid "Invite(s) have been successfully sent."
 msgstr "Pozivi su uspješno poslani."
 
-#: modules/social_features/social_event/social_event.module:162;1245
+#: modules/social_features/social_event/social_event.module:162;1252
 #: modules/social_features/social_event/config/install/field.storage.node.field_enroll_method.yml:0
 msgid "Invite-only"
 msgstr "Samo-uz-poziv"
 
-#: translations.php:47
+#: translations.php:55
 #: modules/social_features/social_event/social_event.install:354
 msgid ""
 "Invite-only - users can only enroll for this event if they are added/invited "
@@ -9707,7 +9635,7 @@ msgstr ""
 "Samo-uz-poziv - korisnici se mogu prijaviti na ovaj događaj samo ako ih je "
 "organizator događaja dodao/pozvao"
 
-#: translations.php:49
+#: translations.php:57
 msgid ""
 "Invite-only - users can only join this group if they are added/invited by "
 "group managers"
@@ -9720,14 +9648,10 @@ msgstr ""
 msgid "Invited"
 msgstr "Pozvan/a"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
 msgid "Invited by"
 msgstr "Poziv šalje"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_event/modules/social_event_invite/config/install/views.view.event_manage_enrollment_invites.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
@@ -9742,20 +9666,7 @@ msgstr "Pozvan/a da se pridruži grupi"
 msgid "Invited to join a group activity context"
 msgstr "Pozvan/a da se pridruži kontekstu aktivnosti u grupi"
 
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:17
-msgid "Invited user."
-msgstr "Pozvani korisnik."
-
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:17
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-msgid "Invitee"
-msgstr ""
-
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:184
-msgid "Invitee mail"
-msgstr ""
-
-#: modules/social_features/social_core/social_core.module:188;212;1
+#: modules/social_features/social_core/social_core.module:190;214;1
 msgid "Invites"
 msgstr "Pozivi"
 
@@ -9771,8 +9682,7 @@ msgstr ""
 msgid "Invites overview"
 msgstr "Pregled poziva"
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:137
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:445
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:458
 msgid "Inviting Members"
 msgstr "Pozivanje članova"
 
@@ -9807,8 +9717,6 @@ msgstr "Stavka"
 msgid "Items"
 msgstr "Stavke"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -9855,13 +9763,13 @@ msgstr "Stavke po stranici"
 msgid "JS Location"
 msgstr "JS lokacija"
 
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:212
-#: modules/social_features/social_group/src/SocialGroupHelperService.php:318
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:204
+#: modules/social_features/social_group/src/SocialGroupHelperService.php:323
 msgid "Jane Doe"
 msgstr "N.N."
 
 #: modules/social_features/social_core/src/Form/InviteEmailBaseForm.php:81
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:221
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:234
 msgid "Jane Doe, johndoe@example.com"
 msgstr "N.N., johndoe@example.com"
 
@@ -9869,27 +9777,33 @@ msgstr "N.N., johndoe@example.com"
 msgid "Javascript"
 msgstr "Javascript"
 
-#: modules/social_features/social_group/modules/social_group_flexible_group/config/install/field.storage.group.field_group_allowed_join_method.yml:0
-msgid "Join directly"
-msgstr "Pridruži se izravno"
+#: modules/social_features/social_group/src/Plugin/Join/SocialGroupDirectJoin.php:39
+msgid "Join"
+msgstr ""
 
 #: modules/custom/group_core_comments/src/Plugin/Field/FieldFormatter/CommentGroupContentFormatter.php:179
 msgid "Join group"
 msgstr "Pridruži se grupi"
 
-#: modules/social_features/social_group/social_group.module:431
-#: modules/social_features/social_group/modules/social_group_flexible_group/src/SocialGroupFlexibleGroupConfigOverride.php:403;484
+#: modules/social_features/social_group/social_group.module:428
+#: modules/social_features/social_group/modules/social_group_flexible_group/src/SocialGroupFlexibleGroupConfigOverride.php:403;529
 msgid "Join method"
 msgstr "Metoda pridruživanja"
 
-#: translations.php:109
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:146;396
+#: translations.php:117
+#: modules/social_features/social_group/social_group.module:3017
+#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:121
 msgid "Join methods"
 msgstr "Metode pridruživanja"
 
 #: modules/social_features/social_activity/config/install/message.template.join_to_group.yml:0
 msgid "Join to group"
 msgstr "Pridruži se grupi"
+
+#: modules/social_features/social_group/src/Plugin/Join/SocialGroupAlreadyJoin.php:28
+msgctxt "Is a member"
+msgid "Joined"
+msgstr ""
 
 #: modules/social_features/social_group/config/install/views.view.group_manage_members.yml:0
 msgid "Joined date"
@@ -9929,11 +9843,11 @@ msgstr ""
 msgid "Landing page"
 msgstr "Odredišna stranica"
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:86
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:85
 msgid "Landing tab for members"
 msgstr "Odredišna kartica za članove"
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:97
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:96
 msgid "Landing tab for non-members"
 msgstr "Odredišna kartica za ne-članove"
 
@@ -10000,7 +9914,7 @@ msgstr "Zadnji pristup"
 msgid "Last login"
 msgstr "Zadnja prijava"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:95
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:94
 #: modules/social_features/social_event/modules/social_event_an_enroll_enrolments_export/src/Plugin/UserExportPlugin/EnrolmentUserLastName.php:8
 #: modules/social_features/social_user_export/src/Plugin/UserExportPlugin/UserLastName.php:23;8
 #: modules/social_features/social_event/modules/social_event_an_enroll/config/install/field.field.event_enrollment.event_enrollment.field_last_name.yml:0
@@ -10049,11 +9963,6 @@ msgstr "Posljednje osvježenje"
 msgid "Last »"
 msgstr "Posljednje »"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
-msgid "Last Â»"
-msgstr ""
-
 #: modules/social_features/social_topic/config/install/views.view.latest_topics.yml:0
 msgid "Latest group topics"
 msgstr "Najnovije teme u grupi"
@@ -10079,6 +9988,10 @@ msgstr "Grupa s najnovijim temama"
 msgid "Latest topics page"
 msgstr "Stranica s najnovijim temama"
 
+#: modules/social_features/social_group/src/Plugin/Join/SocialGroupAlreadyJoin.php:33
+msgid "Leave @entity_type_id"
+msgstr ""
+
 #: modules/social_features/social_activity/social_activity.tokens.inc:81
 #: modules/social_features/social_activity/templates/message-post-teaser.html.twig:13
 msgid "Leave a comment"
@@ -10088,7 +10001,7 @@ msgstr "Ostavi komentar"
 msgid "Leave a message to @name"
 msgstr "Ostavi poruku za @name"
 
-#: modules/social_features/social_follow_taxonomy/src/Plugin/views/filter/FollowTaxonomyViewsFilter.php:236
+#: modules/social_features/social_follow_taxonomy/src/Plugin/views/filter/FollowTaxonomyViewsFilter.php:238
 msgid ""
 "Leave blank for all. Otherwise, the first selected term will be the default "
 "instead of \"Any\"."
@@ -10115,8 +10028,8 @@ msgstr ""
 #: modules/custom/mentions/src/MentionsViewsData.php:138
 #: modules/custom/mentions/src/Form/MentionsTypeForm.php:224
 #: modules/social_features/social_footer/config/schema/social_footer.schema.yml:0
-#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:102
-#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:126
+#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:100
+#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:139
 #: modules/social_features/social_landing_page/config/install/field.field.paragraph.block.field_block_link.yml:0
 msgid "Link"
 msgstr "Poveznica"
@@ -10275,8 +10188,8 @@ msgstr ""
 "jednostavan pristup."
 
 #: modules/social_features/social_footer/config/schema/social_footer.schema.yml:0
-#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:85
-#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:109
+#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:83
+#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:122
 msgid "Logo"
 msgstr "Logo"
 
@@ -10294,7 +10207,7 @@ msgstr "Stroju čitljiv naziv"
 msgid "Mail HTML"
 msgstr "Pošta HTML"
 
-#: modules/social_features/social_tagging/social_tagging.module:70
+#: modules/social_features/social_tagging/social_tagging.module:71
 msgid "Main category"
 msgstr "Glavna kategorija"
 
@@ -10337,7 +10250,7 @@ msgstr ""
 msgid "Manage All Enrollments"
 msgstr "Upravljaj svim upisima"
 
-#: translations.php:101
+#: translations.php:109
 #: modules/social_features/social_event/modules/social_event_an_enroll/config/install/views.view.manage_enrollments.yml:0;0
 msgid "Manage Enrollments"
 msgstr "Upravljaj upisima"
@@ -10400,7 +10313,7 @@ msgstr "Upravljaj zahtjevima za upis na događaj"
 msgid "Manage form and displays settings of posts"
 msgstr "Upravljaj obrascima i prikaži postavke objava"
 
-#: modules/social_features/social_group/social_group.module:1470
+#: modules/social_features/social_group/social_group.module:1637
 msgid "Manage members"
 msgstr "Upravljaj članovima"
 
@@ -10423,8 +10336,6 @@ msgid "Markup"
 msgstr "Oznake"
 
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -10502,6 +10413,10 @@ msgstr "Mediji"
 msgid "Media bridge"
 msgstr "Medijski most"
 
+#: modules/social_features/social_tagging/src/Form/SocialTaggingSettingsForm.php:189
+msgid "Media type: @node_type"
+msgstr ""
+
 #: modules/social_features/social_profile/social_profile.install:348
 #: modules/social_features/social_profile/config/install/core.entity_view_mode.profile.medium_teaser.yml:0
 msgid "Medium Teaser"
@@ -10515,7 +10430,7 @@ msgstr "Srednje velika slika profila"
 msgid "Meetup"
 msgstr ""
 
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:254
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:245
 #: modules/social_features/social_group/config/install/group.role.closed_group-member.yml:0
 #: modules/social_features/social_group/config/install/group.role.open_group-member.yml:0
 #: modules/social_features/social_group/config/install/group.role.public_group-member.yml:0
@@ -10525,8 +10440,6 @@ msgstr ""
 msgid "Member"
 msgstr "Član"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
 msgid "Member account"
@@ -10545,7 +10458,7 @@ msgstr "Članovi"
 msgid "Members excluded on other pages:"
 msgstr "Članovi isključeni na drugim stranicama:"
 
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:89
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:90
 msgid "Members of @name"
 msgstr "Članovi @name"
 
@@ -10576,7 +10489,7 @@ msgstr "Članstvo je uspješno odbijeno."
 msgid "Membership invite notification"
 msgstr "Obavijest o pozivu za članstvo"
 
-#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:93
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:122
 msgid "Membership request approved"
 msgstr "Zahtjev za članstvo odobren"
 
@@ -10584,7 +10497,7 @@ msgstr "Zahtjev za članstvo odobren"
 msgid "Membership request rejected"
 msgstr "Zahtjev za članstvo odbijen"
 
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:229
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:220
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 msgid "Membership requests"
 msgstr "Zahtjevi za članstvo"
@@ -10685,7 +10598,7 @@ msgid "MentionsTypeForm"
 msgstr "Obrazac vrste spominjanja"
 
 #: modules/custom/social_demo/src/Plugin/DemoContent/MenuLink.php:7
-#: modules/social_features/social_core/social_core.module:851
+#: modules/social_features/social_core/social_core.module:861
 msgid "Menu link"
 msgstr "Poveznica na izbornik"
 
@@ -10696,11 +10609,11 @@ msgstr ""
 
 #: modules/social_features/social_event/social_event.install:784
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteSettingsForm.php:64
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:285
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:277
 #: modules/social_features/social_event/src/Form/EnrollRequestModalForm.php:54
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:591
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:563
 #: modules/social_features/social_group/modules/social_group_request/social_group_request.module:34
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:320
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:311
 #: modules/social_features/social_group/modules/social_group_request/src/Form/GroupRequestMembershipRequestForm.php:112
 #: modules/social_features/social_group/modules/social_group_welcome_message/social_group_welcome_message.module:38
 #: modules/social_features/social_profile/modules/social_profile_preview/social_profile_preview.module:226
@@ -10790,24 +10703,19 @@ msgstr ""
 msgid "Muted groups"
 msgstr ""
 
-#: modules/social_features/social_group/social_group.module:2247;2252
+#: modules/social_features/social_group/social_group.module:2455;2460
 msgid "My Groups"
 msgstr "Moje grupe"
 
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
 msgid "My Invitations"
 msgstr "Moji pozivi"
-
-#: modules/custom/ginvite/ginvite.module:187
-msgid "My Invitations Link"
-msgstr ""
 
 #: modules/social_features/social_album/social_album.module:529
 msgid "My albums"
 msgstr "Moji albumi"
 
-#: modules/social_features/social_event/social_event.module:647
+#: modules/social_features/social_event/social_event.module:648
 msgid "My events"
 msgstr "Moji događaji"
 
@@ -10815,15 +10723,11 @@ msgstr "Moji događaji"
 msgid "My group membership request is approved"
 msgstr "Moj zahtjev za članstvo u grupi je odobren"
 
-#: modules/social_features/social_group/social_group.module:2274
+#: modules/social_features/social_group/social_group.module:2482
 msgid "My groups"
 msgstr "Moje grupe"
 
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
-msgid "My invitations"
-msgstr ""
-
-#: modules/social_features/social_profile/social_profile.module:881
+#: modules/social_features/social_profile/social_profile.module:879
 msgid "My profile"
 msgstr "Moj profil"
 
@@ -10858,7 +10762,7 @@ msgstr "Naziv"
 msgid "Name or email contains"
 msgstr "Ime ili e-pošta sadrži"
 
-#: translations.php:70
+#: translations.php:78
 msgid "Names and profile image"
 msgstr "Imena i profilna slika"
 
@@ -10893,11 +10797,11 @@ msgstr "Nova stranica knjige"
 msgid "New Content"
 msgstr "Novi sadržaj"
 
-#: modules/social_features/social_event/social_event.module:624
+#: modules/social_features/social_event/social_event.module:625
 msgid "New Event"
 msgstr "Novi događaj"
 
-#: modules/social_features/social_group/social_group.module:2218
+#: modules/social_features/social_group/social_group.module:2426
 msgid "New Group"
 msgstr "Nova grupa"
 
@@ -10912,6 +10816,10 @@ msgstr "Nova stranica"
 #: modules/social_features/social_topic/social_topic.module:214
 msgid "New Topic"
 msgstr "Nova tema"
+
+#: translations.php:122
+msgid "New content has been added to a group you are in"
+msgstr ""
 
 #: modules/social_features/social_private_message/src/Plugin/Block/PmAddBlock.php:55
 msgid "New message"
@@ -11062,8 +10970,6 @@ msgstr "Nema događaja za obradu."
 msgid "No groups found for this user"
 msgstr "Za ovog korisnika nisu pronađene grupe"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
 msgid "No invitations available."
@@ -11121,7 +11027,7 @@ msgstr "Ne postoje izvješća."
 msgid "No results found."
 msgstr "Nije pronađen nijedan rezultat."
 
-#: modules/social_features/social_event/modules/social_event_max_enroll/social_event_max_enroll.module:150;156;267
+#: modules/social_features/social_event/modules/social_event_max_enroll/social_event_max_enroll.module:151;156;163;280
 msgid "No spots left"
 msgstr "Nema više mjesta"
 
@@ -11159,11 +11065,15 @@ msgstr "Unos"
 msgid "Node title"
 msgstr "Naziv unosa"
 
+#: modules/social_features/social_tagging/src/Form/SocialTaggingSettingsForm.php:173
+msgid "Node type: @node_type"
+msgstr ""
+
 #: modules/custom/social_graphql/src/Plugin/GraphQL/DataProducer/Connection/ConnectionNodes.php:9
 msgid "Nodes"
 msgstr "Unosi"
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:68
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:67
 msgid "Non members landing tab"
 msgstr "Kartica odredišta za nečlanove"
 
@@ -11179,11 +11089,11 @@ msgstr "Nije upisan/a"
 msgid "Not installed"
 msgstr "Nije instalirano"
 
-#: modules/custom/activity_basics/src/Plugin/ActivityEntityCondition/CommentNotReplyActivityEntityCondition.php:7
+#: modules/custom/activity_basics/src/Plugin/ActivityEntityCondition/CommentNotReplyActivityEntityCondition.php:8
 msgid "Not reply comment"
 msgstr "Ne odgovaraj na komentar"
 
-#: modules/social_features/social_tagging/social_tagging.module:41
+#: modules/social_features/social_tagging/social_tagging.module:42
 msgid ""
 "Notice: Drag and drop has intentionally been disabled for this vocabulary."
 msgstr "Napomena: Povuci i ispusti namjerno je onemogućeno za ovaj rječnik."
@@ -11193,15 +11103,15 @@ msgid "Notification"
 msgstr "Obavijest"
 
 #: modules/social_features/social_activity/social_activity.module:42;50;141;1
-msgid "Notification Centre"
-msgstr "Centar za obavijesti"
+msgid "Notification Center"
+msgstr ""
 
 #: modules/social_features/social_activity/config/install/core.entity_view_mode.activity.notification_archive.yml:0
 msgid "Notification archive"
 msgstr "Arhiva obavijesti"
 
 #: modules/custom/activity_send/modules/activity_send_email/activity_send_email.module:280
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:287
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:279
 msgid "Notification from %site_name"
 msgstr "Obavijest od %site_name"
 
@@ -11310,8 +11220,6 @@ msgstr "Postavke izvanmrežne kontrole"
 msgid "Offline window"
 msgstr "Izvanmrežni prozor"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -11414,11 +11322,11 @@ msgstr "Tekući i predstojeći događaji"
 msgid "Only full name (first and last)"
 msgstr "Samo puno ime (ime i prezime)"
 
-#: modules/social_features/social_group/social_group.module:641
+#: modules/social_features/social_group/social_group.module:638
 msgid "Only group members can see this group"
 msgstr "Samo članovi grupe mogu vidjeti ovu grupu"
 
-#: modules/social_features/social_group/social_group.module:633
+#: modules/social_features/social_group/social_group.module:630
 msgid "Only members who are logged in can see this group"
 msgstr "Ovu grupu mogu vidjeti samo članovi koji su prijavljeni"
 
@@ -11508,23 +11416,23 @@ msgstr "Otvorena grupa: članstvo u grupi"
 msgid "Open group: Group node (Album)"
 msgstr "Otvorena grupa: unos grupe (Album)"
 
-#: modules/social_features/social_event/social_event.module:156;1233
+#: modules/social_features/social_event/social_event.module:156;1240
 #: modules/social_features/social_event/config/install/field.storage.node.field_enroll_method.yml:0
 msgid "Open to enroll"
 msgstr "Otvoreno za upis"
 
-#: translations.php:45
+#: translations.php:53
 #: modules/social_features/social_event/social_event.install:346
 msgid "Open to enroll - users can enroll for this event without approval"
 msgstr ""
 "Otvoreno za upis - korisnici se mogu upisati na ovaj događaj bez odobrenja"
 
-#: modules/social_features/social_group/social_group.module:676;952
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:88
+#: translations.php:29
+#: modules/social_features/social_group/social_group.module:704
 msgid "Open to join"
 msgstr "Otvoreno za pridruživanje"
 
-#: translations.php:50
+#: translations.php:58
 msgid "Open to join - users can join this group without approval"
 msgstr ""
 "Otvoreno za pridruživanje - korisnici se mogu pridružiti ovoj grupi bez "
@@ -11540,8 +11448,6 @@ msgstr "Operacija"
 
 #: modules/social_features/social_comment/src/Form/SocialCommentAdminOverview.php:170
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_comment/config/install/views.view.comment.yml:0;0
 #: modules/social_features/social_content_report/config/install/views.view.report_overview.yml:0
@@ -11651,7 +11557,7 @@ msgstr "Filtri premošćivanja oznaka"
 msgid "Override disabled public visiblility settings"
 msgstr "Postavke premošćivanja onemogućene javne vidljivosti"
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:599
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:571
 msgid "Override invite message when resend invites"
 msgstr ""
 
@@ -11675,7 +11581,7 @@ msgstr "Pregled svih grupa na platformi."
 msgid "Overview of all the reported content."
 msgstr "Pregled svih prijavljenih sadržaja."
 
-#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:22
+#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:23
 #: modules/social_features/social_profile/src/Plugin/Field/FieldFormatter/SocialProfileAvatarFormatter.php:67
 msgid "Owner"
 msgstr "Vlasnik"
@@ -11689,8 +11595,6 @@ msgid "Owner event enrollment context"
 msgstr ""
 
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -11778,7 +11682,7 @@ msgstr "Nadređen"
 msgid "Parent entity"
 msgstr "Nadređeni entitet"
 
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:454
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:445
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 msgid "Parent group"
 msgstr "Matična grupa"
@@ -11823,7 +11727,7 @@ msgid "Payload client mutation id"
 msgstr "id mutacije klijenta korisničkog opterećenja"
 
 #: modules/social_features/social_event/social_event.install:267
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:229
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:238
 #: modules/social_features/social_event/config/install/field.storage.event_enrollment.field_request_or_invite_status.yml:0
 msgid "Pending"
 msgstr "Na čekanju"
@@ -11873,7 +11777,7 @@ msgstr "Personalizirani tok aktivnosti (s obrascem za objavu)"
 msgid "Phone number"
 msgstr "Telefonski broj"
 
-#: translations.php:75
+#: translations.php:83
 msgid "Phone number and location"
 msgstr "Telefonski broj i lokacija"
 
@@ -11881,7 +11785,7 @@ msgstr "Telefonski broj i lokacija"
 msgid "Photo"
 msgstr "Fotografija"
 
-#: modules/social_features/social_tagging/social_tagging.module:65
+#: modules/social_features/social_tagging/social_tagging.module:66
 msgid "Placement"
 msgstr "Smještaj"
 
@@ -11897,7 +11801,7 @@ msgstr "Uvod u platformu"
 msgid "Platform introduction block, meant for use in content regions."
 msgstr "Blok uvoda u platformu, namijenjen korištenju u regijama sadržaja."
 
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:380
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:389
 msgid ""
 "Please @log_in or @create_account_link so that you can enroll to the event."
 msgstr "@log_in ili @create_account_link za upis na događaj."
@@ -11907,7 +11811,7 @@ msgstr "@log_in ili @create_account_link za upis na događaj."
 msgid "Please @log_in or @sign_up to comment."
 msgstr ""
 
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:372
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:381
 msgid "Please @log_in so that you can enroll to the event."
 msgstr "@log_in za upis na događaj."
 
@@ -11929,7 +11833,7 @@ msgstr ""
 "Detaljno opiši što smatraš neprikladnim u vezi s ovim sadržajem. Tvoje će "
 "izvješće biti vidljivo samo timu za moderiranje sadržaja."
 
-#: modules/social_features/social_group/social_group.module:1038
+#: modules/social_features/social_group/social_group.module:1205
 msgid ""
 "Please note that changing the group type will also change the\n"
 "  visibility of the group content and the way users can join the group."
@@ -11964,7 +11868,7 @@ msgstr ""
 msgid "Please select the blocks in which the taxonomy filters can be used."
 msgstr "Odaberi blokove u kojima se mogu koristiti filtri taksonomije."
 
-#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:131
+#: modules/social_features/social_group/src/Plugin/Action/AddMembersToGroup.php:129
 msgid "Please select the group you want to add the member you have selected to"
 msgid_plural ""
 "Please select the group you want to add the @count members you have selected "
@@ -12111,7 +12015,7 @@ msgstr "Unosi"
 msgid "Posts created"
 msgstr "Kreirane objave"
 
-#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:17
+#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:18
 #: modules/social_features/social_footer/config/optional/block.block.socialblue_footer_powered.yml:0
 msgid "Powered by"
 msgstr "Pokreće"
@@ -12137,19 +12041,14 @@ msgstr "Prefiks"
 msgid "Preliminary configuration array"
 msgstr ""
 
-#: modules/social_features/social_group/social_group.module:1885
+#: modules/social_features/social_group/social_group.module:2057
 msgid ""
 "Preparing to delete the group and all it's topic's, event's and post's..."
 msgstr "Priprema za brisanje grupe i svih njezinih tema, događaja i objava..."
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:255
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:264
 msgid "Preparing to send invites..."
 msgstr "Priprema za slanje poziva..."
-
-#: modules/custom/ginvite/src/Plugin/Validation/Constraint/PreventDuplicatedConstraint.php:7
-msgctxt "Validation"
-msgid "Prevent duplicated invitations from being created"
-msgstr "Spriječi stvaranje dupliciranih poziva"
 
 #: modules/social_features/social_post/src/Controller/PostCommentController.php:21
 #: modules/social_features/social_profile/modules/social_profile_preview/config/install/core.entity_view_mode.profile.preview.yml:0
@@ -12160,12 +12059,12 @@ msgstr "Pregled"
 msgid "Preview of the related entity."
 msgstr ""
 
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:265
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:257
 msgid "Preview your email"
 msgstr "Pregled e-pošte prije slanja"
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:119
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:264
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:128
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:277
 msgid "Preview your email invite"
 msgstr "Pregled poziva putem e-pošte prije slanja"
 
@@ -12218,15 +12117,15 @@ msgstr ""
 msgid "Private file system (recommended)"
 msgstr ""
 
-#: modules/custom/social_file_private/social_file_private.install:31
+#: modules/custom/social_file_private/social_file_private.install:32
 msgid "Private file system path is set"
 msgstr "Putanja privatnog datotečnog sustava je postavljena"
 
-#: modules/custom/social_file_private/social_file_private.install:23
+#: modules/custom/social_file_private/social_file_private.install:24
 msgid "Private file system path not set"
 msgstr "Putanja privatnog datotečnog sustava nije postavljena"
 
-#: modules/custom/social_file_private/social_file_private.install:61
+#: modules/custom/social_file_private/social_file_private.install:62
 msgid "Private file system path not set for some fields"
 msgstr "Putanja privatnog datotečnog sustava nije postavljena za neka polja"
 
@@ -12284,8 +12183,7 @@ msgstr ""
 msgid "Process selected entities in a batch operation"
 msgstr ""
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:140
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:448
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:461
 msgid "Processed @current out of @total."
 msgstr "Obrađeno @current od @total."
 
@@ -12322,7 +12220,7 @@ msgstr ""
 msgid "Profile Privacy Settings"
 msgstr ""
 
-#: modules/custom/activity_basics/src/Plugin/ActivityContext/ProfileActivityContext.php:9
+#: modules/custom/activity_basics/src/Plugin/ActivityContext/ProfileActivityContext.php:10
 msgid "Profile activity context"
 msgstr "Kontekst aktivnosti profila"
 
@@ -12365,7 +12263,7 @@ msgstr "Profil velik"
 msgid "Profile medium"
 msgstr "Profil srednji"
 
-#: modules/social_features/social_profile/social_profile.module:1042
+#: modules/social_features/social_profile/social_profile.module:1040
 #: modules/social_features/social_profile/social_profile.install:484
 msgid "Profile name"
 msgstr "Ime profila"
@@ -12382,7 +12280,7 @@ msgstr "Profil korisnika @name"
 msgid "Profile of others"
 msgstr "Tuđi profil"
 
-#: translations.php:84
+#: translations.php:92
 #: modules/social_features/social_profile/modules/social_profile_organization_tag/config/install/taxonomy.vocabulary.profile_organization_tag.yml:0
 msgid "Profile organization tag"
 msgstr "Oznaka profila organizacije"
@@ -12408,7 +12306,7 @@ msgstr "Profil mali"
 msgid "Profile statistic block"
 msgstr "Blok statistike profila"
 
-#: translations.php:86
+#: translations.php:94
 #: modules/social_features/social_user_export/src/Plugin/UserExportPlugin/UserProfileTag.php:23;8
 #: modules/social_features/social_profile/config/install/field.field.profile.profile.field_profile_profile_tag.yml:0
 #: modules/social_features/social_profile/config/install/taxonomy.vocabulary.profile_tag.yml:0
@@ -12730,7 +12628,7 @@ msgstr "Omogućava korištenje značajke Album u objavi."
 msgid "Provides user profiles."
 msgstr "Omogućava korisničke profile."
 
-#: modules/social_features/social_group/social_group.module:624;2755
+#: modules/social_features/social_group/social_group.module:621;3046
 #: modules/social_features/social_post/social_post.module:133
 #: modules/social_features/social_post/src/Entity/Post.php:223
 #: modules/social_features/social_group/modules/social_group_flexible_group/config/install/field.storage.group.field_flexible_group_visibility.yml:0
@@ -12768,7 +12666,7 @@ msgstr "Javna grupa: unos grupe (Album)"
 msgid "Public visibility settings"
 msgstr ""
 
-#: modules/social_features/social_core/social_core.module:866
+#: modules/social_features/social_core/social_core.module:876
 #: modules/social_features/social_event/config/install/views.view.events.yml:0;0;0
 msgid "Publish status"
 msgstr "Objavi status"
@@ -12868,13 +12766,13 @@ msgstr "Pročitaj više o tome"
 msgid "Read more about this"
 msgstr "Pročitaj više o tome"
 
-#: modules/social_features/social_core/social_core.install:1050
+#: modules/social_features/social_core/social_core.install:1054
 #: modules/social_features/social_content_block/config/install/field.field.block_content.custom_content_list.field_link.yml:0
 #: modules/social_features/social_core/config/install/field.field.block_content.basic.field_basic_link.yml:0
 msgid "Read more link"
 msgstr "Poveznica Pročitaj više"
 
-#: modules/social_features/social_core/social_core.module:290
+#: modules/social_features/social_core/social_core.module:294
 msgid "Read more<span class=\"visually-hidden\"> about @title</span>"
 msgstr "Pročitaj više<span class=\"visually-hidden\"> o @title</span>"
 
@@ -12889,7 +12787,7 @@ msgstr "Razlog"
 msgid "Reason term for which an additional textfield is displayed."
 msgstr "Pojam razloga za koji se prikazuje dodatno tekstualno polje."
 
-#: modules/social_features/social_group/social_group.module:2188
+#: modules/social_features/social_group/social_group.module:2396
 msgid "Reassign your groups to the super administrator."
 msgstr "Ponovno dodijeli svoje grupe super administratoru."
 
@@ -12977,7 +12875,6 @@ msgstr "Interval osvježavanja u sekundama"
 msgid "Regional Settings"
 msgstr ""
 
-#: modules/custom/ginvite/ginvite.module:183
 #: modules/social_features/social_event/modules/social_event_invite/social_event_invite.tokens.inc:23
 msgid "Register Link"
 msgstr "Link za registraciju"
@@ -12997,7 +12894,7 @@ msgstr "Datum registracije"
 msgid "Registration date"
 msgstr "Datum registracije"
 
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:640;644;652
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:631;635;643
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0;0
 msgid "Reject Membership"
 msgstr "Odbij članstvo"
@@ -13046,14 +12943,14 @@ msgstr "Primjedba"
 msgid "Remote content settings"
 msgstr ""
 
-#: translations.php:129
+#: translations.php:158
 #: modules/social_features/social_event/modules/social_event_invite/social_event_invite.module:362
-#: modules/social_features/social_group/social_group.module:774;2351
+#: modules/social_features/social_group/social_group.module:866;2559
 #: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialGroupInviteVBOConfirmAction.php:27
 msgid "Remove"
 msgstr "Ukloni"
 
-#: modules/social_features/social_group/social_group.module:770
+#: modules/social_features/social_group/social_group.module:862
 msgid "Remove %name from %group"
 msgstr "Ukloni %name iz %group"
 
@@ -13061,7 +12958,7 @@ msgstr "Ukloni %name iz %group"
 msgid "Remove Open Social Branding"
 msgstr "Ukloni Open Social Branding"
 
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:157
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:158
 msgid "Remove a member"
 msgstr "Ukloni člana"
 
@@ -13073,19 +12970,14 @@ msgstr "Ukloni ulogu označenim korisnicima"
 msgid "Remove image"
 msgstr "Ukloni sliku"
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:796
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:155
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:768
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:156
 msgid "Remove invitation"
 msgstr "Ukloni pozivnicu"
 
-#: modules/social_features/social_group/src/Controller/SocialGroupController.php:153
+#: modules/social_features/social_group/src/Controller/SocialGroupController.php:154
 msgid "Remove invitee from group: @group_name"
 msgstr "Ukloni pozvanu osobu iz grupe: @group_name"
-
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-msgid "Remove member link"
-msgstr "Poveznica Ukloni člana"
 
 #: modules/social_features/social_group/src/Plugin/Action/GroupContentEntityDeleteAction.php:24
 msgid "Remove members from a group"
@@ -13126,11 +13018,11 @@ msgstr "Odgovori na komentare dublje od 1 nisu dopušteni"
 msgid "Reply"
 msgstr "Odgovor"
 
-#: modules/custom/activity_basics/src/Plugin/ActivityEntityCondition/CommentReplyActivityEntityCondition.php:7
+#: modules/custom/activity_basics/src/Plugin/ActivityEntityCondition/CommentReplyActivityEntityCondition.php:8
 msgid "Reply comment"
 msgstr "Odgovori na komentar"
 
-#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:63
+#: modules/social_features/social_comment/src/SocialCommentBreadcrumbBuilder.php:64
 msgid "Reply to Comment"
 msgstr "Odgovori na komentar"
 
@@ -13138,8 +13030,8 @@ msgstr "Odgovori na komentar"
 msgid "Reply to private messages"
 msgstr "Odgovori na privatne poruke"
 
-#: modules/social_features/social_comment/social_comment.tokens.inc:289
-#: modules/social_features/social_mentions/social_mentions.tokens.inc:240
+#: modules/social_features/social_comment/social_comment.tokens.inc:288
+#: modules/social_features/social_mentions/social_mentions.tokens.inc:241
 msgid "Reply to this comment"
 msgstr "Odgovori na ovaj komentar"
 
@@ -13147,7 +13039,7 @@ msgstr "Odgovori na ovaj komentar"
 msgid "Reply to this message"
 msgstr "Odgovori na ovu poruku"
 
-#: translations.php:103
+#: translations.php:111
 #: modules/social_features/social_user/src/Plugin/Action/SocialSendEmail.php:235
 msgid "Reply-to"
 msgstr "Adresa za odgovor"
@@ -13210,7 +13102,7 @@ msgstr "Prijave"
 msgid "Request approved event enrollment"
 msgstr "Odobren zahtjev za upis na događaj"
 
-#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:384
+#: modules/social_features/social_group/modules/social_group_request/src/SocialGroupRequestConfigOverride.php:375
 msgid "Request date"
 msgstr "Datum zahtjeva"
 
@@ -13251,6 +13143,10 @@ msgstr "Status zahtjeva ili poziva"
 msgid "Request page link."
 msgstr "Poveznica na stranicu sa zahtjevom."
 
+#: modules/social_features/social_group/modules/social_group_request/src/Plugin/Join/SocialGroupRequestJoin.php:133
+msgid "Request sent"
+msgstr ""
+
 #: modules/custom/grequest/src/Plugin/GroupContentEnabler/GroupMembershipRequest.php:155
 #: modules/social_features/social_event/social_event.install:848
 #: modules/social_features/social_event/config/install/views.view.event_manage_enrollment_requests.yml:0
@@ -13259,9 +13155,9 @@ msgstr "Poveznica na stranicu sa zahtjevom."
 msgid "Request status"
 msgstr "Status zahtjeva"
 
-#: modules/social_features/social_event/social_event.module:159;1239
+#: modules/social_features/social_event/social_event.module:159;1246
 #: modules/social_features/social_event/src/Controller/EnrollRequestDialogController.php:88;95
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:185;200;254
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:194;209;263
 #: modules/social_features/social_event/src/Form/EnrollRequestModalForm.php:94
 #: modules/social_features/social_event/config/install/field.storage.node.field_enroll_method.yml:0
 msgid "Request to enroll"
@@ -13273,7 +13169,7 @@ msgid ""
 "event organisers approve/decline"
 msgstr ""
 
-#: translations.php:46
+#: translations.php:54
 msgid ""
 "Request to enroll - users can 'request to enroll' for this event which event "
 "organisers approve/decline"
@@ -13281,14 +13177,14 @@ msgstr ""
 "Zahtjev za upis - korisnici mogu poslati 'zahtjev za upis' na ovaj događaj "
 "koji organizatori događaja odobravaju/odbijaju"
 
-#: modules/social_features/social_group/social_group.module:684
-#: modules/social_features/social_group/modules/social_group_flexible_group/social_group_flexible_group.module:91
-#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:197;375
+#: translations.php:33
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:88
 #: modules/social_features/social_group/modules/social_group_request/src/Controller/GroupRequestController.php:141;157
+#: modules/social_features/social_group/modules/social_group_request/src/Plugin/Join/SocialGroupRequestJoin.php:97;143
 msgid "Request to join"
 msgstr "Zahtjev za pridruženje"
 
-#: translations.php:48
+#: translations.php:56
 msgid ""
 "Request to join - users can \"request to join\" this group which group "
 "managers approve/decline"
@@ -13323,8 +13219,6 @@ msgid "Resend invites for group members"
 msgstr ""
 
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -13461,10 +13355,7 @@ msgstr "Uloga"
 msgid "Role TargetId"
 msgstr ""
 
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:171
 #: modules/social_features/social_user_export/src/Plugin/UserExportPlugin/UserRoles.php:23;8
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_group/config/install/field.field.group_content.closed_group-group_membership.group_roles.yml:0
 #: modules/social_features/social_group/config/install/field.field.group_content.open_group-group_membership.group_roles.yml:0
 #: modules/social_features/social_group/config/install/field.field.group_content.public_group-group_membership.group_roles.yml:0
@@ -13475,8 +13366,8 @@ msgid "Roles"
 msgstr "Uloge"
 
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteUserForm.php:88
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:300
-#: modules/social_features/social_group/social_group.module:873
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:292
+#: modules/social_features/social_group/social_group.module:970
 msgid "Save"
 msgstr "Spremi"
 
@@ -13484,12 +13375,12 @@ msgstr "Spremi"
 msgid "Save Mentions Type"
 msgstr "Spremi vrstu spominjanja"
 
-#: src/Installer/Form/ModuleConfigureForm.php:123
+#: src/Installer/Form/ModuleConfigureForm.php:133
 msgid "Save and continue"
 msgstr "Spremi i nastavi"
 
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteSettingsForm.php:94
-#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:120
+#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:118
 msgid "Save configuration"
 msgstr "Spremi postavke"
 
@@ -13645,7 +13536,7 @@ msgstr "Odjeljci"
 msgid "See all likes"
 msgstr "Vidi sve lajkove"
 
-#: modules/social_features/social_group/social_group.tokens.inc:196
+#: modules/social_features/social_group/social_group.tokens.inc:193
 msgid "See all members"
 msgstr "Vidi sve članove"
 
@@ -13695,13 +13586,9 @@ msgstr ""
 msgid "Select / unselect all @count members across all the pages"
 msgstr "Odaberi / poništi odabir svih @count članova na svim stranicama"
 
-#: translations.php:55
+#: translations.php:63
 msgid "Select / unselect all @count results in this view"
 msgstr "Odaberi / poništi odabir svih @count rezultata u ovom prikazu"
-
-#: modules/custom/ginvite/src/Form/BulkGroupInvitation.php:132
-msgid "Select Recipients"
-msgstr "Odaberi primatelje"
 
 #: modules/social_features/social_landing_page/config/install/field.field.paragraph.block.field_block_reference.yml:0
 msgid "Select a Block from a list to include"
@@ -13777,7 +13664,7 @@ msgstr "Odaberi izborne module"
 msgid "Select taxonomy vocabularies"
 msgstr "Odaberi taksonomske rječnike"
 
-#: modules/social_features/social_follow_taxonomy/src/Plugin/views/filter/FollowTaxonomyViewsFilter.php:125;217
+#: modules/social_features/social_follow_taxonomy/src/Plugin/views/filter/FollowTaxonomyViewsFilter.php:125;219
 msgid "Select terms"
 msgstr ""
 
@@ -13856,7 +13743,7 @@ msgstr ""
 msgid "Select which usage data to share"
 msgstr "Odaberi koje podatke o upotrebi želiš podijeliti"
 
-#: translations.php:104
+#: translations.php:112
 msgid "Selected @count entities:"
 msgstr "Odabrano @count entiteta:"
 
@@ -13889,7 +13776,7 @@ msgstr "Predstavi se"
 msgid "Self introduction"
 msgstr "Predstavi se"
 
-#: translations.php:74
+#: translations.php:82
 msgid "Self introduction, expertise and interests"
 msgstr "Predstavi sebe, svoja područja stručnosti i interese"
 
@@ -13934,15 +13821,11 @@ msgstr "Pošalji e-poruku članovima grupe"
 msgid "Send in case"
 msgstr "Pošalji u slučaju"
 
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:314
-msgid "Send invitation e-mail to already registered users"
-msgstr ""
-
 #: modules/social_features/social_core/src/Form/InviteUserBaseForm.php:82
 msgid "Send invite(s)"
 msgstr "Pošalji poziv(e)"
 
-#: translations.php:42
+#: translations.php:50
 msgid "Send mail"
 msgstr "Pošalji e-poruku"
 
@@ -13950,7 +13833,7 @@ msgstr "Pošalji e-poruku"
 msgid "Send password reset instructions via email."
 msgstr "Pošalji upute za oporavak lozinke putem e-pošte."
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:800
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:772
 msgid "Send reminder"
 msgstr ""
 
@@ -13964,20 +13847,19 @@ msgid "Send usage data."
 msgstr "Pošalji podatke o upotrebi."
 
 #: modules/social_features/social_core/src/Form/InviteEmailBaseForm.php:92
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:294
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:307
 msgid "Send your invite(s) by email"
 msgstr "Pošalji poziv(e) putem e-pošte"
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:139
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:447
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:460
 msgid "Sending Invites"
 msgstr "Slanje poziva"
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:254
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:263
 msgid "Sending invites..."
 msgstr "Slanje poziva..."
 
-#: translations.php:44
+#: translations.php:52
 msgid "Sent email to %recipient"
 msgstr "Pošalji e-poštu korisniku %recipient"
 
@@ -14019,11 +13901,11 @@ msgstr "Postavi alternativnu naslovnu stranicu za prijavljene korisnike."
 msgid "Set author of event as event organiser automatically."
 msgstr "Automatski postavi autora događaja kao organizatora događaja."
 
-#: translations.php:37
+#: translations.php:45
 msgid "Set wether event types field is required or not."
 msgstr "Postavi je li polje vrste događaja obavezno ili ne."
 
-#: translations.php:39
+#: translations.php:47
 msgid "Set wether the tour is enabled or not."
 msgstr "Postavi hoće li obilazak biti omogućen ili ne."
 
@@ -14142,7 +14024,7 @@ msgstr ""
 msgid "Show"
 msgstr "Prikaži"
 
-#: modules/social_features/social_comment/social_comment.module:328
+#: modules/social_features/social_comment/social_comment.module:324
 #: modules/social_features/social_core/src/Plugin/Field/FieldFormatter/CommentNodeFormatter.php:143
 #: modules/social_features/social_post/src/Plugin/Field/FieldFormatter/CommentPostFormatter.php:83
 msgid "Show all :num_comments comments"
@@ -14295,11 +14177,11 @@ msgstr "Preskoči potvrdu za vrstu @grouptype"
 msgid "Skip not Verified users"
 msgstr ""
 
-#: modules/social_features/social_core/social_core.install:600
+#: modules/social_features/social_core/social_core.install:602
 msgid "Skipped installing socialblue theme. Please check release notes."
 msgstr "Preskočeno instaliranje teme socialblue. Provjeri bilješke o izdanju."
 
-#: modules/social_features/social_core/social_core.install:701
+#: modules/social_features/social_core/social_core.install:703
 msgid ""
 "Skipped installing the social_file_private module because your Private file "
 "system is not set. This could have some security implications. More info: "
@@ -14707,7 +14589,7 @@ msgstr "Social GDPR"
 msgid "Social GraphQL"
 msgstr "Social GraphQL"
 
-#: modules/social_features/social_group/social_group.tokens.inc:22
+#: modules/social_features/social_group/social_group.tokens.inc:25
 #: modules/social_features/social_group/social_group.info.yml:0
 msgid "Social Group"
 msgstr "Social grupa"
@@ -14866,12 +14748,12 @@ msgstr "Social Objava albuma"
 msgid "Social Post Photo"
 msgstr "Social objava fotografije"
 
-#: modules/custom/social_file_private/social_file_private.install:22;30
+#: modules/custom/social_file_private/social_file_private.install:23;31
 #: modules/social_features/social_core/social_core.install:40
 msgid "Social Private Files"
 msgstr ""
 
-#: modules/custom/social_file_private/social_file_private.install:60
+#: modules/custom/social_file_private/social_file_private.install:61
 msgid "Social Private Files Unprotected"
 msgstr ""
 
@@ -14883,7 +14765,7 @@ msgstr "Social Privatna poruka"
 msgid "Social Private Message Owner"
 msgstr "Social Vlasnik privatne poruke"
 
-#: modules/social_features/social_private_message/src/Plugin/Field/FieldFormatter/SocialPrivateMessageThreadMemberFormatter.php:11
+#: modules/social_features/social_private_message/src/Plugin/Field/FieldFormatter/SocialPrivateMessageThreadMemberFormatter.php:17
 msgid "Social Private Message Thread Members"
 msgstr "Social Članovi nizanih privatnih poruka"
 
@@ -15106,7 +14988,7 @@ msgstr "Social blok prijave korisnika"
 msgid "Social user selection"
 msgstr "Social odabir korisnika"
 
-#: modules/custom/social_file_private/social_file_private.install:63
+#: modules/custom/social_file_private/social_file_private.install:64
 msgid ""
 "Some files uploaded on fields are not protected against access by "
 "unauthorized users. These fields were found: :fields More info: https://www."
@@ -15115,6 +14997,30 @@ msgstr ""
 "Neke datoteke postavljene na polja nisu zaštićene od pristupa neovlaštenih "
 "korisnika. Ova polja su pronađena: :fields Više informacija: https://www."
 "drupal.org/docs/8/distributions/open-social/private-files"
+
+#: translations.php:132
+msgid "Someone added content you might be interested in"
+msgstr ""
+
+#: translations.php:119;131
+msgid "Someone commented on your content"
+msgstr ""
+
+#: translations.php:125
+msgid "Someone joined one of your groups"
+msgstr ""
+
+#: translations.php:127
+msgid "Someone reported content as inappropriate"
+msgstr ""
+
+#: translations.php:126
+msgid "Someone wants to enroll to your event"
+msgstr ""
+
+#: translations.php:134
+msgid "Someone wants to join your group"
+msgstr ""
 
 #: modules/social_features/social_search/config/install/views.view.search_content.yml:0;0
 msgid "Sort"
@@ -15126,8 +15032,6 @@ msgid "Sort and Filter"
 msgstr "Sortiraj i filtriraj"
 
 #: config/install/views.view.content.yml:0
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 #: modules/social_features/social_activity/config/optional/views.view.activity_stream.yml:0
@@ -15281,11 +15185,9 @@ msgstr ""
 "Stil za gumb vidi:<a href=\"http://styleguide.getopensocial.com/section-"
 "atoms.html#kssref-atoms-button-style\">vodič za stil</a>."
 
-#: modules/custom/ginvite/config/schema/ginvite.schema.yml:0;0
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:284;302
 #: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollSettingsForm.php:94
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EventInviteSettingsForm.php:57
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:583
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:555
 #: modules/social_features/social_user/src/Plugin/Action/SocialSendEmail.php:241
 msgid "Subject"
 msgstr "Naziv"
@@ -15294,7 +15196,6 @@ msgstr "Naziv"
 msgid "Subject line for email notifications"
 msgstr ""
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitation.php:147
 #: modules/social_features/social_comment/social_comment.module:66;67
 msgid "Submit"
 msgstr "Pošalji"
@@ -15351,7 +15252,7 @@ msgstr "Obavijesti sustava"
 msgid "TAG"
 msgstr "OZNAKA"
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:37
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:36
 msgid "Tab Management"
 msgstr "Upravljanje karticama"
 
@@ -15377,7 +15278,7 @@ msgid "Tag"
 msgstr "Oznaka"
 
 #: modules/social_features/social_follow_taxonomy/modules/social_follow_landing_page/social_follow_landing_page.module:151
-#: modules/social_features/social_tagging/social_tagging.module:178
+#: modules/social_features/social_tagging/social_tagging.module:184
 msgid "Tag content"
 msgstr "Sadržaj oznake"
 
@@ -15387,20 +15288,20 @@ msgstr "Sadržaj oznake"
 msgid "Tag settings"
 msgstr "Postavke oznake"
 
-#: modules/social_features/social_tagging/social_tagging.module:343
-#: modules/social_features/social_tagging/social_tagging.install:162
+#: modules/social_features/social_tagging/social_tagging.module:353
+#: modules/social_features/social_tagging/social_tagging.install:162;250
 msgid "Tagging"
 msgstr "Označavanje"
 
-#: modules/social_features/social_tagging/social_tagging.module:344
-#: modules/social_features/social_tagging/social_tagging.install:163
+#: modules/social_features/social_tagging/social_tagging.module:354
+#: modules/social_features/social_tagging/social_tagging.install:163;251
 msgid "Tagging field."
 msgstr "Polje za označavanje."
 
 #: modules/social_features/social_activity/modules/social_activity_filter/src/Plugin/views/display/FilterBlock.php:164
-#: modules/social_features/social_follow_taxonomy/modules/social_follow_tag/src/SocialFollowTagLazyBuilder.php:157
+#: modules/social_features/social_follow_taxonomy/modules/social_follow_tag/src/SocialFollowTagLazyBuilder.php:155
 #: modules/social_features/social_profile/modules/social_profile_organization_tag/src/SocialProfileOrgTagConfigOverride.php:54;57
-#: modules/social_features/social_tagging/social_tagging.module:193;200;219;276;445
+#: modules/social_features/social_tagging/social_tagging.module:199;206;225;282;455
 #: modules/social_features/social_tagging/src/SocialTaggingOverrides.php:121;232
 #: modules/social_features/social_follow_taxonomy/modules/social_follow_landing_page/config/install/field.field.block_content.follow_tags.field_tags.yml:0
 #: modules/social_features/social_tagging/config/optional/block.block.socialtagsblock.yml:0
@@ -15467,8 +15368,8 @@ msgstr "Teskt pojmova s dodatnim razlozima"
 #: modules/custom/dropdown/src/Plugin/Field/FieldType/Dropdown.php:10
 #: modules/custom/entity_access_by_field/src/Plugin/Field/FieldType/EntityAccessField.php:7
 #: modules/social_features/social_footer/config/schema/social_footer.schema.yml:0
-#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:95
-#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:119
+#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:93
+#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:132
 #: modules/social_features/social_landing_page/config/install/field.field.paragraph.introduction.field_introduction_text.yml:0
 msgid "Text"
 msgstr "Tekst"
@@ -15477,7 +15378,7 @@ msgstr "Tekst"
 msgid "Text area display format settings"
 msgstr ""
 
-#: modules/social_features/social_core/social_core.install:1067
+#: modules/social_features/social_core/social_core.install:1071
 #: modules/social_features/social_core/config/install/field.field.block_content.basic.field_text_block.yml:0
 #: modules/social_features/social_core/config/install/field.field.block_content.hero_call_to_action_block.field_text_block.yml:0
 #: modules/social_features/social_core/config/install/field.field.block_content.platform_intro.field_text_block.yml:0
@@ -15497,8 +15398,8 @@ msgstr "Vrijednost teksta"
 msgid "Textarea"
 msgstr ""
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:207
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:460
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:206
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:469
 msgid "Thanks for enrolling!"
 msgstr ""
 
@@ -15511,7 +15412,7 @@ msgstr "Poveznica (html) na odgovor na komentar."
 msgid "The (html) link to the commented entity."
 msgstr "(html) poveznica na komentirani entitet."
 
-#: modules/social_features/social_group/social_group.tokens.inc:37
+#: modules/social_features/social_group/social_group.tokens.inc:40
 msgid "The (html) link to the created entity."
 msgstr "(html) poveznica na kreirani entitet."
 
@@ -15519,7 +15420,7 @@ msgstr "(html) poveznica na kreirani entitet."
 msgid "The (html) link to the liked entity."
 msgstr "(html) poveznica na lajkani entitet."
 
-#: modules/social_features/social_comment/social_comment.module:430
+#: modules/social_features/social_comment/social_comment.module:426
 msgid "The @entity_type to which the comment is a reply to."
 msgstr ""
 
@@ -15576,11 +15477,11 @@ msgstr ""
 msgid "The Post ID."
 msgstr "ID objave."
 
-#: modules/social_features/social_core/social_core.module:807
+#: modules/social_features/social_core/social_core.module:817
 msgid "The URL alias allows you to customise the link to this page."
 msgstr "Alias URL-a omogućuje prilagođavanje poveznice na ovu stranicu."
 
-#: modules/social_features/social_core/social_core.module:734
+#: modules/social_features/social_core/social_core.module:744
 msgid "The URL alias must be a relative URL."
 msgstr "Alias URL-a mora biti relativni URL."
 
@@ -15708,7 +15609,7 @@ msgstr ""
 msgid "The content type."
 msgstr "Vrsta sadržaja."
 
-#: modules/social_features/social_core/social_core.module:1005
+#: modules/social_features/social_core/social_core.module:1017
 msgid "The created date cannot be in the future."
 msgstr ""
 
@@ -15769,7 +15670,7 @@ msgstr ""
 msgid "The enrollment request of @name has been declined."
 msgstr "Zahtjev za upis @name je odbijen."
 
-#: translations.php:52
+#: translations.php:60
 #: modules/social_features/social_user/social_user.module:246
 msgid ""
 "The entered username already exists or has an incorrect format. Please try "
@@ -15799,24 +15700,24 @@ msgstr "Vrsta entiteta"
 msgid "The entity type to which this mention is attached."
 msgstr "Vrsta entiteta uz koju je ovo spominjanje povezano."
 
-#: modules/social_features/social_event/social_event.module:757
+#: modules/social_features/social_event/social_event.module:758
 msgid "The event date and time are set based on the site's default timezone."
 msgstr ""
 "Datum i vrijeme događaja postavljaju se na temelju zadane vremenske zone "
 "stranice."
 
-#: modules/social_features/social_event/social_event.module:742
+#: modules/social_features/social_event/social_event.module:743
 msgid ""
 "The event date and time are set based on your timezone. @change_timezone."
 msgstr ""
 "Datum i vrijeme događaja postavljaju se na temelju tvoje vremenske zone. "
 "@change_timezone."
 
-#: modules/social_features/social_event/src/Controller/UpdateEnrollRequestController.php:85
+#: modules/social_features/social_event/src/Controller/UpdateEnrollRequestController.php:82
 msgid "The event enrollment request has been approved."
 msgstr "Zahtjev za upis na događaj je odobren."
 
-#: modules/social_features/social_event/src/Controller/UpdateEnrollRequestController.php:91
+#: modules/social_features/social_event/src/Controller/UpdateEnrollRequestController.php:88
 msgid "The event enrollment request has been declined."
 msgstr "Zahtjev za upis na događaj je odbijen."
 
@@ -15833,11 +15734,11 @@ msgstr ""
 "tobom,\n"
 "      pa je smješten u grupe čiji nisi član."
 
-#: modules/social_features/social_group/social_group.tokens.inc:27
+#: modules/social_features/social_group/social_group.tokens.inc:30
 msgid "The group content type."
 msgstr "Vrsta sadržaja grupe."
 
-#: modules/social_features/social_group/social_group.tokens.inc:32
+#: modules/social_features/social_group/social_group.tokens.inc:35
 msgid "The group content url."
 msgstr "URL sadržaja grupe."
 
@@ -15867,7 +15768,7 @@ msgstr "Tijelo poruke e-pošte s pozivom."
 msgid "The invite email subject."
 msgstr "Predmet e-poruke s pozivom."
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Controller/CancelEnrollInviteController.php:78
+#: modules/social_features/social_event/modules/social_event_invite/src/Controller/CancelEnrollInviteController.php:75
 msgid "The invite has been removed."
 msgstr "Poziv je uklonjen."
 
@@ -15908,7 +15809,7 @@ msgstr ""
 "Poveznica na komentirani entitet, što može biti objava ili unos, uključivat "
 "će sirovi HTML."
 
-#: modules/social_features/social_group/social_group.tokens.inc:38
+#: modules/social_features/social_group/social_group.tokens.inc:41
 msgid ""
 "The link to the created entity, can be post or node, will include raw HTML."
 msgstr ""
@@ -16050,7 +15951,7 @@ msgstr "Naziv povezanog unosa."
 msgid "The request to enroll to an enrollment is approved"
 msgstr "Zahtjev za upis na upis je odobren"
 
-#: translations.php:123
+#: translations.php:152
 msgid "The role of 1 selected member has been changed successfully"
 msgid_plural ""
 "The role of @count selected members have been changed successfully"
@@ -16058,7 +15959,7 @@ msgstr[0] "Uloga 1 odabranog člana je uspješno promijenjena"
 msgstr[1] "Uloga @count odabrana člana je uspješno promijenjena"
 msgstr[2] "Uloga @count odabranih članova je uspješno promijenjena"
 
-#: translations.php:124
+#: translations.php:153
 msgid "The role of 1 selected member has not been changed successfully"
 msgid_plural ""
 "The role of @count selected members have not been changed successfully"
@@ -16066,11 +15967,11 @@ msgstr[0] "Uloga 1 odabranog člana nije uspješno promijenjena"
 msgstr[1] "Uloga @count odabrana člana nije uspješno promijenjena"
 msgstr[2] "Uloga @count odabranih članova nije uspješno promijenjena"
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:87
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:86
 msgid "The route (tab) a member lands on when going to a group."
 msgstr "Ruta (kartica) na koju član dođe kada otvori grupu."
 
-#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:98
+#: modules/social_features/social_group/modules/social_group_default_route/social_group_default_route.module:97
 msgid "The route (tab) a non-member lands on when going to a group."
 msgstr "Ruta (kartica) na koju dođe nečlan kada otvori grupu."
 
@@ -16147,7 +16048,7 @@ msgstr "Vrijeme kada je spominjanje kreirano."
 msgid "The title of the node to add to the group"
 msgstr "Naslov unosa za dodavanje u grupu"
 
-#: modules/social_features/social_group/social_group.tokens.inc:28
+#: modules/social_features/social_group/social_group.tokens.inc:31
 msgid "The type of the content that is created in the group."
 msgstr "Vrsta sadržaja koji se kreira u grupi."
 
@@ -16180,7 +16081,7 @@ msgstr "Nadogradnja je završena."
 msgid "The update has encountered an error."
 msgstr "Došlo je greške tijekom procesa nadogradnje."
 
-#: modules/social_features/social_group/social_group.tokens.inc:33
+#: modules/social_features/social_group/social_group.tokens.inc:36
 msgid "The url to the content that is created in the group."
 msgstr "URL sadržaja koji je kreiran u grupi."
 
@@ -16255,7 +16156,7 @@ msgstr ""
 msgid "There @link to enroll in this event."
 msgstr "Postoji @link za upis na ovaj događaj."
 
-#: modules/social_features/social_group/modules/social_group_request/src/Plugin/Block/SocialGroupRequestMembershipNotification.php:158
+#: modules/social_features/social_group/modules/social_group_request/src/Plugin/Block/SocialGroupRequestMembershipNotification.php:157
 msgid "There @link to join this group."
 msgstr "Postoji @link za pridruživanje ovoj grupi."
 
@@ -16267,9 +16168,13 @@ msgstr "Još nema grupa."
 msgid "There are no members yet."
 msgstr "Još nema članova."
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:168
-#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:329
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:177
+#: modules/social_features/social_event/modules/social_event_managers/src/Form/SocialEventManagersAddEnrolleeForm.php:321
 msgid "There are no spots left"
+msgstr ""
+
+#: translations.php:123
+msgid "There is a new post in your stream"
 msgstr ""
 
 #: modules/custom/alternative_frontpage/src/Form/AlternativeFrontpageForm.php:121
@@ -16308,13 +16213,12 @@ msgstr ""
 "Ova polja omogućuju konfiguriraciju različitih tekstova pomoći koji se "
 "prikazuju korisnicima tijekom registracije i prijave"
 
-#: modules/social_features/social_core/social_core.module:857
+#: modules/social_features/social_core/social_core.module:867
 msgid "This description will be displayed when hovering over the menu link."
 msgstr ""
 "Ovaj opis će se prikazati kada zadržiš pokazivač miša iznad poveznice "
 "izbornika."
 
-#: modules/custom/ginvite/src/Plugin/GroupContentEnabler/GroupInvitation.php:264
 #: modules/custom/grequest/src/Plugin/GroupContentEnabler/GroupMembershipRequest.php:208
 msgid ""
 "This field has been disabled by the plugin to guarantee the functionality "
@@ -16385,7 +16289,7 @@ msgstr ""
 "Ovaj se logotip prikazuje u zaglavlju platforme i na e-porukama koje se "
 "šalju tvojim korisnicima. Može se premostiti u gornjoj postavci e-pošte"
 
-#: modules/social_features/social_private_message/social_private_message.module:415
+#: modules/social_features/social_private_message/social_private_message.module:407
 msgid "This message was deleted together with the user’s account."
 msgstr "Ova poruka je izbrisana zajedno s korisničkim računom."
 
@@ -16443,7 +16347,7 @@ msgid ""
 "content."
 msgstr ""
 
-#: modules/social_features/social_core/social_core.module:854
+#: modules/social_features/social_core/social_core.module:864
 msgid "This title will be displayed in the menu."
 msgstr "Ovaj će naslov biti prikazan u izborniku."
 
@@ -16463,7 +16367,7 @@ msgstr ""
 "Označi okvir da odrediš koje podatke želiš podijeliti. Nemoj označiti "
 "kvačicom ako ne želiš dijeliti podatke."
 
-#: modules/social_features/social_event/social_event.module:736
+#: modules/social_features/social_event/social_event.module:737
 msgid "Time zone"
 msgstr "Vremenska zona"
 
@@ -16472,11 +16376,11 @@ msgid "Timestamp"
 msgstr "Vremenska oznaka"
 
 #: modules/custom/mentions/src/MentionsViewsData.php:50
-#: modules/social_features/social_core/social_core.module:853
+#: modules/social_features/social_core/social_core.module:863
 #: modules/social_features/social_event/modules/social_event_managers/src/Plugin/GroupContentEnabler/GroupEventNode.php:7
 #: modules/social_features/social_footer/config/schema/social_footer.schema.yml:0
-#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:113
-#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:137
+#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:111
+#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:150
 #: config/install/views.view.content.yml:0;0
 #: modules/social_features/social_comment/config/install/views.view.comment.yml:0;0
 #: modules/social_features/social_follow_content/config/install/views.view.following.yml:0
@@ -16492,7 +16396,7 @@ msgstr "Vremenska oznaka"
 msgid "Title"
 msgstr "Naziv"
 
-#: translations.php:69
+#: translations.php:77
 msgid "Title & image"
 msgstr "Naziv i slika"
 
@@ -16542,7 +16446,7 @@ msgstr ""
 "odvojene razmacima. Ovo je korisno ako imaš polja privatnih slika i ne želiš "
 "ih uključiti u broj preuzimanja."
 
-#: translations.php:135
+#: translations.php:164
 msgid ""
 "To make the list of topics more specific you can additionally configure more "
 "filters such as topic types, content tags and groups."
@@ -16590,7 +16494,7 @@ msgstr "Tokeni iz modula registratora aktivnosti."
 msgid "Tokens from the social comment module."
 msgstr "Tokeni iz modula društvenih komentara."
 
-#: modules/social_features/social_group/social_group.tokens.inc:23
+#: modules/social_features/social_group/social_group.tokens.inc:26
 msgid "Tokens from the social group module."
 msgstr "Tokeni iz modula grupe."
 
@@ -16610,7 +16514,7 @@ msgstr "Tokeni iz modula društvenih spominjanja."
 msgid "Tokens from the social user module."
 msgstr "Tokeni iz modula društvenog korisnika."
 
-#: translations.php:95
+#: translations.php:103
 #: modules/custom/social_demo/src/Plugin/DemoContent/Topic.php:7
 #: modules/social_features/social_content_block/src/Plugin/MultipleContentBlock/TopicContent.php:7
 #: modules/social_features/social_topic/config/install/node.type.topic.yml:0
@@ -16636,7 +16540,7 @@ msgstr "Vrsta teme"
 msgid "Topic type:"
 msgstr "Vrsta teme:"
 
-#: translations.php:88
+#: translations.php:96
 #: modules/social_features/social_topic/config/install/taxonomy.vocabulary.topic_types.yml:0;0
 msgid "Topic types"
 msgstr "Vrste tema"
@@ -16715,7 +16619,7 @@ msgstr ""
 "Uključivanje ove značajke osigurava da obični korisnik više ne može "
 "objavljivati javni sadržaj bilo gdje na platformi."
 
-#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:21
+#: modules/custom/social_queue_storage/src/QueueStorageEntityListBuilder.php:22
 #: modules/custom/social_queue_storage/src/QueueStorageEntityTypeListBuilder.php:17
 #: modules/social_features/social_group/src/Controller/SocialGroupListBuilder.php:93
 #: config/install/views.view.content.yml:0
@@ -16727,7 +16631,7 @@ msgstr ""
 msgid "Type"
 msgstr "Vrsta"
 
-#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:605
+#: modules/social_features/social_group/modules/social_group_invite/social_group_invite.module:577
 msgid "Type a message on resending invites"
 msgstr ""
 
@@ -16742,8 +16646,8 @@ msgid "Type of content"
 msgstr "Vrsta sadržaja"
 
 #: modules/social_features/social_footer/config/schema/social_footer.schema.yml:0
-#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:107
-#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:131
+#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:105
+#: modules/social_features/social_footer/src/Plugin/Block/SocialFooterPoweredByBlock.php:144
 msgid "URL"
 msgstr "URL"
 
@@ -16791,9 +16695,7 @@ msgstr "URL za slanje podataka o upotrebi"
 msgid "UUID"
 msgstr "UUID"
 
-#: modules/custom/ginvite/src/Form/BulkGroupInvitation.php:202
-#: modules/custom/ginvite/src/Form/BulkGroupInvitationConfirm.php:75
-#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:268
+#: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteEmailForm.php:277
 #: modules/social_features/social_event/modules/social_event_invite/src/Form/EnrollInviteUserForm.php:131
 msgid "Unable to proceed, please try again."
 msgstr "Nije moguće nastaviti, pokušaj ponovno."
@@ -16811,7 +16713,7 @@ msgstr "Prestani pratiti"
 msgid "Unfollow content"
 msgstr "Prestani pratiti sadržaj"
 
-#: modules/social_features/social_follow_content/social_follow_content.module:157
+#: modules/social_features/social_follow_content/social_follow_content.module:155
 msgid "Unfollow this content"
 msgstr "Prestani pratiti ovaj sadržaj"
 
@@ -16925,7 +16827,6 @@ msgstr "URL"
 msgid "Url of the Event a user enrolled to."
 msgstr "URL događaja na koji se korisnik prijavio."
 
-#: modules/custom/ginvite/ginvite.module:184
 #: modules/social_features/social_event/modules/social_event_invite/social_event_invite.tokens.inc:24
 msgid "Url to register page with prefilled email address."
 msgstr "Url za registraciju stranice s unaprijed popunjenom adresom e-pošte."
@@ -16933,10 +16834,6 @@ msgstr "Url za registraciju stranice s unaprijed popunjenom adresom e-pošte."
 #: modules/social_features/social_event/modules/social_event_invite/social_event_invite.tokens.inc:29;34
 msgid "Url to the login page with event as destination."
 msgstr "Url stranice za prijavu s događajem kao odredištem."
-
-#: modules/custom/ginvite/ginvite.module:188
-msgid "Url to user list of invitations."
-msgstr ""
 
 #: modules/custom/social_lets_connect/modules/social_lets_connect_usage/config/schema/social_lets_connect_usage.schema.yml:0
 msgid "Usage data shared with Open Social team"
@@ -17103,7 +17000,6 @@ msgstr "Korisnikov sadržaj u grupi"
 msgid "User information"
 msgstr "Informacije o korisniku"
 
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
 msgid "User invitations to Groups"
 msgstr "Pozivi korisnika u grupe"
@@ -17133,7 +17029,7 @@ msgstr "Podaci o privatnosti korisničkih profila nisu pronađeni."
 msgid "User roles"
 msgstr "Uloge korisnika"
 
-#: translations.php:98
+#: translations.php:106
 #: modules/social_features/social_user/social_user.links.menu.yml:0;0
 #: modules/social_features/social_user/social_user.routing.yml:0
 msgid "User settings"
@@ -17146,10 +17042,6 @@ msgstr "Status korisnika"
 #: modules/social_features/social_user/src/Form/SocialUserFloodForm.php:67
 msgid "User window"
 msgstr "Korisnički prozor"
-
-#: modules/custom/ginvite/src/Plugin/Validation/Constraint/PreventDuplicatedConstraintValidator.php:73
-msgid "User with such email already a member of this group."
-msgstr "Korisnik sa tom adresom e-pošte već je član ove grupe."
 
 #: modules/custom/grequest/src/Plugin/GroupContentEnabler/GroupMembershipRequest.php:16
 #: modules/social_features/social_user_export/src/Plugin/UserExportPlugin/UserAccountName.php:23;8
@@ -17205,7 +17097,7 @@ msgstr "Vrijednost (medijski izvor ili stavka datoteke)"
 msgid "Values"
 msgstr ""
 
-#: modules/social_features/social_core/social_core.install:1468
+#: modules/social_features/social_core/social_core.install:1472
 msgid "Verified User"
 msgstr "Potvrđeni korisnik"
 
@@ -17222,7 +17114,7 @@ msgstr "Potvrđeni korisnik"
 #: modules/custom/social_queue_storage/social_queue_storage.links.task.yml:0
 #: modules/social_features/social_comment/src/Form/SocialCommentAdminOverview.php:210
 #: modules/social_features/social_event/social_event.links.task.yml:0
-#: modules/social_features/social_group/social_group.module:2352
+#: modules/social_features/social_group/social_group.module:2560
 #: modules/social_features/social_post/social_post.links.task.yml:0
 msgid "View"
 msgstr "Pogledaj"
@@ -17275,7 +17167,7 @@ msgstr "Pogledaj komentare"
 msgid "View community Posts"
 msgstr "Pogledaj objave zajednice"
 
-#: modules/social_features/social_follow_content/social_follow_content.module:110
+#: modules/social_features/social_follow_content/social_follow_content.module:108
 msgid "View content I'm following"
 msgstr "Pogledaj sadržaj koji pratim"
 
@@ -17327,15 +17219,15 @@ msgstr "Način prikaza"
 msgid "View my albums"
 msgstr "Pogledaj moje albume"
 
-#: modules/social_features/social_event/social_event.module:645
+#: modules/social_features/social_event/social_event.module:646
 msgid "View my events"
 msgstr "Pogledaj moje događaje"
 
-#: modules/social_features/social_group/social_group.module:2272
+#: modules/social_features/social_group/social_group.module:2480
 msgid "View my groups"
 msgstr "Pogledaj moje grupe"
 
-#: modules/social_features/social_profile/social_profile.module:879
+#: modules/social_features/social_profile/social_profile.module:877
 msgid "View my profile"
 msgstr "Pogledaj moj profil"
 
@@ -17403,7 +17295,7 @@ msgstr "Otvori pregled Moje teme i blokiraj na tuđim profilima"
 msgid "View the My topics overview and block on your own profile"
 msgstr "Otvori pregled Moje teme i blokiraj na vlastitom profilu"
 
-#: modules/social_features/social_group/modules/social_group_request/social_group_request.tokens.inc:102
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.tokens.inc:101
 msgid "View the requests"
 msgstr "Pregledaj zahtjeve"
 
@@ -17459,7 +17351,7 @@ msgid "Violations"
 msgstr "Kršenja"
 
 #: modules/social_features/social_featured_content/templates/node--featured.html.twig:167
-#: modules/social_features/social_group/social_group.module:2727
+#: modules/social_features/social_group/social_group.module:2941
 #: modules/social_features/social_album/config/install/field.field.node.album.field_content_visibility.yml:0
 #: modules/social_features/social_book/config/optional/field.field.node.book.field_content_visibility.yml:0
 #: modules/social_features/social_event/config/install/field.field.node.event.field_content_visibility.yml:0
@@ -17628,7 +17520,7 @@ msgstr ""
 msgid ""
 "When this setting is enabled, users who have never logged in will not "
 "receive email notifications, they still receive notifications via the "
-"notification centre within the community."
+"notification center within the community."
 msgstr ""
 
 #: modules/social_features/social_user/src/Form/SocialUserSettingsForm.php:40
@@ -17730,7 +17622,7 @@ msgid ""
 "emails sent by your platform."
 msgstr ""
 
-#: translations.php:106
+#: translations.php:114
 #: modules/social_features/social_group/modules/social_group_flexible_group/config/install/field.field.group.flexible_group.field_flexible_group_visibility.yml:0
 msgid "Who can see the group."
 msgstr "Tko može vidjeti grupu."
@@ -17753,7 +17645,7 @@ msgid ""
 "such as YouTube, Twitter, Vimeo, etc."
 msgstr ""
 
-#: src/Installer/Form/ModuleConfigureForm.php:117
+#: src/Installer/Form/ModuleConfigureForm.php:127
 msgid "Will generate files, users, groups, events, topics, comments and posts."
 msgstr ""
 "Generira datoteke, korisnike, grupe, događaje, teme, komentare i objave."
@@ -17763,7 +17655,7 @@ msgid "Yahoo"
 msgstr "Yahoo"
 
 #: modules/social_features/social_event/src/Form/EnrollRequestDeclineForm.php:181
-#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:273
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:246
 #: modules/social_features/social_group/modules/social_group_request/src/Form/GroupRequestMembershipRejectForm.php:146
 msgid "Yes"
 msgstr "Da"
@@ -17772,7 +17664,7 @@ msgstr "Da"
 msgid "Yes, continue"
 msgstr "Da, nastavi"
 
-#: modules/social_features/social_private_message/social_private_message.module:360
+#: modules/social_features/social_private_message/social_private_message.module:352
 msgid "You"
 msgstr "Ti"
 
@@ -17784,7 +17676,7 @@ msgstr "Već si član @group."
 msgid "You are enrolled in the event [node:title]"
 msgstr "Upisan/a si na događaj [node:title]"
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:204
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollActionForm.php:232
 msgid ""
 "You are no longer enrolled in this event. Your personal data used for the "
 "enrollment is also deleted."
@@ -17809,13 +17701,9 @@ msgstr ""
 "Ne možeš pregledavati komentare na sadržaj u grupi čiji nisi član. Možeš se "
 "pridružiti grupi @group_link."
 
-#: modules/social_features/social_follow_content/social_follow_content.module:159
+#: modules/social_features/social_follow_content/social_follow_content.module:157
 msgid "You are now automatically following this @type. @unfollow_link."
 msgstr "Sada automatski pratiš ovaj @type. @unfollow_link."
-
-#: modules/custom/ginvite/src/Form/BulkGroupInvitation.php:133
-msgid "You can copy/paste multiple emails, enter one email per line."
-msgstr ""
 
 #: modules/custom/mentions/mentions.module:23
 msgid ""
@@ -17826,7 +17714,7 @@ msgstr ""
 "odgovarajući @text_format"
 
 #: modules/social_features/social_core/src/Form/InviteEmailBaseForm.php:73
-#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:213
+#: modules/social_features/social_group/modules/social_group_invite/src/Form/SocialBulkGroupInvitation.php:226
 msgid "You can enter or paste multiple entries separated by comma or semicolon"
 msgstr ""
 "Možeš unijeti ili zalijepiti više unosa odvojenih zarezom ili točkom-zarezom"
@@ -17871,6 +17759,10 @@ msgstr ""
 msgid "You do not follow any tags."
 msgstr "Ne pratiš nijednu oznaku."
 
+#: modules/social_features/social_core/src/Controller/DashboardController.php:68
+msgid "You do not have any administrative items."
+msgstr ""
+
 #: modules/social_features/social_activity/config/install/views.view.activity_stream_notifications.yml:0
 msgid "You do not have any notifications."
 msgstr "Nemaš obavijesti."
@@ -17883,7 +17775,7 @@ msgstr ""
 "Još nemaš nijednu privatnu poruku. Klikni na gumb s desne strane za početak "
 "nove poruke."
 
-#: modules/social_features/social_group/modules/social_group_quickjoin/src/Controller/SocialQuickJoinController.php:105
+#: modules/social_features/social_group/modules/social_group_quickjoin/src/Controller/SocialQuickJoinController.php:95
 msgid "You don't have access to join this group."
 msgstr "Nemaš pristup za pridruživanje ovoj grupi."
 
@@ -17902,15 +17794,31 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Controller/UserEnrollInviteController.php:92
+#: translations.php:120
+msgid "You have a new comment on a post"
+msgstr ""
+
+#: translations.php:128
+msgid "You have a new enrollment to your event"
+msgstr ""
+
+#: translations.php:137
+msgid "You have a new reply to a thread you were mentioned in"
+msgstr ""
+
+#: translations.php:121
+msgid "You have a new reply to your comment"
+msgstr ""
+
+#: modules/social_features/social_event/modules/social_event_invite/src/Controller/UserEnrollInviteController.php:89
 msgid "You have accepted the invitation for the @event event."
 msgstr "Prihvaćen poziv na događaj @event."
 
-#: modules/custom/ginvite/ginvite.module:98
-msgid "You have accepted the invitation."
-msgstr "Prihvatio/la si poziv."
+#: translations.php:130
+msgid "You have been added to an event"
+msgstr ""
 
-#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:190
+#: modules/social_features/social_event/modules/social_event_an_enroll/src/Form/EventAnEnrollForm.php:189
 msgid ""
 "You have been already enrolled to this event. You have also received a "
 "notification via email."
@@ -17926,19 +17834,23 @@ msgstr ""
 "Upisan/a si na događaj [node:title]. Upis možeš otkazati u bilo kojem "
 "trenutku putem sljedeće poveznice: [social_event_an_enroll:enrolled_event]."
 
+#: translations.php:129
+msgid "You have been invited to an event"
+msgstr ""
+
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/message.template.invited_to_join_group.yml:0
 msgid "You have been invited to join a group"
 msgstr "Pozvan/a si da se pridružiš grupi"
 
-#: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialGroupInviteNotificationBlock.php:122
+#: modules/social_features/social_group/modules/social_group_invite/src/Plugin/Block/SocialGroupInviteNotificationBlock.php:124
 msgid "You have been invited to join this group"
 msgstr "Pozvan/a si da se pridružiš ovoj grupi"
 
-#: modules/custom/ginvite/src/Controller/InvitationOperations.php:120
-msgid "You have declined the group invitation."
-msgstr "Odbio/la si poziv u grupu."
+#: translations.php:136
+msgid "You have been mentioned"
+msgstr ""
 
-#: modules/social_features/social_event/modules/social_event_invite/src/Controller/UserEnrollInviteController.php:96
+#: modules/social_features/social_event/modules/social_event_invite/src/Controller/UserEnrollInviteController.php:93
 msgid "You have declined the invitation for the @event event."
 msgstr "Odbijen poziv na događaj @event."
 
@@ -17950,7 +17862,7 @@ msgstr "Upisan/a si"
 msgid "You have enrolled for this event."
 msgstr "Upisan/a si na ovaj događaj."
 
-#: modules/social_features/social_core/social_core.module:519
+#: modules/social_features/social_core/social_core.module:529
 msgid "You have insufficient permissions to delete this vocabulary"
 msgstr "Nemaš dovoljna dopuštenja za brisanje ovog rječnika"
 
@@ -17971,14 +17883,6 @@ msgstr ""
 "Upotrijebio/la si poveznicu za jednokratnu prijavu. Više nije potrebno "
 "koristiti ovu poveznicu za prijavu."
 
-#: modules/custom/ginvite/src/EventSubscriber/GinviteSubscriber.php:69
-msgid ""
-"You have pending group invitations. <a href=\"@url\">Visit your profile</a> "
-"to see them."
-msgstr ""
-"Imaš pozive u grupu koji čekaju. <a href=\"@url\"> Posjeti svoj profil</a> "
-"da ih vidiš."
-
 #: modules/social_features/social_album/social_album.module:254
 msgid "You have posted successfully in your new album @link"
 msgstr "Uspješna objava u tvom novom albumu @link"
@@ -17990,7 +17894,11 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: modules/social_features/social_follow_content/social_follow_content.module:92
+#: translations.php:138
+msgid "You have received a new private message"
+msgstr ""
+
+#: modules/social_features/social_follow_content/social_follow_content.module:91
 msgid ""
 "You have successfully enrolled to this event. Also you are now following the "
 "event, which means you will receive notifications when a new comment is "
@@ -18019,15 +17927,19 @@ msgstr ""
 msgid "You need to set your password in order to log in."
 msgstr "Trebaš postaviti lozinku da se možeš prijaviti."
 
-#: modules/social_features/social_group/modules/social_group_quickjoin/src/Controller/SocialQuickJoinController.php:95
+#: modules/social_features/social_group/modules/social_group_quickjoin/src/Controller/SocialQuickJoinController.php:85
 msgid "You're already a member of this group."
 msgstr "Već si član ove grupe."
 
-#: modules/social_features/social_group/modules/social_group_quickjoin/src/Controller/SocialQuickJoinController.php:114
+#: modules/social_features/social_group/modules/social_group_quickjoin/src/Controller/SocialQuickJoinController.php:104
 msgid "You've been added to this group."
 msgstr "Sad si član ove grupe."
 
-#: translations.php:115
+#: translations.php:135
+msgid "Your content has been liked"
+msgstr ""
+
+#: translations.php:144
 msgid "Your email has been sent to 1 selected enrollee successfully"
 msgid_plural ""
 "Your email has been sent to @count selected enrollees successfully"
@@ -18035,14 +17947,14 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:125
+#: translations.php:154
 msgid "Your email has been sent to 1 selected member successfully"
 msgid_plural "Your email has been sent to @count selected members successfully"
 msgstr[0] "Tvoj email je uspješno poslan 1 odabranom članu"
 msgstr[1] "Tvoj email je uspješno poslan @count odabranih članova"
 msgstr[2] "Tvoj email je uspješno poslan @count odabranih članova"
 
-#: translations.php:116
+#: translations.php:145
 msgid "Your email has not been sent to 1 selected enrollee successfully"
 msgid_plural ""
 "Your email has not been sent to @count selected enrollees successfully"
@@ -18050,7 +17962,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:126
+#: translations.php:155
 msgid "Your email has not been sent to 1 selected member successfully"
 msgid_plural ""
 "Your email has not been sent to @count selected members successfully"
@@ -18058,21 +17970,21 @@ msgstr[0] "Tvoj email nije uspješno poslan 1 odabranom članu"
 msgstr[1] "Tvoj email nije uspješno poslan @count odabranih članova"
 msgstr[2] "Tvoj email nije uspješno poslan @count odabranih članova"
 
-#: translations.php:127
+#: translations.php:156
 msgid "Your email will be send to 1 selected enrollee"
 msgid_plural "Your email will be send to @count selected enrollees"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: translations.php:128
+#: translations.php:157
 msgid "Your email will be send to 1 selected member"
 msgid_plural "Your email will be send to @count selected members"
 msgstr[0] "Tvoj email će biti poslan 1 odabranom članu"
 msgstr[1] "Tvoj email će biti poslan @count odabrana člana"
 msgstr[2] "Tvoj email će biti poslan @count odabranih članova"
 
-#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:156
+#: modules/social_features/social_footer/src/Form/FooterSettingsForm.php:152
 msgid "Your footer settings have been updated"
 msgstr "Postavke podnožja su ažurirane"
 
@@ -18080,7 +17992,7 @@ msgstr "Postavke podnožja su ažurirane"
 msgid "Your group and all of its topics, events and posts have been deleted."
 msgstr "Tvoja grupa i sve njezine teme, događaji i objave su izbrisani."
 
-#: modules/social_features/social_private_message/social_private_message.module:196
+#: modules/social_features/social_private_message/social_private_message.module:190
 msgid "Your message has been created."
 msgstr "Poruka je kreirana."
 
@@ -18118,7 +18030,15 @@ msgstr "Zahtjev je uspješno poslan"
 msgid "Your request is waiting for Group Administrator's approval"
 msgstr "Tvoj zahtjev čeka odobrenje Administratora Grupe"
 
-#: modules/custom/social_file_private/social_file_private.install:25
+#: translations.php:124
+msgid "Your request to enroll to an event has been accepted"
+msgstr ""
+
+#: translations.php:133
+msgid "Your request to join a group has been accepted"
+msgstr ""
+
+#: modules/custom/social_file_private/social_file_private.install:26
 msgid ""
 "Your uploaded files on the Open Social entities are not fully protected "
 "because you did not set a Private File Directory. You need to set an "
@@ -18240,7 +18160,7 @@ msgstr "[site:name]"
 msgid "a"
 msgstr ""
 
-#: modules/social_features/social_group/social_group.tokens.inc:116
+#: modules/social_features/social_group/social_group.tokens.inc:113
 msgid "a @content_type"
 msgstr "@content_type"
 
@@ -18283,7 +18203,7 @@ msgstr ""
 msgid "an"
 msgstr ""
 
-#: modules/social_features/social_group/social_group.tokens.inc:113
+#: modules/social_features/social_group/social_group.tokens.inc:110
 msgid "an @content_type"
 msgstr "@content_type"
 
@@ -18317,7 +18237,7 @@ msgstr "komentari"
 msgid "content @type: deleted @label."
 msgstr "sadržaj @type: izbrisano @label."
 
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:379
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:388
 msgid "create a new account"
 msgstr "kreiraj novi račun"
 
@@ -18353,7 +18273,7 @@ msgstr "id entiteta s url-a"
 msgid "entity type from url"
 msgstr "vrsta entiteta s url-a"
 
-#: modules/social_features/social_group/social_group.module:357
+#: modules/social_features/social_group/social_group.module:354
 #: modules/social_features/social_group/config/install/group.content_type.closed_group-group_node-event.yml:0
 #: modules/social_features/social_group/config/install/group.content_type.open_group-group_node-event.yml:0
 #: modules/social_features/social_group/config/install/group.content_type.public_group-group_node-event.yml:0
@@ -18370,7 +18290,7 @@ msgid "event enrollments"
 msgstr "upisi na događaj"
 
 #: social.profile:126
-#: modules/social_features/social_core/social_core.module:366
+#: modules/social_features/social_core/social_core.module:370
 #: modules/social_features/social_landing_page/src/Plugin/Block/ActivityOverviewBlock.php:88
 msgid "events"
 msgstr "događaji"
@@ -18460,13 +18380,21 @@ msgstr[2] ""
 msgid "following"
 msgstr ""
 
-#: modules/social_features/social_core/social_core.module:396;408;419
+#: modules/social_features/social_core/social_core.module:400;412;423
 msgid "for this user"
 msgstr "za ovog korisnika"
 
-#: modules/social_features/social_profile/modules/social_profile_organization_tag/social_profile_organization_tag.module:99
+#: modules/social_features/social_profile/modules/social_profile_organization_tag/social_profile_organization_tag.module:97
 msgid "from @org"
 msgstr "od @org"
+
+#: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
+msgid "ginvite/{{ id }}/accept?destination=/user/{{ uid }}/invitations"
+msgstr ""
+
+#: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_user_invitations.yml:0
+msgid "ginvite/{{ id }}/decline?destination=/user/{{ uid }}/invitations"
+msgstr ""
 
 #: modules/social_features/social_featured_content/templates/group--featured.html.twig:104
 msgid "group members"
@@ -18510,11 +18438,11 @@ msgstr "u @event"
 msgid "in @topic"
 msgstr "u @topic"
 
-#: modules/social_features/social_core/social_core.module:360;374;381;388
+#: modules/social_features/social_core/social_core.module:364;378;385;392
 msgid "in the community"
 msgstr "u zajednici"
 
-#: modules/social_features/social_core/social_core.module:429;438;448
+#: modules/social_features/social_core/social_core.module:434;445;457
 msgid "in the group"
 msgstr "u grupi"
 
@@ -18523,7 +18451,7 @@ msgid "internal uuid"
 msgstr "interni uuid"
 
 #: modules/social_features/social_event/src/Plugin/Block/EventRequestEnrollmentNotification.php:149
-#: modules/social_features/social_group/modules/social_group_request/src/Plugin/Block/SocialGroupRequestMembershipNotification.php:160
+#: modules/social_features/social_group/modules/social_group_request/src/Plugin/Block/SocialGroupRequestMembershipNotification.php:159
 msgid "is (1) new request"
 msgid_plural "are (@count) new requests"
 msgstr[0] ""
@@ -18575,7 +18503,7 @@ msgid "located at:"
 msgstr "nalazi se na:"
 
 #: modules/custom/group_core_comments/src/Plugin/Field/FieldFormatter/CommentGroupContentFormatter.php:270
-#: modules/social_features/social_event/src/Form/EnrollActionForm.php:371
+#: modules/social_features/social_event/src/Form/EnrollActionForm.php:380
 #: modules/social_features/social_post/src/Plugin/Field/FieldFormatter/CommentPostFormatter.php:142
 msgid "log in"
 msgstr "prijava"
@@ -18594,21 +18522,21 @@ msgstr "nikada"
 msgid "next ›"
 msgstr "sljedeća ›"
 
-#: translations.php:92
+#: translations.php:100
 #: modules/social_features/social_like/social_like.tokens.inc:123
 msgid "on a"
 msgstr "na"
 
-#: translations.php:93
+#: translations.php:101
 #: modules/social_features/social_like/social_like.tokens.inc:119
 msgid "on the"
 msgstr "na"
 
-#: modules/social_features/social_group/social_group.module:2766
+#: modules/social_features/social_group/social_group.module:3057
 msgid "only visible to all logged-in users."
 msgstr "vidljivo samo svim prijavljenim korisnicima."
 
-#: modules/social_features/social_group/social_group.module:2776
+#: modules/social_features/social_group/social_group.module:3067
 msgid "only visible to logged-in group members."
 msgstr "vidljivo samo prijavljenim članovima grupe."
 
@@ -18744,7 +18672,7 @@ msgstr "template_suggestions_extra"
 msgid "text formats"
 msgstr "tekstualni formati"
 
-#: modules/social_features/social_group/social_group.module:365
+#: modules/social_features/social_group/social_group.module:362
 #: modules/social_features/social_group/config/install/group.content_type.closed_group-group_node-topic.yml:0
 #: modules/social_features/social_group/config/install/group.content_type.open_group-group_node-topic.yml:0
 #: modules/social_features/social_group/config/install/group.content_type.public_group-group_node-topic.yml:0
@@ -18773,7 +18701,7 @@ msgstr "neobjavljeno"
 msgid "users"
 msgstr "korisnici"
 
-#: modules/social_features/social_event/social_event.module:1240
+#: modules/social_features/social_event/social_event.module:1247
 msgid ""
 "users can \"request to enroll\" for this event which event organisers "
 "approve/decline"
@@ -18781,23 +18709,28 @@ msgstr ""
 "korisnici mogu \"zatražiti zahtjev za upis\" na ovaj događaj koji "
 "organizatori događaja odobravaju/odbijaju"
 
-#: modules/social_features/social_group/social_group.module:685
+#: modules/social_features/social_group/modules/social_group_request/social_group_request.module:89
 msgid ""
-"users can \"request to join\" this group which group managers approve/"
-"decline."
+"users can \"request to join\" this @entity_type_id which\n"
+"@entity_type_id managers approve/decline."
 msgstr ""
-"korisnici mogu poslati \"zahtjev za pridruženje\" ovoj grupi koji "
-"upravitelji grupe odobravaju/odbijaju."
 
-#: modules/social_features/social_event/social_event.module:1234
+#: translations.php:34
+msgid ""
+"users can \"request to join\" this @entity_type_id which @entity_type_id "
+"managers approve/decline."
+msgstr ""
+
+#: modules/social_features/social_event/social_event.module:1241
 msgid "users can enroll for this event without approval"
 msgstr "korisnici se mogu prijaviti na ovaj događaj bez odobrenja"
 
-#: modules/social_features/social_group/social_group.module:677
-msgid "users can join this group without approval."
-msgstr "korisnici se mogu pridružiti ovoj grupi bez odobrenja."
+#: translations.php:30
+#: modules/social_features/social_group/social_group.module:705
+msgid "users can join this @entity_type_id without approval."
+msgstr ""
 
-#: modules/social_features/social_event/social_event.module:1246
+#: modules/social_features/social_event/social_event.module:1253
 msgid ""
 "users can only enroll for this event if they are added/invited by event "
 "organisers"
@@ -18805,12 +18738,17 @@ msgstr ""
 "korisnici se mogu prijaviti na ovaj događaj samo ako ih organizator događaja "
 "doda/pozove"
 
-#: modules/social_features/social_group/social_group.module:693
+#: modules/social_features/social_group/social_group.module:711
 msgid ""
-"users can only join this group if they are added/invited by group managers."
+"users can only join this @entity_type_id if they are\n"
+"added/invited by @entity_type_id managers."
 msgstr ""
-"korisnici se mogu pridružiti ovoj grupi samo ako ih dodaju/pozovu voditelji "
-"grupe."
+
+#: translations.php:32
+msgid ""
+"users can only join this @entity_type_id if they are added/invited by "
+"@entity_type_id managers."
+msgstr ""
 
 #: modules/social_features/social_album/config/install/views.view.albums.yml:0
 msgid "view"
@@ -18820,11 +18758,10 @@ msgstr "Pogledaj"
 msgid "view download counts"
 msgstr "prikaz broja preuzimanja"
 
-#: modules/social_features/social_group/social_group.module:2756
+#: modules/social_features/social_group/social_group.module:3047
 msgid "visible to all visitors to the platform."
 msgstr "vidljivo svim posjetiteljima platforme."
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
 #: modules/social_features/social_group/modules/social_group_invite/config/optional/views.view.social_group_invitations.yml:0
 msgid "{{ arguments.gid|placeholder }} invitations"
 msgstr "{{ arguments.gid|placeholder }} pozivi"
@@ -18859,6 +18796,10 @@ msgid ""
 "{{ user_id }}\r\n"
 "{{ uid_1 }}\r\n"
 "{{ uid_2 }}"
+msgstr ""
+
+#: modules/social_features/social_album/config/install/views.view.albums.yml:0
+msgid "{{ view_node }}"
 msgstr ""
 
 #: config/install/views.view.content.yml:0
@@ -18896,19 +18837,10 @@ msgstr "« Prva"
 msgid "« first"
 msgstr "« prva"
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
-msgid "Â« First"
-msgstr "Â« Prva"
-
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 msgid "â€¹â€¹"
 msgstr ""
 
-#: modules/custom/ginvite/config/optional/views.view.group_invitations.yml:0
-#: modules/custom/ginvite/config/optional/views.view.my_invitations.yml:0
 #: modules/custom/grequest/config/optional/views.view.group_pending_members.yml:0
 msgid "â€ºâ€º"
 msgstr ""
@@ -18993,6 +18925,13 @@ msgstr "››"
 #~ msgstr "- Niti jedan -"
 
 #~ msgid ""
+#~ "Are you sure you want to send a invitation to all e-mails listed bellow?"
+#~ msgstr "Želiš li zbilja poslati poziv svim navedenim adresama e-pošte ?"
+
+#~ msgid "Be added"
+#~ msgstr "Budi dodan/a"
+
+#~ msgid ""
 #~ "Before you can log in and set your password, you need to agree to the "
 #~ "data policy."
 #~ msgstr ""
@@ -19018,6 +18957,9 @@ msgstr "››"
 
 #~ msgid "Create your profile"
 #~ msgstr "Kreiraj svoj profil"
+
+#~ msgid "Decline invitation"
+#~ msgstr "Odbij poziv"
 
 #~ msgid "Default group hero size"
 #~ msgstr "Zadana veličina junaka grupe"
@@ -19111,6 +19053,12 @@ msgstr "››"
 #~ msgid "I agree with the @url"
 #~ msgstr "Slažem se s @url"
 
+#~ msgid "Invited user."
+#~ msgstr "Pozvani korisnik."
+
+#~ msgid "Join directly"
+#~ msgstr "Pridruži se izravno"
+
 #~ msgid "Last post"
 #~ msgstr "Posljednji unos"
 
@@ -19122,6 +19070,9 @@ msgstr "››"
 
 #~ msgid "Node type"
 #~ msgstr "Vrsta node-a"
+
+#~ msgid "Notification Centre"
+#~ msgstr "Centar za obavijesti"
 
 #~ msgid "Now create your profile so others can get to know you."
 #~ msgstr "Sada kreiraj svoj profil kako bi te drugi mogli upoznati."
@@ -19142,11 +19093,21 @@ msgstr "››"
 #~ msgid "Other settings"
 #~ msgstr "Ostale postavke"
 
+#~ msgctxt "Validation"
+#~ msgid "Prevent duplicated invitations from being created"
+#~ msgstr "Spriječi stvaranje dupliciranih poziva"
+
 #~ msgid "Profile page stream functionality."
 #~ msgstr "Funkcionalnost toka stranice profila."
 
+#~ msgid "Remove member link"
+#~ msgstr "Poveznica Ukloni člana"
+
 #~ msgid "Revisions"
 #~ msgstr "Revizije"
+
+#~ msgid "Select Recipients"
+#~ msgstr "Odaberi primatelje"
 
 #~ msgid "Set whether the tour is enabled or not."
 #~ msgstr "Postavi hoće li obilazak biti omogućen ili ne."
@@ -19237,6 +19198,9 @@ msgstr "››"
 #~ msgid "Use the topic filter to filter on topic type."
 #~ msgstr "Koristi filter teme za filtriranje prema vrsti teme."
 
+#~ msgid "User with such email already a member of this group."
+#~ msgstr "Korisnik sa tom adresom e-pošte već je član ove grupe."
+
 #~ msgid ""
 #~ "Welcome [current-user:display-name]. You have successfully created a "
 #~ "password. Welcome to Open Social! With this platform you can collaborate "
@@ -19272,6 +19236,19 @@ msgstr "››"
 #~ "          vrstu grupe, što omogućuje bolju kategorizaciju grupa u tvojoj\n"
 #~ "          zajednici. Možeš dodati ili urediti dostupne vrste grupa @link"
 
+#~ msgid "You have accepted the invitation."
+#~ msgstr "Prihvatio/la si poziv."
+
+#~ msgid "You have declined the group invitation."
+#~ msgstr "Odbio/la si poziv u grupu."
+
+#~ msgid ""
+#~ "You have pending group invitations. <a href=\"@url\">Visit your profile</"
+#~ "a> to see them."
+#~ msgstr ""
+#~ "Imaš pozive u grupu koji čekaju. <a href=\"@url\"> Posjeti svoj profil</"
+#~ "a> da ih vidiš."
+
 #~ msgid ""
 #~ "You have successfully enrolled to this event. You have also received a "
 #~ "notification via email."
@@ -19291,3 +19268,23 @@ msgstr "››"
 #~ msgstr ""
 #~ "#-#-#-#-#  en.pot (Open Social)  #-#-#-#-#\n"
 #~ "#-#-#-#-#  en.pot (Open Social)  #-#-#-#-#\n"
+
+#~ msgid ""
+#~ "users can \"request to join\" this group which group managers approve/"
+#~ "decline."
+#~ msgstr ""
+#~ "korisnici mogu poslati \"zahtjev za pridruženje\" ovoj grupi koji "
+#~ "upravitelji grupe odobravaju/odbijaju."
+
+#~ msgid "users can join this group without approval."
+#~ msgstr "korisnici se mogu pridružiti ovoj grupi bez odobrenja."
+
+#~ msgid ""
+#~ "users can only join this group if they are added/invited by group "
+#~ "managers."
+#~ msgstr ""
+#~ "korisnici se mogu pridružiti ovoj grupi samo ako ih dodaju/pozovu "
+#~ "voditelji grupe."
+
+#~ msgid "Â« First"
+#~ msgstr "Â« Prva"
