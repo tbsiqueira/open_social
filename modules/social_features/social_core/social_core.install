@@ -83,6 +83,7 @@ function social_core_install() {
       'view own unpublished content',
       'use text format basic_html',
       'use text format simple_text',
+      'use text format simple_html',
       'view the administration theme',
     ]
   );
@@ -156,6 +157,11 @@ function social_core_update_dependencies() {
   // Update field schema only after Profile module bug fixed.
   $dependencies['social_core'][8020] = [
     'profile' => 8001,
+  ];
+
+  // Grant permission after creating a new filter format.
+  $dependencies['social_core'][11042] = [
+    'social_editor' => 11041,
   ];
 
   // Convert the configuration of existing views to the new schema only after
@@ -1574,4 +1580,11 @@ function social_core_update_11401(): void {
   $config_path = \Drupal::service('extension.list.module')->getPath('social_core') . '/config/static';
   $source = new FileStorage($config_path);
   $config_storage->write('core.entity_view_mode.node.email_card', (array) $source->read('core.entity_view_mode.node.email_card_11401'));
+}
+
+/**
+ * Grant authenticated user permission to use Simple HTML format.
+ */
+function social_core_update_11402(): void {
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, ['use text format simple_html']);
 }
