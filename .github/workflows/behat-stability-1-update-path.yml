@@ -7,9 +7,8 @@ on:
     branches: [ main ]
   pull_request: { }
 
-  # @todo Enable after successful testing
   # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
+  workflow_dispatch:
 
 
 # github.head_ref is only set when the workflow was triggered by a pull_request and it contains the value of the source branch of the PR.
