@@ -2,8 +2,8 @@ name: 'Behat stability 1'
 
 # Controls when the workflow will run
 on:
-  pull_request_review:
-    types: [submitted]
+  pull_request:
+    types: [ ready_for_review, reopened, synchronize ]
 
   # Allows you to run this workflow manually from the Actions tab
   # workflow_dispatch:
@@ -15,11 +15,6 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  approved:
-    if: github.event.review.state == 'approved'
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "This PR was approved"
   # This workflow contains a single job called "Running tests"
   tests:
     name: Running tests
