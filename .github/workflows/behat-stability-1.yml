@@ -17,7 +17,8 @@ env:
 jobs:
   # This workflow contains a single job called "Running tests"
   tests:
-    name: Running tests
+    name: 'Behat stability 1'
+    if: ! github.event.pull_request.draft
     runs-on: ubuntu-22.04
     steps:
       # Set PHP version to 8.0
